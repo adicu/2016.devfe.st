@@ -29,3 +29,15 @@ function submitEmail() {
     alert('Incorrect Email. Please Try Again.');
   }
 }
+
+function showVideo() {
+  $('#viewvideo').hide();
+  $('#gif2015').hide();
+  $('#vid2015').fadeIn();
+
+  $('.transparent').click(function() {
+    $('#viewvideo').show();
+    $('#gif2015').show();
+    $('#vid2015').fadeOut();
+  });
+}

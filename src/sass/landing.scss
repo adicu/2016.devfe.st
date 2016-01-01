@@ -1,13 +1,12 @@
 @import 'base';
-
 .landing {
   color: $white;
   font-family: $cabin;
 }
 
-.header{
+.header {
   position: relative;
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   height: 20%;
 }
 
@@ -22,7 +21,7 @@ h1.landing {
   text-transform: uppercase;
 }
 
-h1.info{
+h1.info {
   position: absolute;
   float: right;
   left: 50%;
@@ -32,19 +31,24 @@ h1.info{
   font-weight: 700;
   z-index: 3;
   text-transform: uppercase;
+  padding: 2%;
+  border-top: solid;
+  border-color: black;
+  border-width: 5px;
 }
 
 h2.landing {
   margin: 0;
   padding: 0;
-  font-size: 1.7rem;
+  font-size: 2.1rem;
   text-align: justify;
 }
 
 h3.landing {
-  font-size: 1.025em;
+  font-size: 1.425em;
   margin: 0;
   padding: 0;
+  padding-bottom: 1rem;
 }
 
 div.landing {
@@ -58,27 +62,40 @@ div.landing {
 
 div.description {
   position: relative;
-
   width: 20%;
-  left: 17.5%;
-  top: -35%;
+  left: 22.5%;
+  top: -55%;
+  min-width: 264px;
 }
 
+.img_contain {
+  width: 95%;
+  height: 60%;
+  background: $yellow;
+  padding-bottom: 0px;
+  z-index: 2;
+}
 
-#gif2015{
+#gif2015 {
   position: relative;
-  width: 30%;
+  width: 60%;
+  height: 100%;
+  min-width: 679px;
+}
+
+#vid2015 {
+  position: relative;
+  width: 70%;
   left: 15%;
   margin-top: 5%;
 }
 
-#viewvideo{
+#viewvideo {
   position: relative;
   right: 5%;
   top: 50%;
   vertical-align: top;
 }
-
 
 p.landing {
   font-size: 2em;
@@ -92,12 +109,12 @@ p.landing {
   // z-index: 1;
 }
 
-.page-landing{
+.page-landing {
   // background-image: url('http://i.imgur.com/mei5DgU.jpg');
   background-color: $lightblue;
 }
 
-.page-info{
+.page-info {
   background-color: $red;
 }
 
@@ -106,7 +123,6 @@ p.landing {
   height: 100%;
   position: relative;
   width: 100%;
-  // z-index: 2;
 }
 
 .background-image {
@@ -115,7 +131,7 @@ p.landing {
   background-size: cover;
 }
 
-.border-left{
+.border-left {
   border-top: solid;
   border-color: black;
   border-width: 5px;
@@ -130,7 +146,7 @@ p.landing {
   // z-index: 1;
 }
 
-.border-right{
+.border-right {
   border-top: solid;
   border-color: black;
   border-width: 5px;
@@ -145,7 +161,22 @@ p.landing {
   // z-index: 1;
 }
 
-.border-u{
+.border-right-2 {
+  border-right: solid;
+  border-color: $yellow;
+  border-width: 5px;
+  box-sizing: border-box;
+  width: 10%;
+  height: 60%;
+  margin: 0;
+  padding: 0;
+  top: 20%;
+  right: 10%;
+  position: absolute;
+  z-index: 6;
+}
+
+.border-u {
   border-left: solid;
   border-right: solid;
   border-bottom: solid;
@@ -159,7 +190,7 @@ p.landing {
   top: 10%;
   left: 10%;
   position: absolute;
-  // z-index: 1;
+  z-index: 0;
 }
 
 .half-globe {
@@ -171,9 +202,9 @@ p.landing {
   // z-index: 2;
 }
 
-.plane{
+.plane {
   position: absolute;
-  width:15%;
+  width: 15%;
   transform: translateX(+50%) translateY(+50%);
   // z-index: 2;
   bottom: 20%;
@@ -185,12 +216,45 @@ p.landing {
   0% {
     right: -10%;
   }
-  50%{
+  50% {
     bottom: 35%;
     right: 65%;
   }
-  100%{
+  100% {
     bottom: 25%;
     right: 115%;
+  }
+}
+
+.unify {
+  position: absolute;
+  width: 5px;
+  height: 20%;
+  background: black;
+  top: 90%;
+  left: 50%;
+  z-index: 100;
+}
+
+@media (max-width: 970px) {
+  h1.landing {
+    font-size: 2.3rem;
+  }
+  div.description {
+    position: relative;
+    width: 50%;
+    left: 0%;
+    top: -70%;
+    min-width: 264px;
+  }
+  #gif2015 {
+    position: relative;
+    width: 100%;
+    left: 0%;
+    top: -40%;
+    dispay: inline-block;
+  }
+  .transparent {
+    display: inline-block;
   }
 }
