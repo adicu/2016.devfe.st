@@ -36,3 +36,14 @@
   background: $white;
   color: $black;
 }
+
+@media (max-width: 970px) {
+  .button{
+    padding: 0.5em;
+  }
+
+  .input{
+    padding: 0.5em;
+    max-width: 5.5em;
+  }
+}

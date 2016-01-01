@@ -24,17 +24,31 @@ h1.landing {
 h1.info {
   position: absolute;
   float: right;
-  left: 50%;
+  left: 55%;
   top: 25%;
+  width: 45%;
   transform: translateX(-25%) translateY(-50%);
   font-size: 3.7rem;
   font-weight: 700;
   z-index: 3;
   text-transform: uppercase;
   padding: 2%;
-  border-top: solid;
-  border-color: black;
-  border-width: 5px;
+  line-height: 3.6rem;
+}
+
+p.info {
+  position: absolute;
+  float: left;
+  left: 15%;
+  top: 20%;
+  width: 35%;
+  transform: translateX(-25%) translateY(-50%);
+  font-size: 1.7rem;
+  font-weight: 500;
+  z-index: 3;
+  padding: 2%;
+  text-align: right;
+  line-height: 1.6rem;
 }
 
 h2.landing {
@@ -83,20 +97,6 @@ div.description {
   min-width: 679px;
 }
 
-#vid2015 {
-  position: relative;
-  width: 70%;
-  left: 15%;
-  margin-top: 5%;
-}
-
-#viewvideo {
-  position: relative;
-  right: 5%;
-  top: 50%;
-  vertical-align: top;
-}
-
 p.landing {
   font-size: 2em;
 }
@@ -116,6 +116,10 @@ p.landing {
 
 .page-info {
   background-color: $red;
+}
+
+.page-schedule {
+  background-color: $yellow;
 }
 
 .transparent {
@@ -226,7 +230,7 @@ p.landing {
   }
 }
 
-.unify {
+#unify-1 {
   position: absolute;
   width: 5px;
   height: 20%;
@@ -236,24 +240,65 @@ p.landing {
   z-index: 100;
 }
 
+#unify-2 {
+  position: absolute;
+  width: 20em;
+  height: 5px;
+  background: black;
+  top: 110%;
+  left: 30%;
+  z-index: 100;
+}
+
 @media (max-width: 970px) {
-  h1.landing {
+  h1.landing{
     font-size: 2.3rem;
+    top: 65%;
+    line-height: 2.2rem;
   }
+
+  h1.info, h1.schedule {
+    font-size: 2.3rem;
+    top: 50%;
+  line-height: 2.2rem;
+  }
+
+  h2.landing, h3.landing {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
   div.description {
     position: relative;
-    width: 50%;
+    width: 60%;
     left: 0%;
     top: -70%;
-    min-width: 264px;
+    height: 50%;
+    display: block;
+    min-width: 50%;
   }
+
   #gif2015 {
     position: relative;
     width: 100%;
     left: 0%;
-    top: -40%;
+    top: -90%;
     dispay: inline-block;
+    background-position: center center;
+  background-repeat: no-repeat;
   }
+
+  .img_contain {
+  width: 100%;
+  height: 80%;
+  z-index: 2;
+}
+
+.border-right-2 {
+  border-color: $transparent;
+  }
+
   .transparent {
     display: inline-block;
   }
