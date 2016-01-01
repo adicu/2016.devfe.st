@@ -1,0 +1,196 @@
+@import 'base';
+
+.landing {
+  color: $white;
+  font-family: $cabin;
+}
+
+.header{
+  position: relative;
+  background: rgba(0,0,0,0);
+  height: 20%;
+}
+
+h1.landing {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3.7rem;
+  font-weight: 700;
+  z-index: 3;
+  text-transform: uppercase;
+}
+
+h1.info{
+  position: absolute;
+  float: right;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-25%) translateY(-50%);
+  font-size: 3.7rem;
+  font-weight: 700;
+  z-index: 3;
+  text-transform: uppercase;
+}
+
+h2.landing {
+  margin: 0;
+  padding: 0;
+  font-size: 1.7rem;
+  text-align: justify;
+}
+
+h3.landing {
+  font-size: 1.025em;
+  margin: 0;
+  padding: 0;
+}
+
+div.landing {
+  color: $white;
+  height: 5em;
+  line-height: 3.2em;
+  margin: 0 auto;
+  padding: 1.5em;
+  width: 50%;
+}
+
+div.description {
+  position: relative;
+
+  width: 20%;
+  left: 17.5%;
+  top: -35%;
+}
+
+
+#gif2015{
+  position: relative;
+  width: 30%;
+  left: 15%;
+  margin-top: 5%;
+}
+
+#viewvideo{
+  position: relative;
+  right: 5%;
+  top: 50%;
+  vertical-align: top;
+}
+
+
+p.landing {
+  font-size: 2em;
+}
+
+.page {
+  // background-image: url('http://cdn.makeagif.com/media/12-27-2015/_3qgDB.gif');
+  height: 100%;
+  position: relative;
+  width: 100%;
+  // z-index: 1;
+}
+
+.page-landing{
+  // background-image: url('http://i.imgur.com/mei5DgU.jpg');
+  background-color: $lightblue;
+}
+
+.page-info{
+  background-color: $red;
+}
+
+.transparent {
+  background-color: $semi-trans;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  // z-index: 2;
+}
+
+.background-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.border-left{
+  border-top: solid;
+  border-color: black;
+  border-width: 5px;
+  box-sizing: border-box;
+  width: 20%;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+  top: 10%;
+  left: 10%;
+  position: absolute;
+  // z-index: 1;
+}
+
+.border-right{
+  border-top: solid;
+  border-color: black;
+  border-width: 5px;
+  box-sizing: border-box;
+  width: 20%;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+  top: 10%;
+  right: 10%;
+  position: absolute;
+  // z-index: 1;
+}
+
+.border-u{
+  border-left: solid;
+  border-right: solid;
+  border-bottom: solid;
+  border-color: black;
+  border-width: 5px;
+  box-sizing: border-box;
+  width: 80%;
+  height: 80%;
+  margin: 0;
+  padding: 0;
+  top: 10%;
+  left: 10%;
+  position: absolute;
+  // z-index: 1;
+}
+
+.half-globe {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  bottom: 0;
+  transform: translateX(+50%) translateY(+50%);
+  // z-index: 2;
+}
+
+.plane{
+  position: absolute;
+  width:15%;
+  transform: translateX(+50%) translateY(+50%);
+  // z-index: 2;
+  bottom: 20%;
+  right: 5%;
+  animation: plane-fly 5s infinite;
+}
+
+@keyframes plane-fly {
+  0% {
+    right: -10%;
+  }
+  50%{
+    bottom: 35%;
+    right: 65%;
+  }
+  100%{
+    bottom: 25%;
+    right: 115%;
+  }
+}
