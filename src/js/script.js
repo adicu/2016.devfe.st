@@ -1,12 +1,30 @@
 
 $(document).ready(function() {
-  console.log('hello world');
+  var width = $(window).width();
+
+  // Move Page
   $('#moreinfo').click(function() {
-    console.log('yass');
     $('html, body').animate({
-      scrollTop: $('#page-2').offset().top,
-    }, 1500);
+      scrollTop: $('#info').offset().top,
+    }, 1000);
   });
+
+  if (width <= 970) {
+    $('.border-right-2').css({'border-color': 'rgba(0, 0, 0, 0)'});
+    $('.img_contain').css({'width': '100%'});
+    $('#land_desc').fadeIn();
+      $('#gif2015').fadeIn();
+  } else {
+    $('.img_contain').animate({width: '95%'}, 1500);
+
+  $('.border-right-2').animate({
+    right: '10%'
+  }, 1500, function() {
+      $('.border-right-2').css({'border-color': '#F9C22E'});
+      $('#land_desc').fadeIn();
+      $('#gif2015').fadeIn();
+  });
+  }
 });
 
 function showEmail() {

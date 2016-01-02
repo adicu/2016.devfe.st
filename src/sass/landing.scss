@@ -22,33 +22,38 @@ h1.landing {
 }
 
 h1.info {
-  position: absolute;
   float: right;
   left: 55%;
-  top: 25%;
   width: 45%;
-  transform: translateX(-25%) translateY(-50%);
   font-size: 3.7rem;
   font-weight: 700;
   z-index: 3;
   text-transform: uppercase;
-  padding: 2%;
   line-height: 3.6rem;
 }
 
 p.info {
-  position: absolute;
   float: left;
   left: 15%;
-  top: 20%;
   width: 35%;
-  transform: translateX(-25%) translateY(-50%);
   font-size: 1.7rem;
   font-weight: 500;
   z-index: 3;
-  padding: 2%;
   text-align: right;
   line-height: 1.6rem;
+}
+
+h1.info, p.info {
+position: absolute;
+top: 10%;
+}
+
+.banner_contain {
+  top: 3.5em;
+  width: 100%;
+  // background-color: $yellow;
+  z-index: 3;
+  height: 50%;
 }
 
 h2.landing {
@@ -75,26 +80,27 @@ div.landing {
 }
 
 div.description {
-  position: relative;
-  width: 20%;
-  left: 22.5%;
-  top: -55%;
+  position: absolute;
+  float: right;
+  left: 65%;
+  top: 10%;
   min-width: 264px;
 }
 
 .img_contain {
-  width: 95%;
-  height: 60%;
+  position: relative;
   background: $yellow;
   padding-bottom: 0px;
   z-index: 2;
+  width: 0%;
+  height: 60%;
 }
 
 #gif2015 {
-  position: relative;
+  position: absolute;
+  float: left;
   width: 60%;
   height: 100%;
-  min-width: 679px;
 }
 
 p.landing {
@@ -107,6 +113,13 @@ p.landing {
   position: relative;
   width: 100%;
   // z-index: 1;
+}
+
+.footer{
+  height: 5%;
+  position:relative;
+  width: 100%;
+  background-color: $tan;
 }
 
 .page-landing {
@@ -137,7 +150,7 @@ p.landing {
 
 .border-left {
   border-top: solid;
-  border-color: black;
+  border-color: white;
   border-width: 5px;
   box-sizing: border-box;
   width: 20%;
@@ -152,7 +165,7 @@ p.landing {
 
 .border-right {
   border-top: solid;
-  border-color: black;
+  border-color: white;
   border-width: 5px;
   box-sizing: border-box;
   width: 20%;
@@ -167,7 +180,7 @@ p.landing {
 
 .border-right-2 {
   border-right: solid;
-  border-color: $yellow;
+  border-color: $transparent;
   border-width: 5px;
   box-sizing: border-box;
   width: 10%;
@@ -175,7 +188,7 @@ p.landing {
   margin: 0;
   padding: 0;
   top: 20%;
-  right: 10%;
+  right: 0%;
   position: absolute;
   z-index: 6;
 }
@@ -184,7 +197,7 @@ p.landing {
   border-left: solid;
   border-right: solid;
   border-bottom: solid;
-  border-color: black;
+  border-color: white;
   border-width: 5px;
   box-sizing: border-box;
   width: 80%;
@@ -200,11 +213,16 @@ p.landing {
 .half-globe {
   position: absolute;
   width: 50%;
-  height: 50%;
   bottom: 0;
+  left: 0;
+  -ms-transform-origin: 50% 50%; /* IE 9 */
+    -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
+    transform-origin: 50% 50%;
   transform: translateX(+50%) translateY(+50%);
   // z-index: 2;
+  animation: globe-rotate 8s infinite linear;
 }
+
 
 .plane {
   position: absolute;
@@ -213,41 +231,81 @@ p.landing {
   // z-index: 2;
   bottom: 20%;
   right: 5%;
-  animation: plane-fly 5s infinite;
+  animation: plane-fly 4s infinite step-end;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+@keyframes globe-rotate{
+  0% {
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: translateX(+50%) translateY(+50%) rotate(360deg); /* Chrome, Safari, Opera */
+    transform: translateX(+50%) translateY(+50%) rotate(360deg);
+  }
+
+  25% {
+    -ms-transform: rotate(480deg); /* IE 9 */
+    -webkit-transform: translateX(+50%) translateY(+50%) rotate(480deg) ; /* Chrome, Safari, Opera */
+    transform: translateX(+50%) translateY(+50%)  rotate(480deg);
+  }
+
+  75% {
+    -ms-transform:  rotate(600deg); /* IE 9 */
+    -webkit-transform: translateX(+50%) translateY(+50%)  rotate(600deg); /* Chrome, Safari, Opera */
+    transform: translateX(+50%) translateY(+50%)  rotate(600deg);
+  }
+
+  100% {
+    -ms-transform:  rotate(720deg); /* IE 9 */
+    -webkit-transform:  translateX(+50%) translateY(+50%) rotate(720deg); /* Chrome, Safari, Opera */
+    transform: translateX(+50%) translateY(+50%)  rotate(720deg);
+  }
 }
 
 @keyframes plane-fly {
   0% {
-    right: -10%;
+    right: 5%;
+    bottom: 0%;
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: scaleX(-1) rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: scaleX(-1) rotate(-45deg);
   }
+
+  25% {
+    bottom: 32.5%;
+    right: 25%;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: scaleX(-1) rotate(0deg); /* Chrome, Safari, Opera */
+    transform: scaleX(-1) rotate(0deg);
+  }
+
   50% {
-    bottom: 35%;
+    bottom: 30%;
     right: 65%;
+    -ms-transform: rotate(60deg); /* IE 9 */
+    -webkit-transform: scaleX(-1) rotate(60deg); /* Chrome, Safari, Opera */
+    transform: scaleX(-1) rotate(60deg);
   }
+
+  75% {
+    bottom: 0%;
+    right: 80%;
+    -ms-transform: rotate(85deg); /* IE 9 */
+    -webkit-transform: scaleX(-1) rotate(85deg); /* Chrome, Safari, Opera */
+    transform: scaleX(-1) rotate(85deg);
+  }
+
   100% {
     bottom: 25%;
     right: 115%;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: scaleX(-1) rotate(0deg); /* Chrome, Safari, Opera */
+    transform: scaleX(-1) rotate(0deg);
   }
-}
-
-#unify-1 {
-  position: absolute;
-  width: 5px;
-  height: 20%;
-  background: black;
-  top: 90%;
-  left: 50%;
-  z-index: 100;
-}
-
-#unify-2 {
-  position: absolute;
-  width: 20em;
-  height: 5px;
-  background: black;
-  top: 110%;
-  left: 30%;
-  z-index: 100;
 }
 
 @media (max-width: 970px) {
@@ -264,15 +322,33 @@ p.landing {
   }
 
   h2.landing, h3.landing {
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+p.info, h1.info{
+  text-align: left;
+}
+
+p.info {
+  left: 5%;
+}
+
+h1.info{
+  margin: 0;
+  padding: 0;
+}
+
+.img_contain {
+  width: 100%;
+  background: $transparent;
 }
 
   div.description {
     position: relative;
     width: 60%;
-    left: 0%;
+    left: -10%;
     top: -70%;
     height: 50%;
     display: block;
@@ -289,15 +365,15 @@ p.landing {
   background-repeat: no-repeat;
   }
 
-  .img_contain {
-  width: 100%;
-  height: 80%;
-  z-index: 2;
+  .banner_contain {
+    position: absolute;
+  top: 7em;
 }
+
 
 .border-right-2 {
   border-color: $transparent;
-  }
+}
 
   .transparent {
     display: inline-block;
