@@ -1,5 +1,61 @@
 {{#extend "base"}}
 {{#content "main" mode="prepend"}}
+  <div class="page page-landing background-image">
+    <div class="transparent">
+      <div class="header">
+        <h1 class="landing">DevFest 2016</h1>
+      </div>
+      <div class="border-left"></div>
+      <div class="border-right"></div>
+      <div class="border-right-2 hide-mobile"></div>
+      <div class="border-u"></div>
+      <div class="img_contain">
+        <img style="display: none" id="gif2015" src="http://cdn.makeagif.com/media/1-01-2016/zLurv3.gif">
 
+        <div id="land_desc" style="display: none" class="landing description">
+        <h2 class="landing">Registration <div class="clear"></div>Coming Soon</h2>
+        <h3 class="landing">Sign Up For Updates</h3>
+        <form action="//devfe.us12.list-manage.com/subscribe/post?u=4728f3ea171ba6ddb55862e63&amp;id=205c98523d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+        <a href="javascript:void(0)" class="button moreinfo" id="moreinfo">More Info</a>
+        <a href="javascript:void(0)">
+        <form action="//devfe.us12.list-manage.com/subscribe/post?u=4728f3ea171ba6ddb55862e63&amp;id=205c98523d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <input style="display: none" name="EMAIL" type="email" id="mce-EMAIL" class="input" placeholder="Your Email Here"></input>
+        </a>
+        <a id="signup" onclick="showEmail()" href="javascript:void(0)" class="button signup">SignUp</a>
+        <a id="submit" style="display: none;" onclick="submitEmail()" href="javascript:void(0)" class="button submit">Submit</a></form>
+        <a style="display:none;" href="javascript:void(0)" id="success" class="success">Success!</a>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div name="page-2" id="info" class="page page-info background-image">
+    <div class="nav">
+      <!-- <div class="logo-container"><h1>DevFest</h1></div> -->
+      <div class="nav-options">
+        <ul class="nav-list">
+          <ul style="float:left;list-style-type:none;" class="left-nav">
+        <li><a id="main" class="register nav-button" href="https://adicu.com/" data-mode="2" target="_blank">DevFest</a></li>
+        </ul>
+          <li><a id="nav_sign" class="register nav-button typeform-share" href="#" data-mode="2">Sign Up Today!</a></li>
+          <li><a href="#schedule" class="register nav-button">
+            Schedule
+          </a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="banner_contain">
+      <h1 class="info">Take off <div class="clear"></div>
+        <span> Jan 30th - Feb 6th</span>
+      </h1>
+      <div class="clear"></div>
+      <p class="info"> A week long of choose your own adventure learning at Columbia University</p>
+    </div>
+    <img src="http://www.clker.com/cliparts/D/g/o/A/G/X/black-and-white-globe.svg" class="hide-mobile half-globe">
+    <img class="hide-mobile plane" src="http://mycargear.com/wp-content/uploads/Plane-Icon-Png-02.png">
+  </div>
+  <div name="page-3" id="schedule" class="page page-schedule background-image">
+    <h1 class="schedule"> More Coming Soon! </h1>
+  </div>
+  <div id="footer" class="footer"><p class="footer">brought to you by <a class="footer" href="http://www.adicu.com">ADI</a></p></div>
 {{/content}}
 {{/extend}}

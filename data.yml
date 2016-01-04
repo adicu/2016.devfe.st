@@ -1,10 +1,10 @@
 meta:
   title: "DevFest 2016"
   description: "DevFest is a different type of hackathon for Columbia students and is hosted by ADI"
-  facebook_image: ""  # /img/facebook.png
-  twitter_image: ""  # /img/twitter.png
-  image: ""  # /img/share.png
-  twitter_handle: ""  # @minimill_co
-  domain: ""  # minimill.co
-  url: ""  # https://minimill.co
+  facebook_image: "/img/facebook.png"
+  twitter_image: "/img/twitter.png"
+  image: "/img/share.png"
+  twitter_handle: "adicu"
+  domain: "devfe.st"
+  url: "https://2016.devfe.st"
   google_analytics_id: "" # UA-66637918-1

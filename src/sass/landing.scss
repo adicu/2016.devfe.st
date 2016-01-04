@@ -1,5 +1,4 @@
 @import 'base';
-
 .landing {
   color: $white;
   font-family: $cabin;
@@ -44,9 +43,10 @@ p.info {
   line-height: 1.6rem;
 }
 
-h1.info, p.info {
-position: absolute;
-top: 10%;
+h1.info,
+p.info {
+  position: absolute;
+  top: 10%;
 }
 
 .banner_contain {
@@ -116,9 +116,9 @@ p.landing {
   // z-index: 1;
 }
 
-.footer{
-  height: 5%;
-  position:relative;
+.footer {
+  height: 7.5%;
+  position: relative;
   width: 100%;
   background-color: $tan;
 }
@@ -216,19 +216,18 @@ p.landing {
   width: 50%;
   bottom: 0;
   left: 0;
-  -ms-transform-origin: 50% 50%; /* IE 9 */
-    -webkit-transform-origin: 50% 50%; /* Chrome, Safari, Opera */
-    transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
   transform: translateX(+50%) translateY(+50%);
   // z-index: 2;
   animation: globe-rotate 8s infinite linear;
 }
 
-
 .plane {
   position: absolute;
   width: 15%;
-  transform: translateX(+50%) translateY(+50%);
+  transform: translateX(+50%) translateY(+50%) scaleX(-1);
   // z-index: 2;
   bottom: 20%;
   right: 5%;
@@ -236,34 +235,30 @@ p.landing {
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: "FlipH";
 }
 
-@keyframes globe-rotate{
+@keyframes globe-rotate {
   0% {
-    -ms-transform: rotate(360deg); /* IE 9 */
-    -webkit-transform: translateX(+50%) translateY(+50%) rotate(360deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(360deg); // IE 9
+    -webkit-transform: translateX(+50%) translateY(+50%) rotate(360deg); // Chrome, Safari, Opera
     transform: translateX(+50%) translateY(+50%) rotate(360deg);
   }
-
   25% {
-    -ms-transform: rotate(480deg); /* IE 9 */
-    -webkit-transform: translateX(+50%) translateY(+50%) rotate(480deg) ; /* Chrome, Safari, Opera */
-    transform: translateX(+50%) translateY(+50%)  rotate(480deg);
+    -ms-transform: rotate(480deg); // IE 9
+    -webkit-transform: translateX(+50%) translateY(+50%) rotate(480deg); // Chrome, Safari, Opera
+    transform: translateX(+50%) translateY(+50%) rotate(480deg);
   }
-
   75% {
-    -ms-transform:  rotate(600deg); /* IE 9 */
-    -webkit-transform: translateX(+50%) translateY(+50%)  rotate(600deg); /* Chrome, Safari, Opera */
-    transform: translateX(+50%) translateY(+50%)  rotate(600deg);
+    -ms-transform: rotate(600deg); // IE 9
+    -webkit-transform: translateX(+50%) translateY(+50%) rotate(600deg); // Chrome, Safari, Opera
+    transform: translateX(+50%) translateY(+50%) rotate(600deg);
   }
-
   100% {
-    -ms-transform:  rotate(720deg); /* IE 9 */
-    -webkit-transform:  translateX(+50%) translateY(+50%) rotate(720deg); /* Chrome, Safari, Opera */
-    transform: translateX(+50%) translateY(+50%)  rotate(720deg);
+    -ms-transform: rotate(720deg); // IE 9
+    -webkit-transform: translateX(+50%) translateY(+50%) rotate(720deg); // Chrome, Safari, Opera
+    transform: translateX(+50%) translateY(+50%) rotate(720deg);
   }
 }
 
@@ -271,40 +266,36 @@ p.landing {
   0% {
     right: 5%;
     bottom: 0%;
-    -ms-transform: rotate(-45deg); /* IE 9 */
-    -webkit-transform: scaleX(-1) rotate(-45deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(-45deg); // IE 9
+    -webkit-transform: scaleX(-1) rotate(-45deg); // Chrome, Safari, Opera
     transform: scaleX(-1) rotate(-45deg);
   }
-
   25% {
     bottom: 32.5%;
     right: 25%;
-    -ms-transform: rotate(0deg); /* IE 9 */
-    -webkit-transform: scaleX(-1) rotate(0deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(0deg); // IE 9
+    -webkit-transform: scaleX(-1) rotate(0deg); // Chrome, Safari, Opera
     transform: scaleX(-1) rotate(0deg);
   }
-
   50% {
     bottom: 30%;
     right: 65%;
-    -ms-transform: rotate(60deg); /* IE 9 */
-    -webkit-transform: scaleX(-1) rotate(60deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(60deg); // IE 9
+    -webkit-transform: scaleX(-1) rotate(60deg); // Chrome, Safari, Opera
     transform: scaleX(-1) rotate(60deg);
   }
-
   75% {
     bottom: 0%;
     right: 80%;
-    -ms-transform: rotate(85deg); /* IE 9 */
-    -webkit-transform: scaleX(-1) rotate(85deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(85deg); // IE 9
+    -webkit-transform: scaleX(-1) rotate(85deg); // Chrome, Safari, Opera
     transform: scaleX(-1) rotate(85deg);
   }
-
   100% {
     bottom: 25%;
     right: 115%;
-    -ms-transform: rotate(0deg); /* IE 9 */
-    -webkit-transform: scaleX(-1) rotate(0deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(0deg); // IE 9
+    -webkit-transform: scaleX(-1) rotate(0deg); // Chrome, Safari, Opera
     transform: scaleX(-1) rotate(0deg);
   }
 }
@@ -321,10 +312,6 @@ h1.schedule {
   line-height: 1em;
 }
 
-.footer{
-  height: 10%;
-}
-
 p.footer {
   margin: 0;
   padding: 0;
@@ -337,47 +324,43 @@ p.footer {
   font-weight: 500;
 }
 
-a.footer{
+a.footer {
   color: $red;
 }
 
 @media (max-width: 970px) {
-  h1.landing{
+  h1.landing {
     font-size: 2.3rem;
     top: 65%;
     line-height: 2.2rem;
   }
-
-  h1.info, h1.schedule {
+  h1.info,
+  h1.schedule {
     font-size: 2.3rem;
     top: 50%;
-  line-height: 2.2rem;
+    line-height: 2.2rem;
   }
-
-  h2.landing, h3.landing {
-  font-size: 1.4rem;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
-p.info, h1.info{
-  text-align: left;
-}
-
-p.info {
-  left: 5%;
-}
-
-h1.info{
-  margin: 0;
-  padding: 0;
-}
-
-.img_contain {
-  width: 100%;
-  background: $transparent;
-}
-
+  h2.landing,
+  h3.landing {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  p.info,
+  h1.info {
+    text-align: left;
+  }
+  p.info {
+    left: 5%;
+  }
+  h1.info {
+    margin: 0;
+    padding: 0;
+  }
+  .img_contain {
+    width: 100%;
+    background: $transparent;
+  }
   div.description {
     position: relative;
     width: 60%;
@@ -387,7 +370,6 @@ h1.info{
     display: block;
     min-width: 50%;
   }
-
   #gif2015 {
     position: relative;
     width: 100%;
@@ -395,19 +377,15 @@ h1.info{
     top: -90%;
     dispay: inline-block;
     background-position: center center;
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
   }
-
   .banner_contain {
     position: absolute;
-  top: 7em;
-}
-
-
-.border-right-2 {
-  border-color: $transparent;
-}
-
+    top: 7em;
+  }
+  .border-right-2 {
+    border-color: $transparent;
+  }
   .transparent {
     display: inline-block;
   }

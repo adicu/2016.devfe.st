@@ -1,76 +1,57 @@
-
-
-// .nav-button {
-// border: medium solid $transparent;
-// padding: 1em;
-//   // padding: 0.7em;
-//   position: relative;
-//   top: 2em;
-//   box-sizing: border-box;
-//   height: 150%;
-// }
-
-#main{
-  padding: .5em;
+#main {
   font-size: 1.75em;
+  padding: 0.5em;
 }
+
 a.nav-button {
+  background-color: $gray;
   display: block;
-  padding: 1em;
-  background-color: #dddddd;
   font-size: 1.25em;
+  padding: 1em;
 }
 
 li {
-    float: right;
+  float: right;
 }
 
 ul {
-    background-color: #dddddd;
+  background-color: $gray;
 }
 
-li a.nav-button:hover {
-    background-color: $yellow;
+li, a.nav-button:hover {
+  background-color: $yellow;
 }
 
-// .nav-button:hover {
-//   background: $tan;
-// }
-
-// .nav-list{
-
-// }
-
-
-.logo-container{
- position: relative;
- float: left;
+.logo-container {
+  float: left;
+  position: relative;
 }
 
-h1.nav{
-  margin-top: 1em;
-  height: inherit;
+h1.nav {
   color: $yellow;
+  height: inherit;
+  margin-top: 1em;
 }
-.nav-options{
+
+.nav-options {
   display: block;
 }
 
-.float-left{
- float:left;
+.float-left {
+  float: left;
 }
-.nav{
-  position: absolute;
-  background: #dddddd;
-  width: 100%;
-  top: 0;
-  left: 0;
+
+.nav {
+  background: $gray;
   font-family: $cabin;
-  // border-bottom: 1px solid #e7e7e7;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .active {
-    background-color: #4CAF50;
+  background-color: $green;
 }
 
 @media (max-width: 970px) {
@@ -78,4 +59,4 @@ h1.nav{
     float: none;
   }
 
-  }
+}
