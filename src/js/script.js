@@ -9,6 +9,13 @@ $(document).ready(function() {
     }, 1000);
   });
 
+  $('#nav_sign').click(function() {
+    showEmail();
+    $('html, body').animate({
+      scrollTop: $('#').offset().top,
+    }, 1000);
+  });
+
   if (width <= 970) {
     $('.border-right-2').css({'border-color': 'rgba(0, 0, 0, 0)'});
     $('.img_contain').css({'width': '100%'});
@@ -20,7 +27,7 @@ $(document).ready(function() {
   $('.border-right-2').animate({
     right: '10%'
   }, 1500, function() {
-      $('.border-right-2').css({'border-color': '#F9C22E'});
+      $('.border-right-2').css({'border-color': 'rgba(0, 0, 0, 0)'});
       $('#land_desc').fadeIn();
       $('#gif2015').fadeIn();
   });
@@ -28,19 +35,18 @@ $(document).ready(function() {
 });
 
 function showEmail() {
-  console.log('holla');
-  $('#email').fadeIn();
+  $('#mce-EMAIL').fadeIn();
   $('#signup').hide();
   $('#submit').show();
 }
 
 function submitEmail() {
   var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
-  var potentialEmail = $('#email').val();
+  var potentialEmail = $('#mce-EMAIL').val();
   if (testEmail.test(potentialEmail)) {
-    console.log('success!');
+    $('form[name=mc-embedded-subscribe-form]').submit();
     $('#submit').hide();
-    $('#email').hide();
+    $('#mce-EMAIL').hide();
     $('#success').show();
     $('#success').fadeOut(2000);
   } else {
