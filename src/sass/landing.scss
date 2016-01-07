@@ -40,13 +40,49 @@ p.info {
   font-weight: 500;
   z-index: 3;
   text-align: right;
-  line-height: 1.6rem;
+  line-height: 1.9rem;
 }
 
 h1.info,
 p.info {
   position: absolute;
-  top: 10%;
+  top: 15%;
+  color: $gray;
+}
+
+p.schedule, h2.schedule {
+  position: absolute;
+  top: 15%;
+  color: $black;
+}
+
+h2.schedule {
+  float: left;
+  left: 15%;
+  width: 35%;
+  font-size: 2.5rem;
+  font-weight: 500;
+  z-index: 3;
+  text-transform: uppercase;
+  line-height: 2.6rem;
+  text-align: right;
+  margin-bottom: 5rem;
+}
+
+em {
+  font-size: 3.1rem;
+  font-weight: 700;
+}
+
+p.schedule {
+  float: right;
+  left: 55%;
+  width: 35%;
+  font-size: 1.7rem;
+  font-weight: 600;
+  z-index: 3;
+  text-align: left;
+  line-height: 2.0rem
 }
 
 .banner_contain {
@@ -62,13 +98,17 @@ h2.landing {
   padding: 0;
   font-size: 2.1rem;
   text-align: justify;
+  color: $black;
 }
 
 h3.landing {
-  font-size: 1.425em;
+  font-size: 1.121em;
+  line-height: 1.121em;
   margin: 0;
   padding: 0;
+  margin-top: 1em;
   padding-bottom: 1rem;
+  color: $lightblue;
 }
 
 div.landing {
@@ -121,15 +161,16 @@ p.landing {
   position: relative;
   width: 100%;
   background-color: $tan;
+  text-align: center;
 }
 
 .page-landing {
   // background-image: url('http://i.imgur.com/mei5DgU.jpg');
-  background-color: $lightblue;
+  background-color: $red;
 }
 
 .page-info {
-  background-color: $red;
+  background-color: $lightblue;
 }
 
 .page-schedule {
@@ -303,11 +344,11 @@ p.landing {
 h1.schedule {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 70%;
   transform: translateX(-50%) translateY(-50%);
-  color: $white;
+  color: $black;
   font-size: 5em;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
   line-height: 1em;
 }
@@ -334,42 +375,84 @@ a.footer {
     top: 65%;
     line-height: 2.2rem;
   }
-  h1.info,
-  h1.schedule {
+
+  h1.info {
     font-size: 2.3rem;
     top: 50%;
     line-height: 2.2rem;
   }
+
+  h1.schedule {
+    font-size: 1.5rem;
+    max-width: 80%;
+  }
+
+  em {
+    font-size: 1.2rem;
+    max-width: 80%;
+  }
+
   h2.landing,
   h3.landing {
     font-size: 1.4rem;
-    margin-bottom: 0;
+    margin-bottom: 1em;
+    padding-bottom: 0;
+    color: $white;
+  }
+
+  h2.schedule {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    margin-bottom: 1em;
+    padding-bottom: 0;
+    left: 5%;
+    text-align: left;
+  }
+
+    p.schedule {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    margin-bottom: 1em;
     padding-bottom: 0;
   }
+
+  h2.info,
+  p.info {
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+    padding-bottom: 0;
+    color: $white;
+  }
+
   p.info,
   h1.info {
     text-align: left;
   }
+
   p.info {
     left: 5%;
   }
+
   h1.info {
     margin: 0;
     padding: 0;
   }
+
   .img_contain {
     width: 100%;
     background: $transparent;
   }
+
   div.description {
     position: relative;
     width: 60%;
     left: -10%;
-    top: -70%;
+    top: -80%;
     height: 50%;
     display: block;
     min-width: 50%;
   }
+
   #gif2015 {
     position: relative;
     width: 100%;
@@ -379,13 +462,16 @@ a.footer {
     background-position: center center;
     background-repeat: no-repeat;
   }
+
   .banner_contain {
     position: absolute;
     top: 7em;
   }
+
   .border-right-2 {
     border-color: $transparent;
   }
+
   .transparent {
     display: inline-block;
   }

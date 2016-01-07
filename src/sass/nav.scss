@@ -4,7 +4,14 @@
 }
 
 a.nav-button {
-  background-color: $gray;
+  background-color: $white;
+  display: block;
+  font-size: 1.25em;
+  padding: 1em;
+}
+
+.nav-logo{
+  background-color: $white;
   display: block;
   font-size: 1.25em;
   padding: 1em;
@@ -42,12 +49,13 @@ h1.nav {
 }
 
 .nav {
-  background: $gray;
+  background: $white;
   font-family: $cabin;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
+  z-index: 100;
 }
 
 .active {

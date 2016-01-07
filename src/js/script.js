@@ -1,5 +1,6 @@
 
 $(document).ready(function() {
+  applyNavScroll();
   var width = $(window).width();
 
   // Move Page
@@ -12,7 +13,19 @@ $(document).ready(function() {
   $('#nav_sign').click(function() {
     showEmail();
     $('html, body').animate({
-      scrollTop: $('#').offset().top,
+      scrollTop: $('#landing').offset().top,
+    }, 1000);
+  });
+
+  $('#schedule-link').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#schedule').offset().top,
+    }, 1000);
+  });
+
+  $('#main').click(function() {
+    $('html, body').animate({
+      scrollTop: $('#landing').offset().top,
     }, 1000);
   });
 
@@ -64,4 +77,28 @@ function showVideo() {
     $('#gif2015').show();
     $('#vid2015').fadeOut();
   });
+}
+
+function applyNavScroll() {
+  var infoHeight = $('#info').offset().top;
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > infoHeight){
+        $('.nav').css({'position': 'fixed'});
+    }
+    else {
+        $('.nav').css({'position': 'absolute'});
+    }
+});
+}
+
+function showNav() {
+  $("#exit").show();
+  $(".unhide-nav").show();
+  $("#menu").hide();
+}
+
+function hideNav() {
+  $(".unhide-nav").hide();
+  $("#menu").show();
+  $("#exit").hide();
 }
