@@ -1,4 +1,6 @@
 @import 'base';
+
+
 .landing {
   color: $white;
   font-family: $cabin;
@@ -15,7 +17,7 @@ h1.landing {
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  font-size: 3.7rem;
+  font-size: 5.7rem;
   font-weight: 700;
   z-index: 3;
   text-transform: uppercase;
@@ -120,33 +122,7 @@ div.landing {
   width: 50%;
 }
 
-div.description {
-  position: absolute;
-  float: right;
-  left: 65%;
-  top: 10%;
-  width: 35%;
-}
 
-.img_contain {
-  position: relative;
-  background: $yellow;
-  padding-bottom: 0px;
-  z-index: 2;
-  width: 0%;
-  height: 60%;
-}
-
-#gif2015 {
-  position: absolute;
-  float: left;
-  width: 60%;
-  height: 100%;
-}
-
-p.landing {
-  font-size: 2em;
-}
 
 .page {
   // background-image: url('http://cdn.makeagif.com/media/12-27-2015/_3qgDB.gif');
@@ -166,7 +142,7 @@ p.landing {
 
 .page-landing {
   // background-image: url('http://i.imgur.com/mei5DgU.jpg');
-  background-color: $red;
+  background: linear-gradient(rgba(255, 86, 102, .8), rgba(249, 219, 189, .8)), url("/img/main.jpg");
 }
 
 .page-info {
@@ -182,6 +158,64 @@ p.landing {
   height: 100%;
   position: relative;
   width: 100%;
+}
+
+.popup {
+  background-color: $black-transp;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.popup-content {
+  background-color: $seagreen;
+  width: 70%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.content-landing {
+  position: relative;
+  margin-top: 30%;
+}
+.hype-text{
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 4px 8px;
+  color: white;
+  margin: 0;
+  font: 14px Sans-Serif;
+  // background: rgba(255, 255, 255, 0.75);
+  // color: black;
+}
+
+.showcase {
+  height: 250px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  overflow: hidden;
+  text-shadow: 0 1px 0 rgba(0,0,0,.3);
+}
+.welcome-text {
+  margin-top: 20px;
+  margin-left: 5%;
+  float: left;
+  height: 230px;
+  text-shadow: 0 1px 0 rgba(0,0,0,.3);
+}
+
+.hype {
+  background: url("/img/hype.jpg");
+  width: 100%;
+  height: 250px;
+  float: right;
+  background-size: cover;
+  position: relative;
 }
 
 .background-image {
@@ -341,33 +375,6 @@ p.landing {
   }
 }
 
-h1.schedule {
-  position: absolute;
-  left: 50%;
-  top: 70%;
-  transform: translateX(-50%) translateY(-50%);
-  color: $black;
-  font-size: 5em;
-  font-weight: 600;
-  text-align: center;
-  line-height: 1em;
-}
-
-p.footer {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-80%);
-  font-size: 1em;
-  text-align: center;
-  font-weight: 500;
-}
-
-a.footer {
-  color: $red;
-}
 
 @media (max-width: 970px) {
   h1.landing {
@@ -438,11 +445,6 @@ a.footer {
     padding: 0;
   }
 
-  .img_contain {
-    width: 100%;
-    background: $transparent;
-  }
-
   div.description {
     position: relative;
     width: 60%;
@@ -451,16 +453,6 @@ a.footer {
     height: 50%;
     display: block;
     min-width: 50%;
-  }
-
-  #gif2015 {
-    position: relative;
-    width: 100%;
-    left: 0%;
-    top: -90%;
-    dispay: inline-block;
-    background-position: center center;
-    background-repeat: no-repeat;
   }
 
   .banner_contain {

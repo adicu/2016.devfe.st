@@ -5,8 +5,22 @@ html, body {
   font-size: 16px;
   font-weight: $light;
   height: 100%;
-  line-height: 1.5;
   position: relative;
+  background: $black;
+}
+
+
+html {
+  font-family: 'Helvetica 45 Light';
+  color: $white;
+  line-height: 1.618em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 a, a:hover {

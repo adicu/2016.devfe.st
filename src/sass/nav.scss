@@ -1,16 +1,15 @@
-#main {
-  font-size: 1.75em;
-  padding: 0.5em;
-}
-
-a.nav-button {
+.nav-logo {
+  background: url('/img/devfest-logo.png');
   background-color: $white;
   display: block;
-  font-size: 1.25em;
-  padding: 1em;
+  vertical-align: middle;
 }
 
-.nav-logo{
+.logo {
+  height: 3.95em;
+}
+
+a .nav-button {
   background-color: $white;
   display: block;
   font-size: 1.25em;
@@ -25,7 +24,7 @@ ul {
   background-color: $gray;
 }
 
-li, a.nav-button:hover {
+li, a .nav-button:hover {
   background-color: $yellow;
 }
 
@@ -34,7 +33,7 @@ li, a.nav-button:hover {
   position: relative;
 }
 
-h1.nav {
+h1 .nav {
   color: $yellow;
   height: inherit;
   margin-top: 1em;
