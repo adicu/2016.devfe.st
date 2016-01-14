@@ -8,7 +8,14 @@ meta:
   domain: "devfe.st"
   url: "https://2016.devfe.st"
   google_analytics_id: "UA-72271329-1"
+page-list:
+  - "info"
+  - "schedule"
+  - "sponsors"
+  - "judges"
+  - "prizes"
 pages:
+  - name: "info"
   - name: "schedule"
     info:
       - day: "day-1"

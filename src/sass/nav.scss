@@ -1,16 +1,16 @@
 .nav-logo {
-  background: url('/img/devfest-logo.png');
-  background-color: $white;
+  // background: url('/img/devfest-logo.png');
+  background-color: $rust;
   display: block;
   vertical-align: middle;
 }
 
 .logo {
-  height: 3.95em;
+  height: 3.6em;
 }
 
-a .nav-button {
-  background-color: $white;
+a.nav-button {
+  background-color: $peach;
   display: block;
   font-size: 1.25em;
   padding: 1em;
@@ -24,8 +24,8 @@ ul {
   background-color: $gray;
 }
 
-li, a .nav-button:hover {
-  background-color: $yellow;
+li, a.nav-button:hover {
+  background-color: $rust;
 }
 
 .logo-container {
@@ -48,7 +48,7 @@ h1 .nav {
 }
 
 .nav {
-  background: $white;
+  background: $peach;
   font-family: $cabin;
   left: 0;
   position: absolute;

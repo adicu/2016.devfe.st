@@ -15,10 +15,12 @@
 <div class="content">
 <div id="top" class="page content-landing">
 <div class="grid-container">
-        <div class="row">
+        <div id="welcome-intro" class="row">
             <div class="col-4"><p>
               <div class="welcome-text">
                 <h1>Registration<br>Coming Soon </h1>
+                {{#each page-list}} {{this}} {{/each}}
+                <br><br>
 
                 {{!-- Sign Up Form --}}
                 <form action="//devfe.us12.list-manage.com/subscribe/post?u=4728f3ea171ba6ddb55862e63&amp;id=205c98523d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
@@ -48,11 +50,80 @@
 
 
 </div>
-{{# each pages }}
-<div class="page">stuff</div>
+
+</div>
+{{#each pages }}
+{{#if @first}}
+
+<div class="page page-landing-{{@index}}">
+<div id="info" class="nav">
+      <div class="nav-options">
+        <ul class="nav-list">
+          <ul style="float:left;list-style-type:none;" class="left-nav">
+            <li><a id="main" class="register nav-logo" href="javascript:void(0)" data-mode="2">
+              <img class="logo" src="/img/devfest-logo.png">
+            </a></li>
+          </ul>
+          <li class="mobile-only" id="menu"><a onclick="showNav()" class="register nav-button"><i class="fa fa-bars"></i></a></li>
+          <li class="hide-mobile unhide-nav mobile-only"><a onclick="hideNav()" id="exit" class="register nav-button"><i class="fa fa-times"></i></a></li>
+          <li class="hide-mobile unhide-nav"><a id="nav_sign" class="register nav-button typeform-share hide-mobile unhide-nav" href="javascript:void(0)" data-mode="2">sign up today</a></li>
+
+          <li class="hide-mobile unhide-nav">
+            <a id="info-link" onclick="scrollTo(info)" href="javascript:void(0)" class="nav-button">
+              info
+            </a>
+          </li>
+          <li class="hide-mobile unhide-nav">
+            <a id="schedule-link" onclick="scrollTo(schedule)" href="javascript:void(0)" class="nav-button">
+              schedule
+            </a>
+          </li>
+          <li class="hide-mobile unhide-nav">
+            <a id="sponsors-link" onclick="scrollTo(sponsors)" href="javascript:void(0)" class="nav-button">
+              sponsors
+            </a>
+          </li>
+          <li class="hide-mobile unhide-nav">
+            <a id="judges-link" onclick="scrollTo(judges)" href="javascript:void(0)" class="nav-button">
+              judges
+            </a>
+          </li>
+          <li class="hide-mobile unhide-nav">
+            <a id="prizes-link" onclick="scrollTo(prizes)" href="javascript:void(0)" class="nav-button">
+              prizes
+            </a>
+          </li>
+          </ul>
+      </div>
+    </div>
+</div>
+
+{{else}}
+<div id="{{this.name}}" class="page page-landing-{{@index}}"></div>
+{{/if}}
+
+{{!-- <div class="page">
+<div id="info" class="nav">
+      <div class="nav-options">
+        <ul class="nav-list">
+          <ul style="float:left;list-style-type:none;" class="left-nav">
+            <li><a id="main" class="register nav-logo" href="javascript:void(0)" data-mode="2">
+              <img class="logo" src="/img/devfest-logo.png">
+            </a></li>
+          </ul>
+          <li class="mobile-only" id="menu"><a onclick="showNav()" class="register nav-button"><i class="fa fa-bars"></i></a></li>
+          <li class="hide-mobile unhide-nav mobile-only"><a onclick="hideNav()" id="exit" class="register nav-button"><i class="fa fa-times"></i></a></li>
+          <li class="hide-mobile unhide-nav"><a onclick="showEmail()" id="nav_sign" class="register nav-button typeform-share hide-mobile unhide-nav" href="javascript:void(0)" data-mode="2">sign up today</a></li>
+          {{#each this}}
+          <li class="hide-mobile unhide-nav"><a id="schedule-link" href="javascript:void(0)" class="register nav-button">{{this.name}}</a></li>
+          {{/each}}
+
+          </ul>
+      </div>
+    </div>
+</div>
+</div> --}}
 {{/each}}
-</div>
-</div>
 
 {{/content}}
 {{/extend}}

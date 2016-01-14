@@ -142,9 +142,27 @@ div.landing {
 
 .page-landing {
   // background-image: url('http://i.imgur.com/mei5DgU.jpg');
-  background: linear-gradient(rgba(255, 86, 102, .6), rgba(249, 219, 189, .6)), url("/img/main.jpg");
+  background: linear-gradient(rgba(255, 86, 102, .5), rgba(249, 219, 189, .5)), url("/img/main.jpg");
 }
 
+.page-landing-0 {
+  // background-image: url('http://i.imgur.com/mei5DgU.jpg');
+  background: $lightblue;
+}
+
+.page-landing-1 {
+  // background-image: url('http://i.imgur.com/mei5DgU.jpg');
+  background: $green;
+}
+
+.page-landing-2 {
+  // background-image: url('http://i.imgur.com/mei5DgU.jpg');
+  background: $red;
+}
+.page-landing-3 {
+  // background-image: url('http://i.imgur.com/mei5DgU.jpg');
+  background: $lightblue;
+}
 .page-info {
   background-color: $lightblue;
 }
