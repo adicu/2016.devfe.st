@@ -19,7 +19,6 @@
             <div class="col-4"><p>
               <div class="welcome-text">
                 <h1>Registration<br>Coming Soon </h1>
-                {{#each page-list}} {{this}} {{/each}}
                 <br><br>
 
                 {{!-- Sign Up Form --}}
@@ -37,12 +36,13 @@
             </div>
 
 
-            <div class="col-2">
+            <div class="hide-mobile col-2">
               <p><div class="hype">
               <a href="javascript:void(0)" onclick="showPopup()" class="hide-mobile hype-text button" id="moreinfo">Watch DevFest 2015 Recap</a>
               </p>
             </div>
         </div>
+        <div class="row next-pg"><div class="showcase-center next-pg col-6"><a class="scroll" href="#info"><i class="fa fa-angle-down fa-2x"></i></a></div></div>
 </div>
 </div>
 
@@ -55,75 +55,163 @@
 {{#each pages }}
 {{#if @first}}
 
-<div class="page page-landing-{{@index}}">
-<div id="info" class="nav">
+<div id="info" class="page page-landing-{{@index}}">
+<div class="nav">
       <div class="nav-options">
-        <ul class="nav-list">
-          <ul style="float:left;list-style-type:none;" class="left-nav">
+        <ol class="nav-list">
+          <ol style="float:left;list-style-type:none;" class="left-nav">
             <li><a id="main" class="register nav-logo" href="javascript:void(0)" data-mode="2">
               <img class="logo" src="/img/devfest-logo.png">
             </a></li>
-          </ul>
+          </ol>
           <li class="mobile-only" id="menu"><a onclick="showNav()" class="register nav-button"><i class="fa fa-bars"></i></a></li>
           <li class="hide-mobile unhide-nav mobile-only"><a onclick="hideNav()" id="exit" class="register nav-button"><i class="fa fa-times"></i></a></li>
           <li class="hide-mobile unhide-nav"><a id="nav_sign" class="register nav-button typeform-share hide-mobile unhide-nav" href="javascript:void(0)" data-mode="2">sign up today</a></li>
+          <li class="hide-mobile unhide-nav">
+            <a id="prizes-link" href="#prizes" class="scroll nav-button">prizes</a>
+          </li>
 
           <li class="hide-mobile unhide-nav">
-            <a id="info-link" onclick="scrollTo(info)" href="javascript:void(0)" class="nav-button">
-              info
-            </a>
+            <a id="judges-link" href="#judges" class="scroll nav-button">judges</a>
           </li>
+
           <li class="hide-mobile unhide-nav">
-            <a id="schedule-link" onclick="scrollTo(schedule)" href="javascript:void(0)" class="nav-button">
-              schedule
-            </a>
-          </li>
-          <li class="hide-mobile unhide-nav">
-            <a id="sponsors-link" onclick="scrollTo(sponsors)" href="javascript:void(0)" class="nav-button">
+            <a id="sponsors-link" href="#sponsors" class="scroll nav-button">
               sponsors
             </a>
           </li>
           <li class="hide-mobile unhide-nav">
-            <a id="judges-link" onclick="scrollTo(judges)" href="javascript:void(0)" class="nav-button">
-              judges
+            <a id="schedule-link" href="#schedule" class="scroll nav-button">
+              schedule
             </a>
           </li>
+
           <li class="hide-mobile unhide-nav">
-            <a id="prizes-link" onclick="scrollTo(prizes)" href="javascript:void(0)" class="nav-button">
-              prizes
+            <a id="info-link" href="#info" class="scroll nav-button">
+              info
             </a>
           </li>
-          </ul>
+          </ol>
       </div>
     </div>
-</div>
 
-{{else}}
-<div id="{{this.name}}" class="page page-landing-{{@index}}"></div>
+
+</div>
 {{/if}}
-
-{{!-- <div class="page">
-<div id="info" class="nav">
-      <div class="nav-options">
-        <ul class="nav-list">
-          <ul style="float:left;list-style-type:none;" class="left-nav">
-            <li><a id="main" class="register nav-logo" href="javascript:void(0)" data-mode="2">
-              <img class="logo" src="/img/devfest-logo.png">
-            </a></li>
-          </ul>
-          <li class="mobile-only" id="menu"><a onclick="showNav()" class="register nav-button"><i class="fa fa-bars"></i></a></li>
-          <li class="hide-mobile unhide-nav mobile-only"><a onclick="hideNav()" id="exit" class="register nav-button"><i class="fa fa-times"></i></a></li>
-          <li class="hide-mobile unhide-nav"><a onclick="showEmail()" id="nav_sign" class="register nav-button typeform-share hide-mobile unhide-nav" href="javascript:void(0)" data-mode="2">sign up today</a></li>
-          {{#each this}}
-          <li class="hide-mobile unhide-nav"><a id="schedule-link" href="javascript:void(0)" class="register nav-button">{{this.name}}</a></li>
-          {{/each}}
-
-          </ul>
-      </div>
-    </div>
-</div>
-</div> --}}
 {{/each}}
+
+<div id="schedule" class="page-2 page-landing-1">
+  <div class="content">
+    <div class="grid-container">
+    {{!-- This each loop is not correct, we need to iterate through the schedule --}}
+    {{#each pages}}
+      <div class="row outline">
+        <div class="showcase col-2"><h1>Saturday<br>Jan 30</div>
+        <div class="col-4">
+          <h2>Kickoff</h2>
+          <p>info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum</p>
+          <h2>Setup</h2>
+          <p>info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum</p>
+          <h2>Setup</h2>
+          <p>info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum</p>
+          </div>
+          </div>
+
+      </div>
+    {{/each}}
+      {{!-- Writing each one out --}}
+      {{!-- <div class="row">
+        <div class="col-2">
+          <h1>Saturday J30</h1>
+          <h2>Kickoff</h2>
+          <p>info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum</p>
+        </div>
+        <div class="col-2">
+          <h1>Saturday J30</h1>
+          <h2>Kickoff</h2>
+          <p>info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum</p>
+        </div>
+        <div class="col-2">
+          <h1>Saturday J30</h1>
+          <h2>Kickoff</h2>
+          <p>info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <h1>Saturday J30</h1>
+          <h2>Kickoff</h2>
+          <p>info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum</p>
+        </div>
+        <div class="col-2">
+          <h1>Saturday J30</h1>
+          <h2>Kickoff</h2>
+          <p>info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum</p>
+        </div>
+        <div class="col-2">
+          <h1>Saturday J30</h1>
+          <h2>Kickoff</h2>
+          <p>info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum
+          info info lorem ipsum</p>
+        </div>
+      </div> --}}
+    </div>
+  </div>
+</div>
+
+<div id="sponsors" class="page page-landing-2">
+  <div class="content">
+    <div class="grid-container"> </div>
+  </div>
+</div>
+
+<div id="judges" class="page page-landing-3">
+  <div class="content">
+    <div class="grid-container"> </div>
+  </div>
+</div>
+
+
+<div id="prizes" class="page page-landing-4">
+  <div class="content">
+    <div class="grid-container"> </div>
+  </div>
+</div>
 
 {{/content}}
 {{/extend}}

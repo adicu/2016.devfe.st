@@ -12,116 +12,25 @@
   height: 20%;
 }
 
-h1.landing {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 5.2rem;
-  font-weight: 700;
-  z-index: 3;
-  text-transform: uppercase;
-}
-
-h1.info {
-  float: right;
-  left: 55%;
-  width: 45%;
-  font-size: 3.7rem;
-  font-weight: 700;
-  z-index: 3;
-  text-transform: uppercase;
-  line-height: 3.6rem;
-}
-
-p.info {
-  float: left;
-  left: 15%;
-  width: 35%;
-  font-size: 1.7rem;
-  font-weight: 500;
-  z-index: 3;
-  text-align: right;
-  line-height: 1.9rem;
-}
-
-h1.info,
-p.info {
-  position: absolute;
-  top: 15%;
-  color: $gray;
-}
-
-p.schedule, h2.schedule {
-  position: absolute;
-  top: 15%;
-  color: $black;
-}
-
-h2.schedule {
-  float: left;
-  left: 15%;
-  width: 35%;
-  font-size: 2.5rem;
-  font-weight: 500;
-  z-index: 3;
-  text-transform: uppercase;
-  line-height: 2.6rem;
-  text-align: right;
-  margin-bottom: 5rem;
-}
-
-em {
-  font-size: 3.1rem;
-  font-weight: 700;
-}
-
-p.schedule {
-  float: right;
-  left: 55%;
-  width: 35%;
-  font-size: 1.7rem;
+.welcome-text h1{
+  color: white;
+  font-style: $cabin;
   font-weight: 600;
-  z-index: 3;
-  text-align: left;
-  line-height: 2.0rem
 }
-
-.banner_contain {
-  top: 3.5em;
-  width: 100%;
-  // background-color: $yellow;
-  z-index: 3;
-  height: 50%;
-}
-
-h2.landing {
-  margin: 0;
-  padding: 0;
-  font-size: 2.1rem;
-  text-align: justify;
-  color: $black;
-}
-
-h3.landing {
-  font-size: 1.121em;
-  line-height: 1.121em;
-  margin: 0;
-  padding: 0;
-  margin-top: 1em;
-  padding-bottom: 1rem;
-  color: $lightblue;
-}
-
-div.landing {
+.fa-angle-down {
+  border: 2px solid $white;
+  border-radius: 50%;
+  padding: 15px 20px;
   color: $white;
-  height: 5em;
-  line-height: 3.2em;
-  margin: 0 auto;
-  padding: 1.5em;
-  width: 50%;
+  // margin-left: center;
 }
 
+.fa-angle-down:hover {
+  border: 2px solid $red;
+  background: $red;
+  color: $white;
+  // margin-left: center;
+}
 
 
 .page {
@@ -130,6 +39,12 @@ div.landing {
   position: relative;
   width: 100%;
   // z-index: 1;
+}
+
+.page-2 {
+  position: relative;
+  width: 100%;
+  height: 200%;
 }
 
 .footer {
@@ -194,7 +109,7 @@ div.landing {
 
 .content-landing {
   position: relative;
-  margin-top: 30%;
+  margin-top: 300px;
 }
 .hype-text{
   position: absolute;
@@ -219,12 +134,25 @@ div.landing {
   overflow: hidden;
   text-shadow: 0 1px 0 rgba(0,0,0,.3);
 }
+
+.showcase-center {
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  overflow: hidden;
+}
 .welcome-text {
   margin-top: 20px;
   margin-left: 5%;
   float: left;
   height: 230px;
   text-shadow: 0 1px 0 rgba(0,0,0,.3);
+}
+
+.welcome-text h1{
+  font-size: 3.4rem;
 }
 
 .hype {
@@ -399,9 +327,10 @@ div.landing {
     margin-top: 5%;
   }
   h1.landing {
-    font-size: 1.4rem;
+    font-size: 3.4rem;
     top: 65%;
-    line-height: 1.4rem;
+    line-height: 3.4rem;
+    text-align: center;
   }
 
   h1.info {

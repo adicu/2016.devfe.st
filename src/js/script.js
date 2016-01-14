@@ -3,6 +3,30 @@ $(document).ready(function() {
   var width = $(window).width();
 
   // Move Page
+  var hashTagActive = '';
+    $('.scroll').click(function (event) {
+        var target = this.hash;
+        var active_target = target + "-link";
+        // $(active_target).css({background: "white"});
+
+        if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+            event.preventDefault();
+            //calculate destination place
+            var dest = 0;
+            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                dest = $(document).height() - $(window).height();
+            } else {
+                dest = $(this.hash).offset().top;
+            }
+            //go to destination
+            $('html,body').animate({
+                scrollTop: dest
+            }, 2000, 'swing');
+            hashTagActive = this.hash;
+
+        }
+    });
+
   $('#moreinfo').click(function() {
     $('html, body').animate({
       scrollTop: $('#info').offset().top,
@@ -13,36 +37,6 @@ $(document).ready(function() {
     showEmail();
     $('html, body').animate({
       scrollTop: $('#top').offset().top,
-    }, 1000);
-  });
-
-  $('#schedule-link').click(function() {
-    $('html, body').animate({
-      scrollTop: $('#schedule').offset().top,
-    }, 1000);
-  });
-
-  $('#info-link').click(function() {
-    $('html, body').animate({
-      scrollTop: $('#info').offset().top,
-    }, 1000);
-  });
-
-  $('#sponsors-link').click(function() {
-    $('html, body').animate({
-      scrollTop: $('#sponsors').offset().top,
-    }, 1000);
-  });
-
-  $('#judges-link').click(function() {
-    $('html, body').animate({
-      scrollTop: $('#judges').offset().top,
-    }, 1000);
-  });
-
-  $('#prizes-link').click(function() {
-    $('html, body').animate({
-      scrollTop: $('#prizes').offset().top,
     }, 1000);
   });
 

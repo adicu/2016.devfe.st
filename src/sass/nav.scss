@@ -20,7 +20,8 @@ li {
   float: right;
 }
 
-ul {
+
+ul, ol {
   background-color: $gray;
 }
 
@@ -62,7 +63,7 @@ h1 .nav {
 }
 
 @media (max-width: 970px) {
-  ul {
+  ul, ol {
     float: none;
   }
 
