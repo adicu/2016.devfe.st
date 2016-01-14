@@ -1,7 +1,7 @@
-TITLE
+DevFest 2016
 ========================================
 
-TITLE is built using [Gulp][gulp], [Handlebars.js][handlebars], and [SCSS][scss].
+The DevFest 2016 Website is built using [Gulp][gulp], [Handlebars.js][handlebars], and [SCSS][scss].
 
 ## Setup
 
@@ -35,7 +35,7 @@ Builds the site into the `dist` directory.  This includes:
 
 This is used for distributing an optimized version of the site (for deployment).  It includes everything from `gulp build` as well as:
 - SCSS minification
-- CSS / JS inline-sourcing 
+- CSS / JS inline-sourcing
 
 ### `gulp watch`
 
@@ -47,7 +47,7 @@ Runs `gulp watch` in the background, and serves the `dist` directory at `localho
 
 ### `gulp deploy`
 
-For use by the Minimill team only.  Deploys to `work.minimill.co/TITLE/`, but won't do so without proper authentication.
+For use by the ADICU team only.  Deploys to `2016.devfe.st`, but won't do so without proper authentication.
 
 ## Structure
 
