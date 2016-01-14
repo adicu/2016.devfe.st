@@ -17,7 +17,7 @@ h1.landing {
   left: 50%;
   top: 50%;
   transform: translateX(-50%) translateY(-50%);
-  font-size: 5.7rem;
+  font-size: 5.2rem;
   font-weight: 700;
   z-index: 3;
   text-transform: uppercase;
@@ -142,7 +142,7 @@ div.landing {
 
 .page-landing {
   // background-image: url('http://i.imgur.com/mei5DgU.jpg');
-  background: linear-gradient(rgba(255, 86, 102, .8), rgba(249, 219, 189, .8)), url("/img/main.jpg");
+  background: linear-gradient(rgba(255, 86, 102, .6), rgba(249, 219, 189, .6)), url("/img/main.jpg");
 }
 
 .page-info {
@@ -376,11 +376,14 @@ div.landing {
 }
 
 
-@media (max-width: 970px) {
+@media (max-width: $desktop-min) {
+  .content-landing {
+    margin-top: 5%;
+  }
   h1.landing {
-    font-size: 2.3rem;
+    font-size: 1.4rem;
     top: 65%;
-    line-height: 2.2rem;
+    line-height: 1.4rem;
   }
 
   h1.info {

@@ -13,7 +13,7 @@
   </div>
 
 <div class="content">
-<div class="content-landing">
+<div id="top" class="page content-landing">
 <div class="grid-container">
         <div class="row">
             <div class="col-4"><p>
@@ -23,30 +23,34 @@
                 {{!-- Sign Up Form --}}
                 <form action="//devfe.us12.list-manage.com/subscribe/post?u=4728f3ea171ba6ddb55862e63&amp;id=205c98523d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 
-<a href="javascript:void(0)" class="button moreinfo" id="moreinfo" >More Info</a>
-<a href="javascript:void(0)">
-<form action="//devfe.us12.list-manage.com/subscribe/post?u=4728f3ea171ba6ddb55862e63&amp;id=205c98523d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-  <input style="display: none" name="EMAIL" type="email" id="mce-EMAIL" class="input" placeholder="Your Email Here"></input>
-</a>
-<a id="signup" onclick="showEmail()" href="javascript:void(0)" class="button signup">SignUp</a>
-<a id="submit" style="display: none;" onclick="submitEmail()" href="javascript:void(0)" class="button submit">Submit</a></form>
-<a style="display:none;" href="javascript:void(0)" id="success" class="success">Success!</a></p>
+                <a href="javascript:void(0)" class="button moreinfo" id="moreinfo" >More Info</a>
+                <a href="javascript:void(0)">
+                <form action="//devfe.us12.list-manage.com/subscribe/post?u=4728f3ea171ba6ddb55862e63&amp;id=205c98523d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <input style="display: none" name="EMAIL" type="email" id="mce-EMAIL" class="input" placeholder="Your Email Here"></input>
+                </a>
+                <a id="signup" onclick="showEmail()" href="javascript:void(0)" class="button signup">SignUp</a>
+                <a id="submit" style="display: none;" onclick="submitEmail()" href="javascript:void(0)" class="button submit">Submit</a></form>
+                <a style="display:none;" href="javascript:void(0)" id="success" class="success">Success!</a></p>
               </div>
             </div>
 
 
             <div class="col-2">
               <p><div class="hype">
-              <a href="javascript:void(0)" onclick="showPopup()" class="hype-text button" id="moreinfo">Watch DevFest 2015 Recap</a>
+              <a href="javascript:void(0)" onclick="showPopup()" class="hide-mobile hype-text button" id="moreinfo">Watch DevFest 2015 Recap</a>
               </p>
             </div>
         </div>
 </div>
 </div>
+
 </div>
 
 
 </div>
+{{# each pages }}
+<div class="page">stuff</div>
+{{/each}}
 </div>
 </div>
 
