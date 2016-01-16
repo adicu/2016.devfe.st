@@ -16,7 +16,7 @@
 <div id="top" class="page content-landing">
 <div class="grid-container">
         <div id="welcome-intro" class="row">
-            <div class="col-4"><p>
+            <div class="col-3"><p>
               <div class="welcome-text">
                 <h1>Registration<br>Coming Soon </h1>
                 <br><br>
@@ -36,13 +36,14 @@
             </div>
 
 
-            <div class="hide-mobile col-2">
+            <div class="hide-mobile col-3">
               <p><div class="hype">
               <a href="javascript:void(0)" onclick="showPopup()" class="hide-mobile hype-text button" id="moreinfo">Watch DevFest 2015 Recap</a>
               </p>
             </div>
         </div>
-        <div class="row next-pg"><div class="showcase-center next-pg col-6"><a class="scroll" href="#info"><i class="fa fa-angle-down fa-2x"></i></a></div></div>
+        {{!-- <div class="row next-pg"><div class="showcase-center next-pg col-6"> --}}
+        {{!-- </div></div> --}}
 </div>
 </div>
 
@@ -55,7 +56,7 @@
 {{#each pages }}
 {{#if @first}}
 
-<div id="info" class="page page-landing-{{@index}}">
+<section id="info" class="page page-landing-{{@index}}">
 <div class="nav">
       <div class="nav-options">
         <ol class="nav-list">
@@ -95,41 +96,57 @@
       </div>
     </div>
 
+  <div class="content">
+    <div class="grid-container">
+      <div class="row hideme">
+        <div class="col-6 infodev">
+          <p>If you've ever wanted to build an app, now's the time to learn.</p>
+          <p>DevFest is Columbia's week-long workshop series and hackathon. DevFest is about learning, community, and building amazing things with technology.</p>
+        </div>
+    </div>
+  </div>
+  <img id="globe" class="hide-mobile half-globe" src="/img/bw-globe.svg">
+  <img id="airplane" class="hide-mobile plane" src="/img/plane.png">
 
-</div>
+</section>
 {{/if}}
 {{/each}}
 
     <section id="schedule" class="page-2 page-landing-1">
       <div class="content">
         <div class="grid-container">
-        {{#each info}}
-          <div class="row hideme outline">
+          <div class="row hideme">
             <div class="showcase col-2">
-              <h1>{{this.dayofw}}</h1><br>
+              <h1>Saturday</h1><br>Jan 30
             </div>
-            <div class="col-4">
-              <h2>{{this.title}}</h2>
+            <div class="showcase-schedule col-4">
+              {{#each day-1}}
+              {{this.title}} <br> {{this.time}} - {{this.location}}
               <p>info info lorem ipsum
               info info lorem ipsum
               info info lorem ipsum
               info info lorem ipsum
               info info lorem ipsum</p>
-              <h2>Setup</h2>
-              <p>info info lorem ipsum
-              info info lorem ipsum
-              info info lorem ipsum
-              info info lorem ipsum
-              info info lorem ipsum</p>
-              <h2>Setup</h2>
-              <p>info info lorem ipsum
-              info info lorem ipsum
-              info info lorem ipsum
-              info info lorem ipsum
-              info info lorem ipsum</p>
+              {{/each}}
             </div>
           </div> <!-- row -->
-        {{/each}}
+
+          <div class="row hideme">
+            <div class="showcase col-2">
+              <h1>Monday</h1><br>Feb 1
+            </div>
+            <div style="text-align:left" class="showcase-schedule col-4">
+              {{#each day-2}}
+              {{this.title}} <br> {{this.time}} - {{this.location}}
+              <p>info info lorem ipsum
+              info info lorem ipsum
+              info info lorem ipsum
+              info info lorem ipsum
+              info info lorem ipsum</p>
+              {{/each}}
+            </div>
+          </div> <!-- row -->
+
 
       </div> <!-- container -->
     </div>  <!-- content -->

@@ -1,4 +1,7 @@
 @import 'base';
+html,p,a {
+  font-family: $cabin;
+}
 
 h1.landing {
   position: absolute;
@@ -32,10 +35,15 @@ section {
   font-weight: 600;
 }
 .fa-angle-down {
-  border: 2px solid $white;
-  border-radius: 50%;
+  // border: 2px solid $white;
+  // border-radius: 50%;
   padding: 15px 20px;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  position: absolute;
   color: $white;
+  float: bottom;
   // margin-left: center;
 }
 
@@ -60,9 +68,25 @@ section {
   height: 100%;
 }
 
+.page-landing-2 {
+  z-index: 2;
+}
+
 .hideme
 {
     opacity:0;
+}
+
+.infodev p {
+  font-size: 1.9rem;
+  line-height: 1.9rem;
+  color: $white;
+  margin: 1.5rem;
+  z-index: 2;
+}
+
+.infodev {
+  margin-top: 60%;
 }
 
 .footer {
@@ -159,6 +183,13 @@ section {
   background-size: cover;
   overflow: hidden;
   text-shadow: 0 1px 0 rgba(0,0,0,.3);
+}
+.row {
+  margin: 1em;
+}
+
+.showcase-schedule {
+  background: $peach;
 }
 
 .showcase-center {
@@ -261,30 +292,16 @@ section {
 .half-globe {
   position: absolute;
   width: 50%;
-  bottom: 0;
+  bottom: 60%;
   left: 0;
   -ms-transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   transform: translateX(+50%) translateY(+50%);
-  // z-index: 2;
-  animation: globe-rotate 8s infinite linear;
+  // animation: globe-rotate 8s infinite linear;
+  z-index: 1;
 }
 
-.plane {
-  position: absolute;
-  width: 15%;
-  transform: translateX(+50%) translateY(+50%) scaleX(-1);
-  // z-index: 2;
-  bottom: 20%;
-  right: 5%;
-  animation: plane-fly 4s infinite step-end;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  filter: FlipH;
-  -ms-filter: "FlipH";
-}
 
 @keyframes globe-rotate {
   0% {
@@ -309,41 +326,67 @@ section {
   }
 }
 
+.plane {
+  z-index: 1;
+  position: absolute;
+  width: 7.5%;
+  transform: translateX(+50%) translateY(+50%) scaleX(-1);
+  // z-index: 2;
+  bottom: 25%;
+  right: 5%;
+  // animation: plane-fly 3s infinite ease-in-out;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  -ms-transform: rotate(20deg); // IE 9
+  -webkit-transform: scaleX(-1) rotate(20deg); // Chrome, Safari, Opera
+  transform: scaleX(-1) rotate(20deg);
+}
+
 @keyframes plane-fly {
   0% {
     right: 5%;
-    bottom: 0%;
-    -ms-transform: rotate(-45deg); // IE 9
-    -webkit-transform: scaleX(-1) rotate(-45deg); // Chrome, Safari, Opera
-    transform: scaleX(-1) rotate(-45deg);
+    bottom: 10%;
+    -webkit-transform: scaleX(-1); // Chrome, Safari, Opera
+    transform: scaleX(-1);
   }
   25% {
-    bottom: 32.5%;
+    bottom: 10%;
     right: 25%;
-    -ms-transform: rotate(0deg); // IE 9
-    -webkit-transform: scaleX(-1) rotate(0deg); // Chrome, Safari, Opera
-    transform: scaleX(-1) rotate(0deg);
+    -webkit-transform: scaleX(-1); // Chrome, Safari, Opera
+    transform: scaleX(-1);
+    // -ms-transform: rotate(0deg); // IE 9
+    // -webkit-transform: scaleX(-1) rotate(0deg); // Chrome, Safari, Opera
+    // transform: scaleX(-1) rotate(0deg);
   }
   50% {
-    bottom: 30%;
-    right: 65%;
-    -ms-transform: rotate(60deg); // IE 9
-    -webkit-transform: scaleX(-1) rotate(60deg); // Chrome, Safari, Opera
-    transform: scaleX(-1) rotate(60deg);
+    bottom: 10%;
+    right: 50%;
+    -webkit-transform: scaleX(-1); // Chrome, Safari, Opera
+    transform: scaleX(-1);
+    // -ms-transform: rotate(40deg); // IE 9
+    // -webkit-transform: scaleX(-1) rotate(40deg); // Chrome, Safari, Opera
+    // transform: scaleX(-1) rotate(40deg);
   }
   75% {
-    bottom: 0%;
-    right: 80%;
-    -ms-transform: rotate(85deg); // IE 9
-    -webkit-transform: scaleX(-1) rotate(85deg); // Chrome, Safari, Opera
-    transform: scaleX(-1) rotate(85deg);
+    bottom: 10%;
+    right: 70%;
+    -webkit-transform: scaleX(-1); // Chrome, Safari, Opera
+    transform: scaleX(-1);
+    // -ms-transform: rotate(70deg); // IE 9
+    // -webkit-transform: scaleX(-1) rotate(70deg); // Chrome, Safari, Opera
+    // transform: scaleX(-1) rotate(70deg);
   }
   100% {
-    bottom: 25%;
+    bottom: 10%;
     right: 115%;
-    -ms-transform: rotate(0deg); // IE 9
-    -webkit-transform: scaleX(-1) rotate(0deg); // Chrome, Safari, Opera
-    transform: scaleX(-1) rotate(0deg);
+    -webkit-transform: scaleX(-1); // Chrome, Safari, Opera
+    transform: scaleX(-1);
+    // -ms-transform: rotate(0deg); // IE 9
+    // -webkit-transform: scaleX(-1) rotate(0deg); // Chrome, Safari, Opera
+    // transform: scaleX(-1) rotate(0deg);
   }
 }
 

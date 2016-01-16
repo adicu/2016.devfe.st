@@ -4,48 +4,63 @@ $(document).ready(function() {
 
   // Move Page
   var hashTagActive = '';
-    $('.scroll').click(function (event) {
-        var target = this.hash;
-        var active_target = target + "-link";
-        // $(active_target).css({background: "white"});
+  $('.scroll').click(function(event) {
+    var target = this.hash;
+    var active_target = target + "-link";
+    // $(active_target).css({background: "white"});
 
-        if(hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
-            event.preventDefault();
-            //calculate destination place
-            var dest = 0;
-            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
-                dest = $(document).height() - $(window).height();
-            } else {
-                dest = $(this.hash).offset().top;
-            }
-            //go to destination
-            $('html,body').animate({
-                scrollTop: dest
-            }, 2000, 'swing');
-            hashTagActive = this.hash;
+    if (hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
+      event.preventDefault();
+      //calculate destination place
+      var dest = 0;
+      if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+        dest = $(document).height() - $(window).height();
+      } else {
+        dest = $(this.hash).offset().top;
+      }
+      //go to destination
+      $('html,body').animate({
+        scrollTop: dest
+      }, 2000, 'swing');
+      hashTagActive = this.hash;
 
-        }
+    }
+  });
+
+  /* Every time the window is scrolled ... */
+  $(window).scroll(function() {
+
+    var $cool_body = $(document.body);
+    var bodyHeight = $cool_body.height();
+
+    $('#globe').css({
+      'transform': 'translateX(+50%) translateY(+50%) rotate(' + ($cool_body.scrollTop() / bodyHeight * 360) + 'deg)'
     });
 
-   /* Every time the window is scrolled ... */
-    $(window).scroll( function(){
+    console.log($cool_body.scrollTop() / bodyHeight);
 
-        /* Check the location of each desired element */
-        $('.hideme').each( function(i){
+    $('#airplane').css({
+      'right': 100 * (($cool_body.scrollTop() / bodyHeight) - 1) + 25 + '%'
+    });
 
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+    /* Check the location of each desired element */
+    $('.hideme').each(function(i) {
 
-            /* If the object is completely visible in the window, fade it it */
-            if( bottom_of_window > bottom_of_object ){
+      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      var bottom_of_window = $(window).scrollTop() + $(window).height();
 
-                $(this).animate({'opacity':'1'},500);
+      /* If the object is completely visible in the window, fade it it */
+      if (bottom_of_window > bottom_of_object) {
 
-            }
+        $(this).animate({
+          'opacity': '1'
+        }, 500);
 
-        });
+      }
 
     });
+
+  });
 
   $('#moreinfo').click(function() {
     $('html, body').animate({
