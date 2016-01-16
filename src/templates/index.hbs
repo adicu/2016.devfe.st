@@ -100,101 +100,40 @@
 {{/if}}
 {{/each}}
 
-<div id="schedule" class="page-2 page-landing-1">
-  <div class="content">
-    <div class="grid-container">
-    {{!-- This each loop is not correct, we need to iterate through the schedule --}}
-    {{#each pages}}
-      <div class="row hideme outline">
-        <div class="showcase col-2">
-          <h1>Saturday<br>Jan 30
-        </div>
-        <div class="col-4">
-          <h2>Kickoff</h2>
-          <p>info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum</p>
-          <h2>Setup</h2>
-          <p>info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum</p>
-          <h2>Setup</h2>
-          <p>info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum</p>
-        </div>
-      </div>
+    <section id="schedule" class="page-2 page-landing-1">
+      <div class="content">
+        <div class="grid-container">
+        {{#each info}}
+          <div class="row hideme outline">
+            <div class="showcase col-2">
+              <h1>{{this.dayofw}}</h1><br>
+            </div>
+            <div class="col-4">
+              <h2>{{this.title}}</h2>
+              <p>info info lorem ipsum
+              info info lorem ipsum
+              info info lorem ipsum
+              info info lorem ipsum
+              info info lorem ipsum</p>
+              <h2>Setup</h2>
+              <p>info info lorem ipsum
+              info info lorem ipsum
+              info info lorem ipsum
+              info info lorem ipsum
+              info info lorem ipsum</p>
+              <h2>Setup</h2>
+              <p>info info lorem ipsum
+              info info lorem ipsum
+              info info lorem ipsum
+              info info lorem ipsum
+              info info lorem ipsum</p>
+            </div>
+          </div> <!-- row -->
+        {{/each}}
 
-    </div>
-{{/each}}
-      {{!-- Writing each one out --}}
-      {{!-- <div class="row">
-        <div class="col-2">
-          <h1>Saturday J30</h1>
-          <h2>Kickoff</h2>
-          <p>info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum</p>
-        </div>
-        <div class="col-2">
-          <h1>Saturday J30</h1>
-          <h2>Kickoff</h2>
-          <p>info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum</p>
-        </div>
-        <div class="col-2">
-          <h1>Saturday J30</h1>
-          <h2>Kickoff</h2>
-          <p>info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-2">
-          <h1>Saturday J30</h1>
-          <h2>Kickoff</h2>
-          <p>info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum</p>
-        </div>
-        <div class="col-2">
-          <h1>Saturday J30</h1>
-          <h2>Kickoff</h2>
-          <p>info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum</p>
-        </div>
-        <div class="col-2">
-          <h1>Saturday J30</h1>
-          <h2>Kickoff</h2>
-          <p>info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum
-          info info lorem ipsum</p>
-        </div>
-      </div> --}}
-    </div>
-  </div>
-</div>
+      </div> <!-- container -->
+    </div>  <!-- content -->
+</section>
 
 <div id="sponsors" class="page page-landing-2">
   <div class="content">
