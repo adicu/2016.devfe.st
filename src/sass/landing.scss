@@ -82,7 +82,7 @@ section {
 }
 
 .infodev p {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     line-height: 1.9rem;
     color: $white;
     margin: 1.5rem;
@@ -90,7 +90,8 @@ section {
 }
 
 .infodev {
-    margin-top: 60%;
+    position: absolute;
+    top: 75%;
 }
 
 .footer {
@@ -157,10 +158,20 @@ section {
 }
 
 .popup-content {
-    background-color: $seagreen;
+    background-color: $black;
     width: 70%;
     height: 50%;
     margin: 0 auto;
+}
+
+.fa-times{
+  float: right;
+  padding: .5em;
+  color: $white;
+}
+
+.fa-times:hover{
+  color: $rust;
 }
 
 .content-landing {
@@ -176,6 +187,7 @@ section {
     // padding: 4px 8px;
     color: white;
     margin: 0;
+    padding: 0;
     font: 14px Sans-Serif;
 
     // background: rgba(255, 255, 255, 0.75);
@@ -234,7 +246,7 @@ p.page-info-text a:hover{
 
 .question {
   margin-bottom: .5em;
-  color: $white;
+  color: $lightblue;
   font-size: 1.5rem;
 }
 
@@ -492,6 +504,43 @@ p.page-info-text a:hover{
 }
 
 @media (max-width: $desktop-min) {
+  .welcome-text h1 {
+    font-size: 2.3rem;
+    text-align: left;
+    margin-bottom: 1.5em;
+}
+
+.fa-times{
+  padding: 0em;
+}
+
+.popup {
+    background-color: $black-transp;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.popup-content {
+    background-color: $transparent;
+    width: 100%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.infodev p {
+    font-size: 1rem;
+    line-height: 1.1rem;
+}
+
+.infodev {
+    position: absolute;
+    top: 15%;
+}
+
+.half-globe {
+  bottom: 40%;
+}
     .content-landing {
         margin-top: 5%;
     }
@@ -507,24 +556,6 @@ p.page-info-text a:hover{
         font-size: 2.3rem;
         top: 50%;
         line-height: 2.2rem;
-    }
-
-    h1.schedule {
-        font-size: 1.5rem;
-        max-width: 80%;
-    }
-
-    em {
-        font-size: 1.2rem;
-        max-width: 80%;
-    }
-
-    h2.landing,
-    h3.landing {
-        font-size: 1.4rem;
-        margin-bottom: 1em;
-        padding-bottom: 0;
-        color: $white;
     }
 
     h2.schedule {

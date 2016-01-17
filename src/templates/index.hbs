@@ -8,7 +8,7 @@
 </div>
 {{!-- popup --}}
   <div style="display: none" class="popup-content">
-    <i style="float: right; padding: .5em; color: white" onclick="hidePopup()" class="fa fa-times fa-2x"></i>
+    <i onclick="hidePopup()" class="fa fa-times fa-2x"></i>
     <iframe id="playerid" width="100%" height="100%" src="https://www.youtube.com/embed/CVeK0cK0B_I?rel=0&amp;controls=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
   </div>
 
@@ -19,26 +19,29 @@
             <div class="col-3">
               <div class="welcome-text">
                 <h1>Registration<br>Coming Soon </h1>
-                <br><br>
 
                 {{!-- Sign Up Form --}}
                 <form action="//devfe.us12.list-manage.com/subscribe/post?u=4728f3ea171ba6ddb55862e63&amp;id=205c98523d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 
-                <a href="javascript:void(0)" class="button moreinfo" id="moreinfo" >More Info</a>
-                <a href="javascript:void(0)">
                 <form action="//devfe.us12.list-manage.com/subscribe/post?u=4728f3ea171ba6ddb55862e63&amp;id=205c98523d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                  <input style="display: none" name="EMAIL" type="email" id="mce-EMAIL" class="input" placeholder="Your Email Here"></input>
-                </a>
+                <div class="grid-container">
+                  <div class="row">
+
                 <a id="signup" onclick="showEmail()" href="javascript:void(0)" class="button signup">SignUp</a>
-                <a id="submit" style="display: none;" onclick="submitEmail()" href="javascript:void(0)" class="button submit">Submit</a></form>
-                <a style="display:none;" href="javascript:void(0)" id="success" class="success">Success!</a>
+                <br>
+                <input style="display: none" name="EMAIL" type="email" id="mce-EMAIL" class="input" placeholder="Your Email Here"></input>
+                <a id="submit" style="display: none;" onclick="submitEmail()" href="javascript:void(0)" class="button submit">Submit</a>
+                  </div>
+                </div>
+
+                </form>
               </div>
             </div>
 
 
-            <div class="hide-mobile col-3">
+            <div class="col-3">
               <p><div class="hype">
-              <a href="javascript:void(0)" onclick="showPopup()" class="hide-mobile hype-text button" id="moreinfo">Watch DevFest 2015 Recap</a>
+              <a href="javascript:void(0)" onclick="showPopup()" class="hide-mobile hype-text button showcase-center">Watch DevFest 2015 Recap</a>
               </p>
             </div>
         </div>
@@ -102,17 +105,18 @@
       </div>
     </div>
 
-  <div class="content">
+  <div class="content infodev">
     <div class="grid-container">
       <div class="row hideme">
-        <div class="col-6 infodev">
+        <div class="col-6">
           <p>If you've ever wanted to build an app, now's the time to learn.</p>
           <p>DevFest is Columbia's week-long workshop series and hackathon. DevFest is about learning, community, and building amazing things with technology.</p>
         </div>
     </div>
   </div>
-  <img id="globe" class="hide-mobile half-globe" src="/img/bw-globe.svg">
-  <img id="airplane" class="hide-mobile plane" src="/img/plane.png">
+  </div>
+   <img id="globe" class="half-globe" src="/img/bw-globe.svg">
+  <img id="airplane" class="plane" src="/img/plane.png">
 
 </section>
 {{/if}}
@@ -121,7 +125,7 @@
 <section id="faqs" class="page page-landing-4">
   <div class="content">
     <div class="grid-container">
-    <div class="row hideme">
+    <div class="row">
       <div class="col-6">
           <h1 class="page-head"> FAQs </h1>
           <p class="page-info-text">If you have other questions, please <a href="mailto:devfest@adicu.com?Subject=I%20have%20a%20question!">email us</a>.</p>
@@ -131,7 +135,7 @@
     <div class="question-box row">
       <div class="col-5 faq-block">
         <p class="question">{{this.question}}</p>
-        <p class="answer">{{this.answer}}</p>
+        <p class="answer hideme">{{this.answer}}</p>
       </div>
     </div>
   {{/each}}
