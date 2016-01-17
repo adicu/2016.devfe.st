@@ -4,7 +4,6 @@
   display: block;
   vertical-align: middle;
 }
-
 .logo {
   height: 3.62em;
 }
@@ -16,6 +15,10 @@ a.nav-button {
   display: block;
   font-size: 1.25em;
   padding: 1em;
+}
+
+a.register-nav{
+  background-color: $white;
 }
 
 li {

@@ -22,7 +22,6 @@
                 <h1>Registration<br>Coming Soon </h1>
 
                 {{!-- Sign Up Form --}}
-                <form action="//devfe.us12.list-manage.com/subscribe/post?u=4728f3ea171ba6ddb55862e63&amp;id=205c98523d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 
                 <form action="//devfe.us12.list-manage.com/subscribe/post?u=4728f3ea171ba6ddb55862e63&amp;id=205c98523d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div class="grid-container">
@@ -30,7 +29,7 @@
                   <div class="col-6">
                 <a id="signup" onclick="showEmail()" href="javascript:void(0)" class="button signup">SignUp</a></div>
                 <br>
-                <input style="display: none" name="EMAIL" type="email" id="mce-EMAIL" class="input" placeholder="Your Email Here"></input>
+                <input style="display: none" name="EMAIL" type="email" id="mce-EMAIL" class="input" placeholder="Your Email Here">
                 <a id="submit" style="display: none;" onclick="submitEmail()" href="javascript:void(0)" class="button submit">Submit</a>
                 <a id="success" href="#info" style="display: none;" class="button submit scroll"> Let's Take Off! </a>
                   </div>
@@ -42,16 +41,16 @@
 
 
             <div class="col-3">
-              <p><div class="hype">
+              <div class="hype">
               <a href="javascript:void(0)" onclick="showPopup()" class="hide-mobile hype-text button showcase-center">Watch DevFest 2015 Recap</a>
-              </p>
+
             </div>
         </div>
 </div>
 </div>
 
 </div>
-
+</div>
 
 </div>
 
@@ -81,12 +80,12 @@
             <a id="sponsors-link" href="#sponsors" class="scroll nav-button">
               sponsors
             </a>
-          </li>
+          </li>--}}
           <li class="hide-mobile unhide-nav">
             <a id="schedule-link" href="#schedule" class="scroll nav-button">
               schedule
             </a>
-          </li> --}}
+          </li>
 
           <li class="hide-mobile unhide-nav">
             <a id="faqs-link" href="#faqs" class="scroll nav-button">
@@ -99,6 +98,14 @@
               info
             </a>
           </li>
+          {{!-- <li class="hide-mobile unhide-nav">
+            <a id="reg-link" href="https://adicu.typeform.com/to/i3TyKY" class="nav-button register-nav typeform-share" data-mode="1" target="_blank">
+              register now
+            </a>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+
+
+          </li> --}}
           </ol>
       </div>
     </div>
@@ -118,7 +125,7 @@
 
 </section>
 
-<section id="faqs" class="page page-landing-4">
+<section style="height: auto" id="faqs" class="page page-landing-4">
   <div class="content">
     <div class="grid-container">
     <div class="row">
@@ -129,48 +136,56 @@
     </div>
     {{#each faqs}}
     <div class="question-box row">
-      <div class="col-5 faq-block">
+      <div class="col-6 faq-block">
         <p class="question">{{this.question}}</p>
         <p class="answer hideme">{{this.answer}}</p>
       </div>
     </div>
   {{/each}}
 
+    </div>
   </div>
 </section>
 
-    {{!-- <section id="schedule" class="page-2 page-landing-1">
+    <section id="schedule" class="page-2 page-landing-1">
       <div class="content">
         <div class="grid-container">
-          <div class="row hideme">
-            <div class="showcase col-2">
+        <div class="row">
+        <a href="javascript:void(0)" onclick="schedule('#day-1')"> <div class="col-1 feat-nav showcase-center">Saturday Jan 30</div></a>
+        <div class="col-1 feat-nav showcase-center">Monday Feb 1</div>
+        <div class="col-1 feat-nav showcase-center">Tuesday Feb 2</div>
+        <div class="col-1 feat-nav showcase-center">Wednesday Feb 3</div>
+        <div class="col-1 feat-nav showcase-center">Thursday Feb 4</div>
+        <a href="javascript:void(0)" onclick="schedule('#day-6')"><div class="col-1 feat-nav showcase-center">Friday Feb 5</div></a>
+        <div class="col-1 feat-nav showcase-center">Saturday Feb 6</div>
+        </div>
+
+          <div id="day-1" class="row hideme">
+            <div class="showcase feat col-2">
               <h1>Saturday</h1><br>Jan 30
             </div>
             <div class="showcase-schedule col-4">
               {{#each day-1}}
               <h1>{{this.title}}</h1>
               <h2>{{this.time}} | {{this.location}} </h2>
-              <p>info info lorem ipsum
-              info info lorem ipsum
-              info info lorem ipsum
-              info info lorem ipsum
-              info info lorem ipsum</p>
+              <p class="schedule-desc">
+                {{this.description}}
+              </p>
               {{/each}}
             </div>
           </div> <!-- row -->
 
-          <div class="row hideme">
-            <div class="showcase col-2">
-              <h1>Monday</h1><br>Feb 1
+          <div id="day-7" style="display: none" class="row hideme">
+            <div class="showcase feat col-2">
+              <h1>Friday</h1><br>Feb 5
             </div>
-            <div style="text-align:left" class="showcase-schedule col-4">
-              {{#each day-2}}
-              {{this.title}} <br> {{this.time}} - {{this.location}}
-              <p>info info lorem ipsum
-              info info lorem ipsum
-              info info lorem ipsum
-              info info lorem ipsum
-              info info lorem ipsum</p>
+            <div class="showcase-schedule col-4">
+              {{#each day-6}}
+              <h1>{{this.title}}</h1>
+              <h2>{{this.time}} | {{this.location}} </h2>
+              <p class="schedule-desc">
+                {{this.description}}
+              </p>
               {{/each}}
             </div>
           </div> <!-- row -->
@@ -180,7 +195,7 @@
     </div>  <!-- content -->
 </section>
 
-<div id="sponsors" class="page page-landing-2">
+{{!-- <div id="sponsors" class="page page-landing-2">
   <div class="content">
     <div class="grid-container"> hi test </div>
   </div>
@@ -197,8 +212,8 @@
   <div class="content">
     <div class="grid-container">  hi test </div>
   </div>
-</div>
- --}}
+</div> --}}
+
 {{/content}}
 {{/extend}}
 

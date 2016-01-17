@@ -4,6 +4,15 @@ html, p, a {
     font-family: $cabin;
 }
 
+.feat {
+  background: $ruddy;
+}
+
+.feat-nav {
+  height: 100px;
+  background: $ruddy;
+}
+
 h1.landing {
     position: absolute;
     left: 50%;
@@ -210,7 +219,9 @@ section {
 }
 
 .showcase-schedule p {
-
+margin: .5em;
+margin-bottom: 2em;
+  font-size: 1.2rem;
 }
 
 .showcase-schedule h2 {

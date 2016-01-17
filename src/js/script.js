@@ -158,3 +158,9 @@ function hidePopup() {
   $('#playerid').attr('src', video);
   $('#welcome-intro').show();
 }
+
+function schedule(param) {
+  var somestring = "";
+  somestring = param;
+  $('#day-1').html() = $(somestring);
+}
