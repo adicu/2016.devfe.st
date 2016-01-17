@@ -13,9 +13,10 @@
   </div>
 
 <div class="content">
+<img id="airplane-intro" class="plane-intro" src="/img/plane.png">
 <div id="top" class="page content-landing">
 <div class="grid-container">
-        <div id="welcome-intro" class="row">
+        <div id="welcome-intro" class="row intro-row">
             <div class="col-3">
               <div class="welcome-text">
                 <h1>Registration<br>Coming Soon </h1>
@@ -25,12 +26,13 @@
 
                 <form action="//devfe.us12.list-manage.com/subscribe/post?u=4728f3ea171ba6ddb55862e63&amp;id=205c98523d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <div class="grid-container">
-                  <div class="row">
-
-                <a id="signup" onclick="showEmail()" href="javascript:void(0)" class="button signup">SignUp</a>
+                  <div class="row intro-row">
+                  <div class="col-6">
+                <a id="signup" onclick="showEmail()" href="javascript:void(0)" class="button signup">SignUp</a></div>
                 <br>
                 <input style="display: none" name="EMAIL" type="email" id="mce-EMAIL" class="input" placeholder="Your Email Here"></input>
                 <a id="submit" style="display: none;" onclick="submitEmail()" href="javascript:void(0)" class="button submit">Submit</a>
+                <a id="success" href="#info" style="display: none;" class="button submit scroll"> Let's Take Off! </a>
                   </div>
                 </div>
 
@@ -45,8 +47,6 @@
               </p>
             </div>
         </div>
-        {{!-- <div class="row next-pg"><div class="showcase-center next-pg col-6"> --}}
-        {{!-- </div></div> --}}
 </div>
 </div>
 
@@ -56,10 +56,8 @@
 </div>
 
 </div>
-{{#each pages }}
-{{#if @first}}
 
-<section id="info" class="page page-landing-{{@index}}">
+<section id="info" class="page page-landing-0">
 <div class="nav">
       <div class="nav-options">
         <ol class="nav-list">
@@ -119,8 +117,6 @@
   <img id="airplane" class="plane" src="/img/plane.png">
 
 </section>
-{{/if}}
-{{/each}}
 
 <section id="faqs" class="page page-landing-4">
   <div class="content">

@@ -88,6 +88,7 @@ $(document).ready(function() {
 });
 
 function showEmail() {
+  $('#success').hide();
   $('#mce-EMAIL').fadeIn();
   $('#signup').hide();
   $('#submit').show();
@@ -101,7 +102,6 @@ function submitEmail() {
     $('#submit').hide();
     $('#mce-EMAIL').hide();
     $('#success').show();
-    $('#success').fadeOut(2000);
   } else {
     alert('Incorrect Email. Please Try Again.');
   }

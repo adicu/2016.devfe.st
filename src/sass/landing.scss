@@ -276,6 +276,10 @@ p.page-info-text a:hover{
     font-size: 3.4rem;
 }
 
+.intro-row {
+  margin: 0;
+}
+
 .hype {
     background: url("/img/hype.jpg");
     width: 100%;
@@ -410,8 +414,11 @@ p.page-info-text a:hover{
         transform: translateX(+50%) translateY(+50%) rotate(720deg);
     }
 }
+.plane-intro {
+  animation: plane-fly 3s infinite linear;
+}
 
-.plane {
+.plane, .plane-intro {
     z-index: 1;
     position: absolute;
     width: 7.5%;
@@ -439,7 +446,7 @@ p.page-info-text a:hover{
 @keyframes plane-fly {
     0% {
         right: 5%;
-        bottom: 10%;
+        bottom: 0%;
         -webkit-transform: scaleX(-1);
 
         // Chrome, Safari, Opera
@@ -447,16 +454,16 @@ p.page-info-text a:hover{
     }
 
     25% {
-        bottom: 10%;
+        bottom: 15%;
         right: 25%;
         -webkit-transform: scaleX(-1);
 
         // Chrome, Safari, Opera
         transform: scaleX(-1);
 
-        // -ms-transform: rotate(0deg); // IE 9
-        // -webkit-transform: scaleX(-1) rotate(0deg); // Chrome, Safari, Opera
-        // transform: scaleX(-1) rotate(0deg);
+        -ms-transform: rotate(0deg); // IE 9
+        -webkit-transform: scaleX(-1) rotate(0deg); // Chrome, Safari, Opera
+        transform: scaleX(-1) rotate(0deg);
 
     }
 
@@ -468,37 +475,37 @@ p.page-info-text a:hover{
         // Chrome, Safari, Opera
         transform: scaleX(-1);
 
-        // -ms-transform: rotate(40deg); // IE 9
-        // -webkit-transform: scaleX(-1) rotate(40deg); // Chrome, Safari, Opera
-        // transform: scaleX(-1) rotate(40deg);
+        -ms-transform: rotate(20deg); // IE 9
+        -webkit-transform: scaleX(-1) rotate(20deg); // Chrome, Safari, Opera
+        transform: scaleX(-1) rotate(20deg);
 
     }
 
     75% {
-        bottom: 10%;
+        bottom: 19%;
         right: 70%;
         -webkit-transform: scaleX(-1);
 
         // Chrome, Safari, Opera
         transform: scaleX(-1);
 
-        // -ms-transform: rotate(70deg); // IE 9
-        // -webkit-transform: scaleX(-1) rotate(70deg); // Chrome, Safari, Opera
-        // transform: scaleX(-1) rotate(70deg);
+        -ms-transform: rotate(0deg); // IE 9
+        -webkit-transform: scaleX(-1) rotate(0deg); // Chrome, Safari, Opera
+        transform: scaleX(-1) rotate(0deg);
 
     }
 
     100% {
-        bottom: 10%;
+        bottom: 80%;
         right: 115%;
         -webkit-transform: scaleX(-1);
 
         // Chrome, Safari, Opera
         transform: scaleX(-1);
 
-        // -ms-transform: rotate(0deg); // IE 9
-        // -webkit-transform: scaleX(-1) rotate(0deg); // Chrome, Safari, Opera
-        // transform: scaleX(-1) rotate(0deg);
+        -ms-transform: rotate(-40deg); // IE 9
+        -webkit-transform: scaleX(-1) rotate(-40deg); // Chrome, Safari, Opera
+        transform: scaleX(-1) rotate(-40deg);
 
     }
 }
