@@ -24,6 +24,14 @@ var sourcemaps = require('gulp-sourcemaps');
 var uglify = require('gulp-uglify');
 var yaml = require('js-yaml');
 
+handlebars.Handlebars.registerHelper('if_even', function(conditional, options) {
+  if ((conditional % 2) == 0) {
+    return options.fn(this);
+  } else {
+    return options.inverse(this);
+  }
+});
+
 handlebars.Handlebars.registerHelper(layouts(handlebars.Handlebars));
 
 gulp.task('sass:lint', function() {

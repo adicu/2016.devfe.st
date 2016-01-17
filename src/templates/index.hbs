@@ -68,7 +68,7 @@
           <li class="mobile-only" id="menu"><a onclick="showNav()" class="register nav-button"><i class="fa fa-bars"></i></a></li>
           <li class="hide-mobile unhide-nav mobile-only"><a onclick="hideNav()" id="exit" class="register nav-button"><i class="fa fa-times"></i></a></li>
           <li class="hide-mobile unhide-nav"><a id="nav_sign" class="register nav-button typeform-share hide-mobile unhide-nav" href="javascript:void(0)" data-mode="2">sign up today</a></li>
-          <li class="hide-mobile unhide-nav">
+          {{!-- <li class="hide-mobile unhide-nav">
             <a id="prizes-link" href="#prizes" class="scroll nav-button">prizes</a>
           </li>
 
@@ -84,6 +84,12 @@
           <li class="hide-mobile unhide-nav">
             <a id="schedule-link" href="#schedule" class="scroll nav-button">
               schedule
+            </a>
+          </li> --}}
+
+          <li class="hide-mobile unhide-nav">
+            <a id="faqs-link" href="#faqs" class="scroll nav-button">
+              faqs
             </a>
           </li>
 
@@ -112,7 +118,28 @@
 {{/if}}
 {{/each}}
 
-    <section id="schedule" class="page-2 page-landing-1">
+<section id="faqs" class="page page-landing-4">
+  <div class="content">
+    <div class="grid-container">
+    <div class="row hideme">
+      <div class="col-6">
+          <h1 class="page-head"> FAQs </h1>
+          <p class="page-info-text">If you have other questions, please <a href="mailto:devfest@adicu.com?Subject=I%20have%20a%20question!">email us</a>.</p>
+      </div>
+    </div>
+    {{#each faqs}}
+    <div class="question-box row">
+      <div class="col-5 faq-block">
+        <p class="question">{{this.question}}</p>
+        <p class="answer">{{this.answer}}</p>
+      </div>
+    </div>
+  {{/each}}
+
+  </div>
+</section>
+
+    {{!-- <section id="schedule" class="page-2 page-landing-1">
       <div class="content">
         <div class="grid-container">
           <div class="row hideme">
@@ -121,7 +148,8 @@
             </div>
             <div class="showcase-schedule col-4">
               {{#each day-1}}
-              {{this.title}} <br> {{this.time}} - {{this.location}}
+              <h1>{{this.title}}</h1>
+              <h2>{{this.time}} | {{this.location}} </h2>
               <p>info info lorem ipsum
               info info lorem ipsum
               info info lorem ipsum
@@ -170,7 +198,7 @@
     <div class="grid-container">  hi test </div>
   </div>
 </div>
-
+ --}}
 {{/content}}
 {{/extend}}
 
