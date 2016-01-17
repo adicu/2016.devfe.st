@@ -165,15 +165,15 @@ section {
 
 .content-landing {
     position: relative;
-    margin-top: 300px;
+    margin-top: 100px;
 }
 
 .hype-text {
-    position: absolute;
+    position: relative;
     bottom: 0%;
     left: 0%;
     background: rgba(0, 0, 0, 0.75);
-    padding: 4px 8px;
+    // padding: 4px 8px;
     color: white;
     margin: 0;
     font: 14px Sans-Serif;
@@ -254,7 +254,6 @@ p.page-info-text a:hover{
 }
 
 .welcome-text {
-    margin-top: 20px;
     margin-left: 5%;
     float: left;
     height: 230px;

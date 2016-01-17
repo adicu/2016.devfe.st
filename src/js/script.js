@@ -6,11 +6,13 @@ $(document).ready(function() {
   var hashTagActive = '';
   $('.scroll').click(function(event) {
     var target = this.hash;
-    var active_target = target + "-link";
-    // $(active_target).css({background: "white"});
+    var activeTarget = target + '-link';
+
+    // $(active_target).css({background: 'white'});
 
     if (hashTagActive != this.hash) { //this will prevent if the user click several times the same link to freeze the scroll.
       event.preventDefault();
+
       //calculate destination place
       var dest = 0;
       if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
@@ -18,9 +20,10 @@ $(document).ready(function() {
       } else {
         dest = $(this.hash).offset().top;
       }
+
       //go to destination
       $('html,body').animate({
-        scrollTop: dest
+        scrollTop: dest,
       }, 2000, 'swing');
       hashTagActive = this.hash;
 
@@ -30,30 +33,31 @@ $(document).ready(function() {
   /* Every time the window is scrolled ... */
   $(window).scroll(function() {
 
-    var $cool_body = $(document.body);
-    var bodyHeight = $cool_body.height();
+    var $coolBody = $(document.body);
+    var bodyHeight = $coolBody.height();
 
     $('#globe').css({
-      'transform': 'translateX(+50%) translateY(+50%) rotate(' + ($cool_body.scrollTop() / bodyHeight * 360) + 'deg)'
+      transform: 'translateX(+50%) translateY(+50%) rotate(' + ($coolBody.scrollTop() / bodyHeight * 360) + 'deg)',
     });
 
-    console.log($cool_body.scrollTop() / bodyHeight);
-
-    $('#airplane').css({
-      'right': 100 * (($cool_body.scrollTop() / bodyHeight) - 1) + 25 + '%'
-    });
+    // console.log($cool_body.scrollTop());
+    if ((100 * (($coolBody.scrollTop() / bodyHeight) - 1) + 25) > 0) {
+      $('#airplane').css({
+        right: 100 * (($coolBody.scrollTop() / bodyHeight) - 1) + 25 + '%',
+      });
+    }
 
     /* Check the location of each desired element */
     $('.hideme').each(function(i) {
 
-      var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
+      var bottomObject = $(this).offset().top + $(this).outerHeight();
+      var bottomWindow = $(window).scrollTop() + $(window).height();
 
       /* If the object is completely visible in the window, fade it it */
-      if (bottom_of_window > bottom_of_object) {
+      if (bottomWindow > bottomObject) {
 
         $(this).animate({
-          'opacity': '1'
+          opacity: '1',
         }, 500);
 
       }

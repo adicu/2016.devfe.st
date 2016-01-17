@@ -25,7 +25,7 @@ var uglify = require('gulp-uglify');
 var yaml = require('js-yaml');
 
 handlebars.Handlebars.registerHelper('if_even', function(conditional, options) {
-  if ((conditional % 2) == 0) {
+  if ((conditional % 2) === 0) {
     return options.fn(this);
   } else {
     return options.inverse(this);
@@ -153,9 +153,9 @@ gulp.task('build:optimized', ['sass:optimized', 'images:optimized', 'fonts', 'js
 
 gulp.task('deploy', ['build:optimized'], function() {
   gulp.src('')
-    .pipe(shell('scp -r dist/* root@minimill.co:/srv/work/private_html/TITLE/'))
+    .pipe(shell('scp -r dist/* root@adi-website:../srv/2016.devfe.st/public_html/'))
     .on('finish', function() {
-      process.stdout.write('Deployed to work.minimill.co/TITLE/');
+      process.stdout.write('Deployed to 2016.devfe.st/');
     });
 });
 
