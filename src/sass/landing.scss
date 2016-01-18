@@ -11,10 +11,11 @@ html, p, a {
 .register_button {
   background: $lightblue;
   color: $white;
-  margin: 1em;
-  padding: 1em;
-  font-size: 1.5rem;
-  line-height: 1.4rem;
+  margin-top: 1em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-bottom: 1em;
+  font-size: 1.5em;
 }
 
 .feat-nav {
@@ -288,7 +289,7 @@ p.page-info-text a:hover{
 .welcome-text {
     margin-left: 5%;
     float: left;
-    height: 230px;
+    height: 180px;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -534,7 +535,7 @@ p.page-info-text a:hover{
   .welcome-text h1 {
     font-size: 2.3rem;
     text-align: left;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 .fa-times{
@@ -556,8 +557,8 @@ p.page-info-text a:hover{
 }
 
 .infodev p {
-    font-size: 1rem;
-    line-height: 1.1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
 }
 
 .infodev {
