@@ -8,6 +8,15 @@ html, p, a {
   background: $ruddy;
 }
 
+.register_button {
+  background: $lightblue;
+  color: $white;
+  margin: 1em;
+  padding: 1em;
+  font-size: 1.5rem;
+  line-height: 1.4rem;
+}
+
 .feat-nav {
   height: 100px;
   background: $ruddy;

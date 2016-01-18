@@ -13,41 +13,34 @@
   </div>
 
 <div class="content">
-<img id="airplane-intro" class="plane-intro" src="/img/plane.png">
+<img id="airplane-intro" class="plane-intro hide-mobile" src="/img/plane.png">
 <div id="top" class="page content-landing">
-<div class="grid-container">
+  <div class="grid-container">
         <div id="welcome-intro" class="row intro-row">
             <div class="col-3">
               <div class="welcome-text">
-                <h1>Registration<br>Coming Soon </h1>
-
-                {{!-- Sign Up Form --}}
-
-                <form action="//devfe.us12.list-manage.com/subscribe/post?u=4728f3ea171ba6ddb55862e63&amp;id=205c98523d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                <div class="grid-container">
-                  <div class="row intro-row">
-                  <div class="col-6">
-                <a id="signup" onclick="showEmail()" href="javascript:void(0)" class="button signup">SignUp</a></div>
-                <br>
-                <input style="display: none" name="EMAIL" type="email" id="mce-EMAIL" class="input" placeholder="Your Email Here">
-                <a id="submit" style="display: none;" onclick="submitEmail()" href="javascript:void(0)" class="button submit">Submit</a>
-                <a id="success" href="#info" style="display: none;" class="button submit scroll"> Let's Take Off! </a>
-                  </div>
-                </div>
-
-                </form>
+                <h1>Get Ready<br>To Take Off </h1>
               </div>
             </div>
-
 
             <div class="col-3">
               <div class="hype">
               <a href="javascript:void(0)" onclick="showPopup()" class="hide-mobile hype-text button showcase-center">Watch DevFest 2015 Recap</a>
-
+              </div>
             </div>
-        </div>
-</div>
-</div>
+      </div>
+                  <div class="row showcase-center intro-row">
+                  <div class="register_button col-6">
+                {{!-- <a id="signup" onclick="showEmail()" href="javascript:void(0)" class="button signup">SignUp</a></div>
+                <br>
+                <input style="display: none" name="EMAIL" type="email" id="mce-EMAIL" class="input" placeholder="Your Email Here">
+                <a id="submit" style="display: none;" onclick="submitEmail()" href="javascript:void(0)" class="button submit">Submit</a> --}}
+                <a id="success" data-mode="1" target="_blank" href="https://adicu.typeform.com/to/i3TyKY" style="" class="scroll showcase-center typeform-share"> Register Now </a><script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+                  </div>
+                </div>
+
+
+  </div>
 
 </div>
 </div>
@@ -67,7 +60,7 @@
           </ol>
           <li class="mobile-only" id="menu"><a onclick="showNav()" class="register nav-button"><i class="fa fa-bars"></i></a></li>
           <li class="hide-mobile unhide-nav mobile-only"><a onclick="hideNav()" id="exit" class="register nav-button"><i class="fa fa-times"></i></a></li>
-          <li class="hide-mobile unhide-nav"><a id="nav_sign" class="register nav-button typeform-share hide-mobile unhide-nav" href="javascript:void(0)" data-mode="2">sign up today</a></li>
+          {{!-- <li class="hide-mobile unhide-nav"><a id="nav_sign" class="register nav-button typeform-share hide-mobile unhide-nav" href="javascript:void(0)" data-mode="2">sign up today</a></li> --}}
           {{!-- <li class="hide-mobile unhide-nav">
             <a id="prizes-link" href="#prizes" class="scroll nav-button">prizes</a>
           </li>
@@ -103,14 +96,14 @@
               info
             </a>
           </li>
-          {{!-- <li class="hide-mobile unhide-nav">
+          <li class="hide-mobile unhide-nav">
             <a id="reg-link" href="https://adicu.typeform.com/to/i3TyKY" class="nav-button register-nav typeform-share" data-mode="1" target="_blank">
               register now
             </a>
 <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
 
 
-          </li> --}}
+          </li>
           </ol>
       </div>
     </div>
