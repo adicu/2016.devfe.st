@@ -1,9 +1,9 @@
 meta:
   title: "DevFest 2016"
   description: "DevFest is Columbia's week-long workshop series and hackathon. DevFest is about learning, community, and building amazing things with technology."
-  facebook_image: "/img/facebook.png"
-  twitter_image: "/img/twitter.png"
-  image: "/img/share.png"
+  facebook_image: "http://devfe.st/img/facebook.jpg"
+  twitter_image: "http://devfe.st/img/twitter.jpg"
+  image: "http://devfe.st/img/share.jpg"
   twitter_handle: "adicu"
   domain: "devfe.st"
   url: "https://2016.devfe.st"
