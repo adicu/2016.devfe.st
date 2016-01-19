@@ -31,19 +31,20 @@
             </div>
       </div>
                   <div class="row intro-row">
+                  <a id="success" data-mode="1" target="_blank" href="https://adicu.typeform.com/to/i3TyKY" style="" class="scroll typeform-share">
                   <div class="register_button col-6 showcase-center">
                 {{!-- <a id="signup" onclick="showEmail()" href="javascript:void(0)" class="button signup">SignUp</a></div>
                 <br>
                 <input style="display: none" name="EMAIL" type="email" id="mce-EMAIL" class="input" placeholder="Your Email Here">
                 <a id="submit" style="display: none;" onclick="submitEmail()" href="javascript:void(0)" class="button submit">Submit</a> --}}
-                <a id="success" data-mode="1" target="_blank" href="https://adicu.typeform.com/to/i3TyKY" style="" class="scroll typeform-share"> Register Now </a><script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-                  </div>
+                 Register Now <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+                  </div></a>
                 </div>
 
-                <div class="mobile-only row intro-row">
+                <div style="margin-top: 0"class="mobile-only row intro-row">
                   <div class="col-6">
-                    <h1 class="mobile-text"> Registration for DevFest 2016 is open! </h1>
-                    <h1 class="mobile-text"><i class="fa fa-calendar"></i> Jan 30 - Feb 6 </h1>
+                    <h1 class="mobile-text"> Registration for DevFest 2016 is open! <br><br> <i class="fa fa-calendar"></i> Jan 30 - Feb 6  </h1>
+
                   </div>
                 </div>
 
@@ -152,8 +153,8 @@
     </div>
   </div>
 </section>
-
-    {{!-- <section id="schedule" class="page-2 page-landing-1">
+{{!--
+    <section id="schedule" class="page-2 page-landing-1">
       <div class="content">
         <div class="grid-container">
         <div class="row">
@@ -166,22 +167,25 @@
         <div class="col-1 feat-nav showcase-center">Saturday Feb 6</div>
         </div>
 
-          <div id="day-1" class="row hideme">
+          <div id="day-1" class="row">
             <div class="showcase feat col-2">
               <h1>Saturday</h1><br>Jan 30
             </div>
-            <div class="showcase-schedule col-4">
+            <div  class="showcase-schedule col-4">
               {{#each day-1}}
+              <div class="col-3">
+
               <h1>{{this.title}}</h1>
               <h2>{{this.time}} | {{this.location}} </h2>
               <p class="schedule-desc">
                 {{this.description}}
               </p>
+              </div>
               {{/each}}
             </div>
           </div> <!-- row -->
 
-          <div id="day-7" style="display: none" class="row hideme">
+          <div id="day-7" class="row hideme">
             <div class="showcase feat col-2">
               <h1>Friday</h1><br>Feb 5
             </div>
