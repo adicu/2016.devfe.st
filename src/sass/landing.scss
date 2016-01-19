@@ -9,19 +9,42 @@ html, p, a {
 }
 
 .register_button {
-  background: $lightblue;
+  background: $transparent;
+  border: medium solid $white;
   color: $white;
   margin-top: 1em;
   padding-top: 1.5em;
   padding-bottom: 1.5em;
   margin-bottom: 1em;
   font-size: 1.5em;
+  box-sizing: border-box;
+}
+
+.register_button:hover {
+  background: $white;
+  color: $black;
 }
 
 .feat-nav {
   height: 100px;
   background: $ruddy;
   margin: 10px;
+}
+
+h1.intro-land {
+  color: $white;
+  font-size: 2.2rem;
+  font-weight: 600;
+  font-family: $oxygen;
+  line-height: 3rem;
+}
+
+h1.intro-land-1 {
+  color: $white;
+  font-size: 2.2rem;
+  font-weight: 500;
+  font-family: $oxygen;
+  line-height: 3rem;
 }
 
 h1.landing {
@@ -33,6 +56,12 @@ h1.landing {
     font-weight: 700;
     z-index: 3;
     text-transform: uppercase;
+}
+
+.date{
+  font-size: 1.2rem;
+  color: $white;
+  font-weight: 400;
 }
 
 section {
@@ -79,12 +108,10 @@ section {
 }
 
 .page {
-    // background-image: url('http://cdn.makeagif.com/media/12-27-2015/_3qgDB.gif');
+    box-sizing: border-box;
     height: 100%;
     position: relative;
     width: 100%;
-
-    // z-index: 1;
 }
 
 .page-2 {
@@ -123,13 +150,15 @@ section {
 }
 
 .page-landing {
+    background: $lightblue;
+   overflow: hidden;
     // background-image: url('http://i.imgur.com/mei5DgU.jpg');
-    background: linear-gradient(rgba(255, 86, 102, 0.5), rgba(249, 219, 189, 0.5)), url("/img/main.jpg");
+    // background: linear-gradient(rgba(255, 86, 102, 0.5), rgba(249, 219, 189, 0.5)), url("/img/main.jpg");
 }
 
 .page-landing-0 {
     // background-image: url('http://i.imgur.com/mei5DgU.jpg');
-    background: $lightblue;
+    background: $ruddy;
 }
 
 .page-landing-1 {
@@ -194,11 +223,6 @@ section {
   color: $rust;
 }
 
-.content-landing {
-    position: relative;
-    margin-top: 100px;
-}
-
 .hype-text {
     position: relative;
     bottom: 0%;
@@ -225,9 +249,7 @@ section {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-.row {
-    margin: 1em;
-}
+
 
 .showcase-schedule p {
 margin: .5em;
@@ -263,7 +285,7 @@ p.page-info-text a:hover{
   text-decoration: underline;
 }
 .question-box {
-  margin: 2.5em;
+  margin: 2.5em 0;
 }
 
 .question {
@@ -383,14 +405,13 @@ p.page-info-text a:hover{
 }
 
 .half-globe {
+    bottom: 5rem;
+    border-radius: 50%;
     position: absolute;
-    width: 50%;
-    bottom: 60%;
-    left: 0;
-    -ms-transform-origin: 50% 50%;
-    -webkit-transform-origin: 50% 50%;
+    width: 70%;
+    right: 5rem;
     transform-origin: 50% 50%;
-    transform: translateX(+50%) translateY(+50%);
+    transform: translateX(50%) translateY(+50%);
 
     // animation: globe-rotate 8s infinite linear;
     z-index: 1;
@@ -540,6 +561,12 @@ p.page-info-text a:hover{
     margin-bottom: 1em;
 }
 
+section {
+  padding-left: 1em;
+  padding-right: 1em;
+  box-sizing: border-box;
+}
+
 .fa-times{
   padding: 0em;
 }
@@ -604,6 +631,8 @@ p.page-info-text a:hover{
         padding-bottom: 0;
     }
 
+
+
     h2.info,
     p.info {
         font-size: 1.4rem;
@@ -649,10 +678,16 @@ p.page-info-text a:hover{
         display: inline-block;
     }
 
-    .page-landing {
-    // background-image: url('http://i.imgur.com/mei5DgU.jpg');
-    background: linear-gradient(rgba(255, 86, 102, 0.5), rgba(249, 219, 189, 0.5));
+    h1.intro-land {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
+
+h1.intro-land-1 {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
 
   .mobile-text {
     font-family: $oxygen;

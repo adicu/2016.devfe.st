@@ -1,6 +1,6 @@
 .nav-logo {
   // background: url('/img/devfest-logo.png');
-  background-color: $peach;
+  background-color: $black;
   display: block;
   vertical-align: middle;
 }
@@ -8,31 +8,19 @@
   height: 3.62em;
 }
 
-
-
 a.nav-button {
-  background-color: $peach;
+  background-color: $black;
   display: block;
   font-size: 1.25em;
   padding: 1em;
 }
 
-a.register-nav{
-  background-color: $white;
-}
-
 li {
   float: right;
-  background: $peach;
-}
-
-
-ul, ol {
-  background-color: $peach;
 }
 
 li, a.nav-button:hover {
-  background-color: $white;
+  background-color: lighten($black, 10%);
 }
 
 .logo-container {
@@ -49,7 +37,6 @@ h1 .nav {
 
 .nav-options {
   display: block;
-  background: $peach;
 }
 
 .float-left {
@@ -57,7 +44,8 @@ h1 .nav {
 }
 
 .nav {
-  background: $peach;
+  color: $white;
+  background: $black;
   font-family: $cabin;
   left: 0;
   position: absolute;

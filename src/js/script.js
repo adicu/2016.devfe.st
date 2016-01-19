@@ -120,7 +120,7 @@ function showVideo() {
 }
 
 function applyNavScroll() {
-  var infoHeight = $('#info').offset().top;
+  var infoHeight = $('#faqs').offset().top;
   $(window).scroll(function() {
     if ($(this).scrollTop() > infoHeight) {
       $('.nav').css({

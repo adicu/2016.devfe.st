@@ -1,65 +1,44 @@
 {{#extend "base"}}
 {{#content "main" mode="prepend"}}
 
-<div id="landing" class="page page-landing background-image">
-<div class="transparent">
-<div class="header">
-  <h1 class="landing">DevFest 2016</h1>
-</div>
-{{!-- popup --}}
-  <div style="display: none" class="popup-content">
-    <i onclick="hidePopup()" class="fa fa-times fa-2x"></i>
-    <iframe id="playerid" width="100%" height="100%" src="https://www.youtube.com/embed/CVeK0cK0B_I?rel=0&amp;controls=0&amp;showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-  </div>
-
-<div class="content">
-<img id="airplane-intro" class="plane-intro hide-mobile" src="/img/plane.png">
-<div id="top" class="page content-landing">
-  <div class="grid-container">
-        <div id="welcome-intro" class="hide-mobile row intro-row">
-            <div class="col-3">
-              <div style="line-height: 3.8rem" class="welcome-text">
-                <h1>Get Ready<br>To Take Off </h1>
-                <h1 style="font-size: 1.8em; padding: .75em;"><i class="fa fa-calendar"></i> Jan 30 - Feb 6 </h1>
-              </div>
-            </div>
-
-            <div class="col-3 hide-mobile">
-              <div class="hype">
-              <a href="javascript:void(0)" onclick="showPopup()" class="hype-text button showcase-center">Watch DevFest 2015 Recap</a>
-              </div>
-            </div>
-      </div>
-                  <div class="row intro-row">
-                  <a id="success" data-mode="1" target="_blank" href="https://adicu.typeform.com/to/i3TyKY" style="" class="scroll typeform-share">
-                  <div class="register_button col-6 showcase-center">
+<section id="top" class="page page-landing">
+  <div class="content">
+    <div class="grid-container">
+      <div class="row">
+        <div class="land-row col-5">
+          <h1 class="intro-land-1">
+          5 tracks, 7 days, 1 hackathon.<br>
+          Everything you won't learn in class.<br>
+          DevFest 2016 at Columbia University.
+          </h1>
+          <div class="row intro-row">
+            <a id="success" data-mode="1" target="_blank" href="https://adicu.typeform.com/to/i3TyKY" style="" class="scroll typeform-share">
+              <div class="register_button col-3 showcase-center">
                 {{!-- <a id="signup" onclick="showEmail()" href="javascript:void(0)" class="button signup">SignUp</a></div>
                 <br>
                 <input style="display: none" name="EMAIL" type="email" id="mce-EMAIL" class="input" placeholder="Your Email Here">
                 <a id="submit" style="display: none;" onclick="submitEmail()" href="javascript:void(0)" class="button submit">Submit</a> --}}
-                 Register Now <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-                  </div></a>
-                </div>
+                Register Now <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
 
-                <div style="margin-top: 0"class="mobile-only row intro-row">
-                  <div class="col-6">
-                    <h1 class="mobile-text"> Registration for DevFest 2016 is open! <br><br> <i class="fa fa-calendar"></i> Jan 30 - Feb 6  </h1>
+              </div>
+              </a>
 
-                  </div>
-                </div>
+            </div>
+            <div class="row"><p class="date">Takeoff January 30th - February 6th, 2016</p></div>
+          </div>
+        </div>
+      </div>
 
 
-  </div>
+    </div>
 
-</div>
-</div>
 
-</div>
+    <img id="globe" class="half-globe hide-mobile" src="/img/bw-globe.svg">
+    <img style="display: none" id="airplane" class="plane hide-mobile" src="/img/plane.png">
+  </section>
 
-</div>
-
-<section id="info" class="page page-landing-0">
-<div class="nav">
+    <section style="height: auto" id="faqs" class="page page-landing-4">
+      <div class="nav">
       <div class="nav-options">
         <ol class="nav-list">
           <ol style="float:left;list-style-type:none;" class="left-nav">
@@ -90,69 +69,54 @@
           </li> --}}
           <li class="hide-mobile unhide-nav">
             <a id="code-link" target="_blank" href="/static/DevFest2016CodeofConduct.pdf" class="nav-button">
-              code of conduct
+              Code of Conduct
             </a>
           </li>
+
 
           <li class="hide-mobile unhide-nav">
             <a id="faqs-link" href="#faqs" class="scroll nav-button">
-              faqs
+              FAQs
             </a>
           </li>
 
           <li class="hide-mobile unhide-nav">
-            <a id="info-link" href="#info" class="scroll nav-button">
-              info
+            <a class="nav-button">
+              Coming soon...
             </a>
           </li>
+
           <li class="hide-mobile unhide-nav">
             <a id="reg-link" href="https://adicu.typeform.com/to/i3TyKY" class="nav-button register-nav typeform-share" data-mode="1" target="_blank">
-              register now
+              Register Now
             </a>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-
+            <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
 
           </li>
-          </ol>
+        </ol>
       </div>
     </div>
 
-  <div class="content infodev">
-    <div class="grid-container">
-      <div class="row">
-        <div class="col-6">
-          <p>If you've ever wanted to build an app, now's the time to learn.</p>
-          <p>DevFest is Columbia's week-long workshop series and hackathon. DevFest is about learning, community, and building amazing things with technology.</p>
+      <div class="content">
+        <div class="grid-container">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="page-head"> FAQs </h1>
+              <p class="page-info-text">If you have other questions, please <a href="mailto:devfest@adicu.com?Subject=I%20have%20a%20question!">email us</a>.</p>
+            </div>
+          </div>
+          {{#each faqs}}
+          <div class="question-box row">
+            <div class="col-6 faq-block">
+              <p class="question">{{this.question}}</p>
+              <p class="answer">{{this.answer}}</p>
+            </div>
+          </div>
+          {{/each}}
+
         </div>
-    </div>
-  </div>
-  </div>
-   <img id="globe" class="half-globe hide-mobile" src="/img/bw-globe.svg">
-  <img id="airplane" class="plane hide-mobile" src="/img/plane.png">
-
-</section>
-
-<section style="height: auto" id="faqs" class="page page-landing-4">
-  <div class="content">
-    <div class="grid-container">
-    <div class="row">
-      <div class="col-6">
-          <h1 class="page-head"> FAQs </h1>
-          <p class="page-info-text">If you have other questions, please <a href="mailto:devfest@adicu.com?Subject=I%20have%20a%20question!">email us</a>.</p>
       </div>
-    </div>
-    {{#each faqs}}
-    <div class="question-box row">
-      <div class="col-6 faq-block">
-        <p class="question">{{this.question}}</p>
-        <p class="answer">{{this.answer}}</p>
-      </div>
-    </div>
-  {{/each}}
-
-    </div>
-  </div>
-</section>
+    </section>
 {{!--
     <section id="schedule" class="page-2 page-landing-1">
       <div class="content">
@@ -203,7 +167,7 @@
 
       </div> <!-- container -->
     </div>  <!-- content -->
-</section> --}}
+  </section> --}}
 
 {{!-- <div id="sponsors" class="page page-landing-2">
   <div class="content">
