@@ -16,9 +16,9 @@
 <img id="airplane-intro" class="plane-intro hide-mobile" src="/img/plane.png">
 <div id="top" class="page content-landing">
   <div class="grid-container">
-        <div id="welcome-intro" class="row intro-row">
+        <div id="welcome-intro" class="hide-mobile row intro-row">
             <div class="col-3">
-              <div style="margin-top: 30%" class="welcome-text">
+              <div class="welcome-text">
                 <h1>Get Ready<br>To Take Off </h1>
                 <h1 style="color: black">Jan 30 - Feb 6 </h1>
               </div>
@@ -37,6 +37,13 @@
                 <input style="display: none" name="EMAIL" type="email" id="mce-EMAIL" class="input" placeholder="Your Email Here">
                 <a id="submit" style="display: none;" onclick="submitEmail()" href="javascript:void(0)" class="button submit">Submit</a> --}}
                 <a id="success" data-mode="1" target="_blank" href="https://adicu.typeform.com/to/i3TyKY" style="" class="scroll typeform-share"> Register Now </a><script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+                  </div>
+                </div>
+
+                <div class="mobile-only row intro-row">
+                  <div class="col-6">
+                    <h1 class="mobile-text"> Registration for DevFest 2016 is open! </h1>
+                    <h1 class="mobile-text"> Jan 30 - Feb 6 </h1>
                   </div>
                 </div>
 
@@ -111,7 +118,7 @@
 
   <div class="content infodev">
     <div class="grid-container">
-      <div class="row hideme">
+      <div class="row">
         <div class="col-6">
           <p>If you've ever wanted to build an app, now's the time to learn.</p>
           <p>DevFest is Columbia's week-long workshop series and hackathon. DevFest is about learning, community, and building amazing things with technology.</p>
@@ -137,7 +144,7 @@
     <div class="question-box row">
       <div class="col-6 faq-block">
         <p class="question">{{this.question}}</p>
-        <p class="answer hideme">{{this.answer}}</p>
+        <p class="answer">{{this.answer}}</p>
       </div>
     </div>
   {{/each}}

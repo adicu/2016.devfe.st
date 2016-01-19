@@ -646,4 +646,15 @@ p.page-info-text a:hover{
     .transparent {
         display: inline-block;
     }
+
+    .page-landing {
+    // background-image: url('http://i.imgur.com/mei5DgU.jpg');
+    background: linear-gradient(rgba(255, 86, 102, 0.5), rgba(249, 219, 189, 0.5));
+}
+
+  .mobile-text {
+    font-family: $oxygen;
+    text-align: center;
+    padding: 1em;
+  }
 }
