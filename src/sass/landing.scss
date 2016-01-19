@@ -1,7 +1,7 @@
 @import "base";
 
 html, p, a {
-    font-family: $cabin;
+  font-family: $cabin;
 }
 
 .feat {
@@ -48,14 +48,14 @@ h1.intro-land-1 {
 }
 
 h1.landing {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    font-size: 3.7rem;
-    font-weight: 700;
-    z-index: 3;
-    text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 3.7rem;
+  font-weight: 700;
+  z-index: 3;
+  text-transform: uppercase;
 }
 
 .date{
@@ -65,24 +65,24 @@ h1.landing {
 }
 
 section {
-    padding: 6rem 0 3rem;
+  padding: 6rem 0 3rem;
 }
 
 .landing {
-    color: $white;
-    font-family: $oxygen;
+  color: $white;
+  font-family: $oxygen;
 }
 
 .header {
-    position: relative;
-    background: rgba(0, 0, 0, 0);
-    height: 20%;
+  position: relative;
+  background: rgba(0, 0, 0, 0);
+  height: 20%;
 }
 
 .welcome-text h1 {
-    color: white;
-    font-style: $oxygen;
-    font-weight: 600;
+  color: white;
+  font-style: $oxygen;
+  font-weight: 600;
 }
 
 .fa-angle-down {
@@ -97,133 +97,133 @@ section {
     float: bottom;
 
     // margin-left: center;
-}
+  }
 
-.fa-angle-down:hover {
+  .fa-angle-down:hover {
     border: 2px solid $red;
     background: $red;
     color: $white;
 
     // margin-left: center;
-}
+  }
 
-.page {
+  .page {
     box-sizing: border-box;
     height: 100%;
     position: relative;
     width: 100%;
-}
+  }
 
-.page-2 {
+  .page-2 {
     position: relative;
     width: 100%;
     height: 100%;
-}
+  }
 
-.page-landing-2 {
+  .page-landing-2 {
     z-index: 2;
-}
+  }
 
-.hideme {
+  .hideme {
     opacity: 0;
-}
+  }
 
-.infodev p {
+  .infodev p {
     font-size: 1.7rem;
     line-height: 1.9rem;
     color: $white;
     margin: 1.5rem;
     z-index: 2;
-}
+  }
 
-.infodev {
+  .infodev {
     position: absolute;
     top: 75%;
-}
+  }
 
-.footer {
+  .footer {
     height: 7.5%;
     position: relative;
     width: 100%;
     background-color: $tan;
     text-align: center;
-}
+  }
 
-.page-landing {
+  .page-landing {
     background: $lightblue;
-   overflow: hidden;
+    overflow: hidden;
     // background-image: url('http://i.imgur.com/mei5DgU.jpg');
     // background: linear-gradient(rgba(255, 86, 102, 0.5), rgba(249, 219, 189, 0.5)), url("/img/main.jpg");
-}
+  }
 
-.page-landing-0 {
+  .page-landing-0 {
     // background-image: url('http://i.imgur.com/mei5DgU.jpg');
     background: $ruddy;
-}
+  }
 
-.page-landing-1 {
+  .page-landing-1 {
     // background-image: url('http://i.imgur.com/mei5DgU.jpg');
     background: $green;
     height: auto;
-}
+  }
 
-.page-landing-2 {
+  .page-landing-2 {
     // background-image: url('http://i.imgur.com/mei5DgU.jpg');
     background: $red;
     color: $white;
-}
+  }
 
-.page-landing-3 {
+  .page-landing-3 {
     // background-image: url('http://i.imgur.com/mei5DgU.jpg');
     background: $lightblue;
     color: $white;
-}
+  }
 
-.page-landing-4 {
+  .page-landing-4 {
     color: $white;
-}
+  }
 
-.page-info {
+  .page-info {
     background-color: $lightblue;
     color: $white;
-}
+  }
 
-.page-schedule {
+  .page-schedule {
     background-color: $yellow;
-}
+  }
 
-.transparent {
+  .transparent {
     background-color: $semi-trans;
     height: 100%;
     position: relative;
     width: 100%;
-}
+  }
 
-.popup {
+  .popup {
     background-color: $black-transp;
     height: 100%;
     position: relative;
     width: 100%;
-}
+  }
 
-.popup-content {
+  .popup-content {
     background-color: $black;
     width: 70%;
     height: 50%;
     margin: 0 auto;
-}
+  }
 
-.fa-times{
-  float: right;
-  padding: .5em;
-  color: $white;
-}
+  .fa-times{
+    float: right;
+    padding: .5em;
+    color: $white;
+  }
 
-.fa-times:hover{
-  color: $rust;
-}
+  .fa-times:hover{
+    color: $rust;
+  }
 
-.hype-text {
+  .hype-text {
     position: relative;
     bottom: 0%;
     left: 0%;
@@ -236,9 +236,9 @@ section {
 
     // background: rgba(255, 255, 255, 0.75);
     // color: black;
-}
+  }
 
-.showcase {
+  .showcase {
     height: 250px;
     background-position: center;
     display: flex;
@@ -247,100 +247,100 @@ section {
     background-size: cover;
     overflow: hidden;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-}
+  }
 
 
 
-.showcase-schedule p {
-margin: .5em;
-margin-bottom: 2em;
-  font-size: 1.2rem;
-}
+  .showcase-schedule p {
+    margin: .5em;
+    margin-bottom: 2em;
+    font-size: 1.2rem;
+  }
 
-.showcase-schedule h2 {
-  margin: 1em;
-  text-align: right;
-}
+  .showcase-schedule h2 {
+    margin: 1em;
+    text-align: right;
+  }
 
-.showcase h1 {
+  .showcase h1 {
 
-}
+  }
 
-h1.page-head {
-  font-size: 5.5rem;
-  font-family: $oxygen;
-}
+  h1.page-head {
+    font-size: 5.5rem;
+    font-family: $oxygen;
+  }
 
-p.page-info-text {
-  font-size: 2.5em;
-  font-family: $oxygen;
-  margin-bottom: 1em;
-}
+  p.page-info-text {
+    font-size: 2.5em;
+    font-family: $oxygen;
+    margin-bottom: 1em;
+  }
 
-p.page-info-text a{
-  color: $red;
-}
+  p.page-info-text a{
+    color: $red;
+  }
 
-p.page-info-text a:hover{
-  text-decoration: underline;
-}
-.question-box {
-  margin: 2.5em 0;
-}
+  p.page-info-text a:hover{
+    text-decoration: underline;
+  }
+  .question-box {
+    margin: 2.5em 0;
+  }
 
-.question {
-  margin-bottom: .5em;
-  color: $lightblue;
-  font-size: 1.5rem;
-}
+  .question {
+    margin-bottom: .5em;
+    color: $lightblue;
+    font-size: 1.5rem;
+  }
 
-.answer {
-  font-size: 1.1rem;
-  font-weight: 300;
-  line-height: 1.7rem;
-}
+  .answer {
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+  }
 
-.showcase-center {
+  .showcase-center {
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
     background-size: cover;
     overflow: hidden;
-}
+  }
 
-.welcome-text {
+  .welcome-text {
     margin-left: 5%;
     float: left;
     height: 180px;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
-}
+  }
 
-.welcome-text h1 {
+  .welcome-text h1 {
     font-size: 3.4rem;
     line-height: 4rem;
-}
+  }
 
-.intro-row {
-  margin: 0;
-}
+  .intro-row {
+    margin: 0;
+  }
 
-.hype {
+  .hype {
     background: url("/img/hype.jpg");
     width: 100%;
     height: 250px;
     float: right;
     background-size: cover;
     position: relative;
-}
+  }
 
-.background-image {
+  .background-image {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+  }
 
-.border-left {
+  .border-left {
     border-top: solid;
     border-color: white;
     border-width: 5px;
@@ -354,9 +354,9 @@ p.page-info-text a:hover{
     position: absolute;
 
     // z-index: 1;
-}
+  }
 
-.border-right {
+  .border-right {
     border-top: solid;
     border-color: white;
     border-width: 5px;
@@ -370,9 +370,9 @@ p.page-info-text a:hover{
     position: absolute;
 
     // z-index: 1;
-}
+  }
 
-.border-right-2 {
+  .border-right-2 {
     border-right: solid;
     border-color: $transparent;
     border-width: 5px;
@@ -385,9 +385,9 @@ p.page-info-text a:hover{
     right: 0%;
     position: absolute;
     z-index: 6;
-}
+  }
 
-.border-u {
+  .border-u {
     border-left: solid;
     border-right: solid;
     border-bottom: solid;
@@ -402,9 +402,9 @@ p.page-info-text a:hover{
     left: 10%;
     position: absolute;
     z-index: 0;
-}
+  }
 
-.half-globe {
+  .half-globe {
     bottom: 5rem;
     border-radius: 50%;
     position: absolute;
@@ -415,20 +415,20 @@ p.page-info-text a:hover{
 
     // animation: globe-rotate 8s infinite linear;
     z-index: 1;
-}
+  }
 
-@keyframes globe-rotate {
+  @keyframes globe-rotate {
     0% {
-        -ms-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
 
         // IE 9
         -webkit-transform: translateX(+50%) translateY(+50%) rotate(360deg);
 
         // Chrome, Safari, Opera
         transform: translateX(+50%) translateY(+50%) rotate(360deg);
-    }
+      }
 
-    25% {
+      25% {
         -ms-transform: rotate(480deg);
 
         // IE 9
@@ -436,9 +436,9 @@ p.page-info-text a:hover{
 
         // Chrome, Safari, Opera
         transform: translateX(+50%) translateY(+50%) rotate(480deg);
-    }
+      }
 
-    75% {
+      75% {
         -ms-transform: rotate(600deg);
 
         // IE 9
@@ -446,9 +446,9 @@ p.page-info-text a:hover{
 
         // Chrome, Safari, Opera
         transform: translateX(+50%) translateY(+50%) rotate(600deg);
-    }
+      }
 
-    100% {
+      100% {
         -ms-transform: rotate(720deg);
 
         // IE 9
@@ -456,17 +456,17 @@ p.page-info-text a:hover{
 
         // Chrome, Safari, Opera
         transform: translateX(+50%) translateY(+50%) rotate(720deg);
+      }
     }
-}
-.plane-intro {
-  animation: plane-fly 3s infinite linear;
-}
+    .plane-intro {
+      animation: plane-fly 3s infinite linear;
+    }
 
-.plane, .plane-intro {
-    z-index: 1;
-    position: absolute;
-    width: 7.5%;
-    transform: translateX(+50%) translateY(+50%) scaleX(-1);
+    .plane, .plane-intro {
+      z-index: 1;
+      position: absolute;
+      width: 7.5%;
+      transform: translateX(+50%) translateY(+50%) scaleX(-1);
 
     // z-index: 2;
     bottom: 25%;
@@ -485,19 +485,19 @@ p.page-info-text a:hover{
 
     // Chrome, Safari, Opera
     transform: scaleX(-1) rotate(20deg);
-}
+  }
 
-@keyframes plane-fly {
+  @keyframes plane-fly {
     0% {
-        right: 5%;
-        bottom: 0%;
-        -webkit-transform: scaleX(-1);
+      right: 5%;
+      bottom: 0%;
+      -webkit-transform: scaleX(-1);
 
         // Chrome, Safari, Opera
         transform: scaleX(-1);
-    }
+      }
 
-    25% {
+      25% {
         bottom: 15%;
         right: 25%;
         -webkit-transform: scaleX(-1);
@@ -509,9 +509,9 @@ p.page-info-text a:hover{
         -webkit-transform: scaleX(-1) rotate(0deg); // Chrome, Safari, Opera
         transform: scaleX(-1) rotate(0deg);
 
-    }
+      }
 
-    50% {
+      50% {
         bottom: 10%;
         right: 50%;
         -webkit-transform: scaleX(-1);
@@ -523,9 +523,9 @@ p.page-info-text a:hover{
         -webkit-transform: scaleX(-1) rotate(20deg); // Chrome, Safari, Opera
         transform: scaleX(-1) rotate(20deg);
 
-    }
+      }
 
-    75% {
+      75% {
         bottom: 19%;
         right: 70%;
         -webkit-transform: scaleX(-1);
@@ -537,9 +537,9 @@ p.page-info-text a:hover{
         -webkit-transform: scaleX(-1) rotate(0deg); // Chrome, Safari, Opera
         transform: scaleX(-1) rotate(0deg);
 
-    }
+      }
 
-    100% {
+      100% {
         bottom: 80%;
         right: 115%;
         -webkit-transform: scaleX(-1);
@@ -551,111 +551,111 @@ p.page-info-text a:hover{
         -webkit-transform: scaleX(-1) rotate(-40deg); // Chrome, Safari, Opera
         transform: scaleX(-1) rotate(-40deg);
 
+      }
     }
-}
 
-@media (max-width: $desktop-min) {
-  .welcome-text h1 {
-    font-size: 2.3rem;
-    text-align: left;
-    margin-bottom: 1em;
-}
+    @media (max-width: $desktop-min) {
+      .welcome-text h1 {
+        font-size: 2.3rem;
+        text-align: left;
+        margin-bottom: 1em;
+      }
 
-section {
-  padding-left: 1em;
-  padding-right: 1em;
-  box-sizing: border-box;
-}
+      section {
+        padding-left: 1em;
+        padding-right: 1em;
+        box-sizing: border-box;
+      }
 
-.fa-times{
-  padding: 0em;
-}
+      .fa-times{
+        padding: 0em;
+      }
 
-.popup {
-    background-color: $black-transp;
-    height: 100%;
-    position: relative;
-    width: 100%;
-}
+      .popup {
+        background-color: $black-transp;
+        height: 100%;
+        position: relative;
+        width: 100%;
+      }
 
-.popup-content {
-    background-color: $transparent;
-    width: 100%;
-    height: 60%;
-    margin: 0 auto;
-}
+      .popup-content {
+        background-color: $transparent;
+        width: 100%;
+        height: 60%;
+        margin: 0 auto;
+      }
 
-.infodev p {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-}
+      .infodev p {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+      }
 
-.infodev {
-    position: absolute;
-    top: 15%;
-}
+      .infodev {
+        position: absolute;
+        top: 15%;
+      }
 
-.half-globe {
-  bottom: 40%;
-}
-    .content-landing {
+      .half-globe {
+        bottom: 40%;
+      }
+      .content-landing {
         margin-top: 5%;
-    }
+      }
 
-    h1.landing {
+      h1.landing {
         font-size: 3.4rem;
         top: 65%;
         line-height: 3.4rem;
         text-align: center;
-    }
+      }
 
-    h1.info {
+      h1.info {
         font-size: 2.3rem;
         top: 50%;
         line-height: 2.2rem;
-    }
+      }
 
-    h2.schedule {
+      h2.schedule {
         font-size: 1.2rem;
         line-height: 1.2rem;
         margin-bottom: 1em;
         padding-bottom: 0;
         left: 5%;
         text-align: left;
-    }
+      }
 
-    p.schedule {
+      p.schedule {
         font-size: 1.2rem;
         line-height: 1.2rem;
         margin-bottom: 1em;
         padding-bottom: 0;
-    }
+      }
 
 
 
-    h2.info,
-    p.info {
+      h2.info,
+      p.info {
         font-size: 1.4rem;
         margin-bottom: 1em;
         padding-bottom: 0;
         color: $white;
-    }
+      }
 
-    p.info,
-    h1.info {
+      p.info,
+      h1.info {
         text-align: left;
-    }
+      }
 
-    p.info {
+      p.info {
         left: 5%;
-    }
+      }
 
-    h1.info {
+      h1.info {
         margin: 0;
         padding: 0;
-    }
+      }
 
-    div.description {
+      div.description {
         position: relative;
         width: 60%;
         left: -10%;
@@ -663,35 +663,35 @@ section {
         height: 50%;
         display: block;
         min-width: 50%;
-    }
+      }
 
-    .banner_contain {
+      .banner_contain {
         position: absolute;
         top: 7em;
-    }
+      }
 
-    .border-right-2 {
+      .border-right-2 {
         border-color: $transparent;
-    }
+      }
 
-    .transparent {
+      .transparent {
         display: inline-block;
+      }
+
+      h1.intro-land {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+
+      h1.intro-land-1 {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+      }
+
+
+      .mobile-text {
+        font-family: $oxygen;
+        text-align: center;
+        padding: 1em;
+      }
     }
-
-    h1.intro-land {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-}
-
-h1.intro-land-1 {
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-}
-
-
-  .mobile-text {
-    font-family: $oxygen;
-    text-align: center;
-    padding: 1em;
-  }
-}

@@ -159,8 +159,8 @@ function hidePopup() {
   $('#welcome-intro').show();
 }
 
-function schedule(param) {
-  var somestring = "";
-  somestring = param;
-  $('#day-1').html() = $(somestring);
-}
+// function schedule(param) {
+//   var somestring = "";
+//   somestring = param;
+//   $('#day-1').html() = $(somestring);
+// }
