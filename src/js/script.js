@@ -72,12 +72,6 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  $('#nav_sign').click(function() {
-    showEmail();
-    $('html, body').animate({
-      scrollTop: $('#top').offset().top,
-    }, 1000);
-  });
 
   $('#main').click(function() {
     $('html, body').animate({

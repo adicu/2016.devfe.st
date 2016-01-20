@@ -86,26 +86,20 @@ section {
 }
 
 .fa-angle-down {
-    // border: 2px solid $white;
-    // border-radius: 50%;
     padding: 15px 20px;
     margin: 0;
     padding: 0;
-    bottom: 0;
-    position: absolute;
     color: $white;
     float: bottom;
 
     // margin-left: center;
   }
 
-  .fa-angle-down:hover {
-    border: 2px solid $red;
-    background: $red;
-    color: $white;
+//   .fa-angle-down:hover {
+//     color: $white;
 
-    // margin-left: center;
-  }
+//     // margin-left: center;
+//   }
 
   .page {
     box-sizing: border-box;
@@ -135,6 +129,40 @@ section {
     margin: 1.5rem;
     z-index: 2;
   }
+
+  .next_page {
+    margin-top: 20%;
+  }
+
+  a.more{
+    color: $white;
+  }
+
+  p.more{
+    font-size: 1.1rem;
+  }
+
+  .more:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(0, -1px, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(0, 2px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(0, -4px, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(0, 4px, 0);
+  }
+}
 
   .infodev {
     position: absolute;
@@ -457,8 +485,8 @@ section {
     bottom: 5rem;
     border-radius: 50%;
     position: absolute;
-    width: 70rem;
-    height: 70rem;
+    width: 70em;
+    height: 70em;
     right: 5rem;
     transform-origin: 50% 50%;
     transform: translateX(50%) translateY(+50%);
@@ -604,7 +632,7 @@ section {
       }
     }
 
-    @media (max-width: $desktop-min) {
+    @media (max-width: $phone-landscape-max) {
       .welcome-text h1 {
         font-size: 2.3rem;
         text-align: left;
