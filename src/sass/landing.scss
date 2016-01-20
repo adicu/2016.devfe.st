@@ -25,6 +25,24 @@ html, p, a {
   color: $black;
 }
 
+.info_button {
+  background: $transparent;
+  border: medium solid $white;
+  color: $white;
+  margin: .5em 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  font-weight: 400;
+  margin-right:1em;
+}
+
+.info_button:hover {
+  background: $white;
+  color: $black;
+}
+
 .feat-nav {
   height: 100px;
   background: $ruddy;
@@ -192,7 +210,7 @@ section {
   .page-landing-1 {
     // background-image: url('http://i.imgur.com/mei5DgU.jpg');
     // background: darken($white,'10%');
-    background: darken($white, 20%);
+    background: $white;
     height: auto;
   }
 
@@ -251,7 +269,7 @@ section {
     // border: medium solid $white;
     // border: medium solid darken($white, 10%);
     // background: $white;
-    background: darken($white, 20%);
+    background: $white;
     color: $black;
     font-size: 1.5em;
     padding: 1em;
@@ -267,8 +285,14 @@ section {
     font-weight: bold;
   }
 
+  .track-box h1{
+    color: $lightblue;
+  }
+
   .track-box p{
     font-size: .75em;
+    font-weight: 400;
+    color: lighten($black, 30%);
   }
 
   a.track-link:hover{
@@ -284,21 +308,6 @@ section {
   background: darken($white, 10%);
   color: $black;
 }
-
-
-
-
-
-
-  .fa-times{
-    float: right;
-    padding: .5em;
-    color: $white;
-  }
-
-  .fa-times:hover{
-    color: $rust;
-  }
 
   .hype-text {
     position: relative;
@@ -344,12 +353,15 @@ section {
   }
 
   h1.page-head {
-    font-size: 5.5rem;
+    font-size: 4.1rem;
     font-family: $oxygen;
+    margin-top: 3rem;
   }
 
   p.page-info-text {
-    font-size: 2.5em;
+    color: lighten($black, 20%);
+    font-size: 1.7rem;
+    line-height: 2.6rem;
     font-family: $oxygen;
     margin-bottom: 1em;
   }
@@ -643,10 +655,6 @@ section {
         padding-left: 1em;
         padding-right: 1em;
         box-sizing: border-box;
-      }
-
-      .fa-times{
-        padding: 0em;
       }
 
       .popup {
