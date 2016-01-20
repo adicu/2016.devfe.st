@@ -163,7 +163,8 @@ section {
 
   .page-landing-1 {
     // background-image: url('http://i.imgur.com/mei5DgU.jpg');
-    background: $green;
+    // background: darken($white,'10%');
+    background: darken($white, 20%);
     height: auto;
   }
 
@@ -192,6 +193,10 @@ section {
     background-color: $yellow;
   }
 
+  .dev-plane {
+    transform: rotate(-90deg);
+  }
+
   .transparent {
     background-color: $semi-trans;
     height: 100%;
@@ -212,6 +217,50 @@ section {
     height: 50%;
     margin: 0 auto;
   }
+
+  .track-box {
+    box-sizing: border-box;
+    // border: medium solid $white;
+    // border: medium solid darken($white, 10%);
+    // background: $white;
+    background: darken($white, 20%);
+    color: $black;
+    font-size: 1.5em;
+    padding: 1em;
+    margin:1em 0;
+    height: 250px;
+    max-height: 250px;
+    overflow: scroll;
+    font-weight: 500;
+  }
+
+  a.track-link {
+    color: $rust;
+    font-weight: bold;
+  }
+
+  .track-box p{
+    font-size: .75em;
+  }
+
+  a.track-link:hover{
+    text-decoration: underline;
+  }
+
+  .track-intro {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+.track-box:hover {
+  background: darken($white, 10%);
+  color: $black;
+}
+
+
+
+
+
 
   .fa-times{
     float: right;
@@ -614,6 +663,10 @@ section {
         font-size: 2.3rem;
         top: 50%;
         line-height: 2.2rem;
+      }
+
+      .track-box{
+        height: auto;
       }
 
       h2.schedule {
