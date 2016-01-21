@@ -1,6 +1,7 @@
 $(document).ready(function() {
   applyNavScroll();
   var width = $(window).width();
+  $(window).resize(applyNavScroll);
 
   // Move Page
   var hashTagActive = '';
@@ -115,6 +116,7 @@ function showVideo() {
 
 function applyNavScroll() {
   var infoHeight = $('#tracks').offset().top;
+  console.log(infoHeight);
   $(window).scroll(function() {
     if ($(this).scrollTop() > infoHeight) {
       $('.nav').css({
