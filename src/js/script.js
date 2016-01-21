@@ -23,11 +23,11 @@ $(document).ready(function() {
       }
 
       //go to destination
+      var SCROLL_TIME = 1000;
       $('html,body').animate({
         scrollTop: dest,
-      }, 2000, 'swing');
+      }, SCROLL_TIME, 'swing');
       hashTagActive = this.hash;
-
     }
   });
 
