@@ -150,6 +150,37 @@ day-7:
     description: "Mingle with other participants, meet our company sponsors, and enjoy some appetizers as we celebrate a job well done at DevFest."
     location: "TBA"
     time: "3pm - 5pm"
+
+gold-level:
+  - company: "Yahoo"
+    logo: "http://devfe.st/img/sponsors/yahoo.png"
+    link: "https://www.yahoo.com/"
+  - company: "Facebook"
+    logo: "http://devfe.st/img/sponsors/facebook.png"
+    link: "https://www.facebook.com/"
+  - company: "Bloomberg"
+    logo: "http://devfe.st/img/sponsors/bloomberg.png"
+    link: "http://www.bloomberg.com/"
+
+silver-level:
+  - company: "Andreessen Horowitz"
+    logo: "http://devfe.st/img/sponsors/a16z.png"
+    link: "http://a16z.com/"
+  - company: "Microsoft"
+    logo: "http://devfe.st/img/sponsors/microsoft.png"
+    link: "http://www.microsoft.com/"
+  - company: "Columbia Entrepreneurship"
+    logo: "http://devfe.st/img/sponsors/columbiaentrepeneurship.png"
+    link: "http://entrepreneurship.columbia.edu/"
+
+bronze-level:
+  - company: "Etsy"
+    logo: "http://devfe.st/img/sponsors/etsy.png"
+    link: "https://www.etsy.com/"
+  - company: "MongoDB"
+    logo: "http://devfe.st/img/sponsors/mongodb.png"
+    link: "https://www.mongodb.com/"
+
 faqs:
   - question: "What is DevFest?"
     answer: "DevFest is a week-long series of technical workshops held by ADI culminating in a 24-hour hackathon. DevFest focuses on fostering community, and helping new developers end the week with a completed project."
