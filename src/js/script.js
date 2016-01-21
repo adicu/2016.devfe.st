@@ -116,7 +116,7 @@ function showVideo() {
 }
 
 function applyNavScroll() {
-  var infoHeight = $('#tracks').offset().top;
+  var infoHeight = $('#schedule').offset().top;
   console.log(infoHeight);
   $(window).scroll(function() {
     if ($(this).scrollTop() > infoHeight) {
