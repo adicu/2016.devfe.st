@@ -200,7 +200,6 @@ section {
   .page-landing {
     background: $lightblue;
     overflow: hidden;
-    height: auto;
     // background-image: url('http://i.imgur.com/mei5DgU.jpg');
     // background: linear-gradient(rgba(255, 86, 102, 0.5), rgba(249, 219, 189, 0.5)), url("/img/main.jpg");
   }
@@ -655,6 +654,10 @@ section {
         font-size: 2.3rem;
         text-align: left;
         margin-bottom: 1em;
+      }
+
+      .page-landing {
+        height: auto;
       }
 
       section {
