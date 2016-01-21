@@ -1,6 +1,6 @@
 meta:
   title: "DevFest 2016"
-  description: "5 tracks, 7 days, 1 hackathon. Everything you won't learn in class. DevFest 2016 at Columbia University"
+  description: "7 days, 6 tracks, 1 hackathon. Everything you won't learn in class. DevFest 2016 at Columbia University"
   facebook_image: "http://devfe.st/img/facebook.png"
   twitter_image: "http://devfe.st/img/twitter.jpg"
   image: "http://devfe.st/img/share.jpg"
@@ -165,3 +165,10 @@ faqs:
     answer: "Yes! There will be dinner served every night during the workshops and food throughout the week! If you have any food allergies make sure to state them when you register, or just email us."
   - question: "Do I need a team or idea to sign up?"
     answer: "No! Just come with a willingness to learn something new!"
+
+beginner:
+product:
+game:
+web:
+mobile:
+datascience:

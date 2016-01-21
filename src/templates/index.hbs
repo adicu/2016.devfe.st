@@ -7,7 +7,7 @@
       <div class="row">
         <div class="land-row col-5">
           <h1 class="intro-land-1">
-          5 tracks, 7 days, 1 hackathon.<br>
+          7 days, 6 tracks, 1 hackathon.<br>
           Everything you won't learn in class.<br>
           DevFest 2016 at Columbia University.
           </h1>
@@ -24,7 +24,18 @@
               </a>
 
             </div>
-            <div class="row"><p class="date">Takeoff January 30th - February 6th, 2016</p></div>
+            <div class="row"><p class="date">Take off January 30th - February 6th, 2016</p></div>
+
+
+
+            <div class="more row">
+              <div class="col-6 next_page">
+                <a class="scroll more" href="#tracks">
+                  <p class="showcase-center">Learn More</p><br>
+                  <p  class="showcase-center"><i class="fa fa-angle-down fa-2x"></i></p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -37,12 +48,12 @@
     <img style="display: none" id="airplane" class="plane hide-mobile" src="/img/plane.png">
   </section>
 
-    <section style="height: auto" id="faqs" class="page page-landing-4">
-      <div class="nav">
+<section id="tracks" class="page page-landing-1">
+   <div class="nav">
       <div class="nav-options">
         <ol class="nav-list">
           <ol style="float:left;list-style-type:none;" class="left-nav">
-            <li><a id="main" class="register nav-logo" href="javascript:void(0)" data-mode="2">
+            <li><a id="main" class="register nav-logo scroll" href="#top" data-mode="2">
               <img class="logo" src="/img/devfest-logo.png">
             </a></li>
           </ol>
@@ -81,6 +92,12 @@
           </li>
 
           <li class="hide-mobile unhide-nav">
+            <a id="tracks-link" href="#tracks" class="scroll nav-button">
+              Tracks
+            </a>
+          </li>
+
+          <li class="hide-mobile unhide-nav">
             <a class="nav-button">
               Coming soon...
             </a>
@@ -96,12 +113,71 @@
       </div>
     </div>
 
+
+  <div class="content">
+    <div class="grid-container">
+      <div class="row">
+        <div class="col-6">
+          <h1 class="page-head"> Tracks </h1>
+          <p class="page-info-text">Learn at your own pace, picking from the tracks that excite you.<br> Work on one track at a time, or bounce between them! </p>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="grid-container">
+      <div class="row">
+        <div class="track-box col-2">
+          <h1> Beginner Development </h1>
+          <p> Presented by <a target="_blank" class="track-link" href="http://adicu.com/jade"> JADE </a> </p>
+
+        </div>
+        <div class="track-box col-2">
+          <h1> Data <br> Science </h1>
+          <p> Presented by <a target="_blank" class="track-link" href="http://adicu.com/jade"> CDSS </a> </p>
+
+
+        </div>
+        <div class="track-box col-2">
+          <h1> Game Development </h1>
+          <p> Presented by <a target="_blank" class="track-link" href="http://coreatcu.com/"> CU Game Dev </a> </p>
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="track-box col-2">
+          <h1> Mobile Development </h1>
+          <p> Presented by <a target="_blank" class="track-link" href="http://adicu.com/"> ADI </a> </p>
+
+        </div>
+        <div class="track-box col-2">
+          <h1> Product Development </h1>
+          <p> Presented by <a target="_blank" class="track-link" href="http://coreatcu.com/"> CORE </a> </p>
+
+        </div>
+        <div class="track-box col-2">
+          <h1> Web Development </h1>
+          <p> Presented by <a target="_blank" class="track-link" href="http://adicu.com/"> ADI </a> </p>
+
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+
+  </section>
+
+    <section style="height: auto" id="faqs" class="page page-landing-4">
+
       <div class="content">
         <div class="grid-container">
           <div class="row">
             <div class="col-6">
               <h1 class="page-head"> FAQs </h1>
               <p class="page-info-text">If you have other questions, please <a href="mailto:devfest@adicu.com?Subject=I%20have%20a%20question!">email us</a>.</p>
+
             </div>
           </div>
           {{#each faqs}}
@@ -114,8 +190,41 @@
           {{/each}}
 
         </div>
+
       </div>
     </section>
+
+
+ {{!-- TODO: Dope footer register now, questions, link to facebook, hosted by adi --}}
+    <section style="height: auto;" id="footer" class="page page-landing-0">
+      <div class="content">
+        <div class="row">
+          <div class="col-4">
+            <a target="_blank" href="http://www.facebook.com/events/930126400357503/">
+              <div class="col-5 info_button showcase-center">Facebook RSVP</div>
+            </a>
+
+            <a target="_blank" href="mailto:devfest@adicu.com?Subject=I%20have%20a%20question!">
+              <div class="col-5 info_button showcase-center">Ask Questions</div>
+            </a>
+
+            {{!-- <a target="_blank" href="http://www.adicu.com">
+              <div class="col-5 info_button showcase-center">More ADI</div>
+            </a> --}}
+          </div>
+        <a target="_blank" class="adi-logo" href="http://www.adicu.com">
+        <div class="col-2 showcase-center">
+          <img src="/img/adi-small-white.png">
+        </div>
+        </a>
+
+        </div>
+        </div>
+
+    </section>
+
+
+
 {{!--
     <section id="schedule" class="page-2 page-landing-1">
       <div class="content">

@@ -18,9 +18,28 @@ html, p, a {
   margin-bottom: 1em;
   font-size: 1.5em;
   box-sizing: border-box;
+  transition: 0.3s ease background-color;
 }
 
 .register_button:hover {
+  background: $white;
+  color: $black;
+}
+
+.info_button {
+  background: $transparent;
+  border: medium solid $white;
+  color: $white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  font-weight: 400;
+  margin-right:1em;
+  margin-bottom: 1em;
+}
+
+.info_button:hover {
   background: $white;
   color: $black;
 }
@@ -86,26 +105,20 @@ section {
 }
 
 .fa-angle-down {
-    // border: 2px solid $white;
-    // border-radius: 50%;
     padding: 15px 20px;
     margin: 0;
     padding: 0;
-    bottom: 0;
-    position: absolute;
     color: $white;
     float: bottom;
 
     // margin-left: center;
   }
 
-  .fa-angle-down:hover {
-    border: 2px solid $red;
-    background: $red;
-    color: $white;
+//   .fa-angle-down:hover {
+//     color: $white;
 
-    // margin-left: center;
-  }
+//     // margin-left: center;
+//   }
 
   .page {
     box-sizing: border-box;
@@ -136,6 +149,40 @@ section {
     z-index: 2;
   }
 
+  .next_page {
+    margin-top: 20%;
+  }
+
+  a.more{
+    color: $white;
+  }
+
+  p.more{
+    font-size: 1.1rem;
+  }
+
+  .more:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  }
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(0, -1px, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(0, 2px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(0, -4px, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(0, 4px, 0);
+  }
+}
+
   .infodev {
     position: absolute;
     top: 75%;
@@ -163,7 +210,8 @@ section {
 
   .page-landing-1 {
     // background-image: url('http://i.imgur.com/mei5DgU.jpg');
-    background: $green;
+    // background: darken($white,'10%');
+    background: $white;
     height: auto;
   }
 
@@ -192,6 +240,10 @@ section {
     background-color: $yellow;
   }
 
+  .dev-plane {
+    transform: rotate(-90deg);
+  }
+
   .transparent {
     background-color: $semi-trans;
     height: 100%;
@@ -213,15 +265,51 @@ section {
     margin: 0 auto;
   }
 
-  .fa-times{
-    float: right;
-    padding: .5em;
-    color: $white;
+  .track-box {
+    box-sizing: border-box;
+    // border: medium solid $white;
+    // border: medium solid darken($white, 10%);
+    // background: $white;
+    background: $white;
+    color: $black;
+    font-size: 1.5em;
+    padding: 1em;
+    margin:1em 0;
+    height: 250px;
+    max-height: 250px;
+    overflow: scroll;
+    font-weight: 500;
   }
 
-  .fa-times:hover{
+  a.track-link {
     color: $rust;
+    font-weight: bold;
   }
+
+  .track-box h1{
+    color: $lightblue;
+  }
+
+  .track-box p{
+    font-size: .75em;
+    font-weight: 400;
+    color: lighten($black, 30%);
+  }
+
+  a.track-link:hover{
+    text-decoration: underline;
+  }
+
+  .track-intro {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+.track-box:hover {
+  background-color: darken($white, 10%);
+  color: $black;
+  transition: 0.4s ease background-color;
+}
 
   .hype-text {
     position: relative;
@@ -267,12 +355,15 @@ section {
   }
 
   h1.page-head {
-    font-size: 5.5rem;
+    font-size: 4.1rem;
     font-family: $oxygen;
+    margin-top: 2rem;
   }
 
   p.page-info-text {
-    font-size: 2.5em;
+    color: lighten($black, 20%);
+    font-size: 1.7rem;
+    line-height: 2.6rem;
     font-family: $oxygen;
     margin-bottom: 1em;
   }
@@ -408,8 +499,8 @@ section {
     bottom: 5rem;
     border-radius: 50%;
     position: absolute;
-    width: 70rem;
-    height: 70rem;
+    width: 70em;
+    height: 70em;
     right: 5rem;
     transform-origin: 50% 50%;
     transform: translateX(50%) translateY(+50%);
@@ -555,7 +646,7 @@ section {
       }
     }
 
-    @media (max-width: $desktop-min) {
+    @media (max-width: $phone-landscape-max) {
       .welcome-text h1 {
         font-size: 2.3rem;
         text-align: left;
@@ -566,10 +657,6 @@ section {
         padding-left: 1em;
         padding-right: 1em;
         box-sizing: border-box;
-      }
-
-      .fa-times{
-        padding: 0em;
       }
 
       .popup {
@@ -614,6 +701,10 @@ section {
         font-size: 2.3rem;
         top: 50%;
         line-height: 2.2rem;
+      }
+
+      .track-box{
+        height: auto;
       }
 
       h2.schedule {

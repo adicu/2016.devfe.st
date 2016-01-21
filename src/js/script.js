@@ -1,6 +1,7 @@
 $(document).ready(function() {
   applyNavScroll();
   var width = $(window).width();
+  $(window).resize(applyNavScroll);
 
   // Move Page
   var hashTagActive = '';
@@ -72,12 +73,6 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  $('#nav_sign').click(function() {
-    showEmail();
-    $('html, body').animate({
-      scrollTop: $('#top').offset().top,
-    }, 1000);
-  });
 
   $('#main').click(function() {
     $('html, body').animate({
@@ -120,7 +115,8 @@ function showVideo() {
 }
 
 function applyNavScroll() {
-  var infoHeight = $('#faqs').offset().top;
+  var infoHeight = $('#tracks').offset().top;
+  console.log(infoHeight);
   $(window).scroll(function() {
     if ($(this).scrollTop() > infoHeight) {
       $('.nav').css({
