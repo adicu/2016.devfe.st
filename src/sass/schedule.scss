@@ -1,0 +1,32 @@
+.day {
+  padding: 0.5rem 0;
+
+  h2 {
+    text-align: left;
+    color: $red;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    padding-bottom: 0.75rem;
+    padding-top: 1rem;
+    text-align: left;
+    width: auto;
+  }
+
+  h3 {
+    .event-time {
+      color: darken($gray, 35%);
+      font-size: 1rem;
+      padding-left: 0.5rem;
+    }
+  }
+
+  .event-description {
+    font-size: 1.1rem;
+    line-height: 1.72rem;
+    // max-width: 750px;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    // width: 100%;
+  }
+}
