@@ -128,14 +128,14 @@ day-5:
     time: "8pm - 11pm"
 day-6:
   - day: "day-6"
-    title: "Hackathon Kickoff"
-    description: "The official kickoff to our 18 hour hackathon filled with sponsorship demos and more"
+    title: "Takeoff"
+    description: "The official kickoff to our 18-hour hackathon, filled with sponsorship demos and more!"
     location: "Havemeyer 309"
     time: "4pm - 5:30pm"
   - day: "day-6"
     title: "Hackathon"
     dayofw: "Friday"
-    description: "The main event! We'll be hacking all night, with plenty of mentors around to help you out with your projects. Also, we'll have fun events and surprises throughout the night."
+    description: "The main event! We'll be hacking all night, with plenty of mentors around to help you out with your projects. Keep an eye out for fun surprises throughout the whole night."
     location: "Watson Library (Uris Hall)"
     time: "5:30pm - 12pm Saturday"
 day-7:
