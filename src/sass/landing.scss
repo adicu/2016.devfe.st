@@ -137,9 +137,6 @@ section {
     height: 100%;
   }
 
-  .page-landing-2 {
-    z-index: 2;
-  }
 
   .hideme {
     opacity: 0;
@@ -203,6 +200,7 @@ section {
   .page-landing {
     background: $lightblue;
     overflow: hidden;
+    height: auto;
     // background-image: url('http://i.imgur.com/mei5DgU.jpg');
     // background: linear-gradient(rgba(255, 86, 102, 0.5), rgba(249, 219, 189, 0.5)), url("/img/main.jpg");
   }
@@ -221,8 +219,10 @@ section {
 
   .page-landing-2 {
     // background-image: url('http://i.imgur.com/mei5DgU.jpg');
-    background: $red;
-    color: $white;
+    background: darken($white, 5%);
+    color: $black;
+    height: auto;
+
   }
 
   .page-landing-3 {
