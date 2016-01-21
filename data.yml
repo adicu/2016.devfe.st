@@ -1,9 +1,9 @@
 meta:
   title: "DevFest 2016"
   description: "7 days, 6 tracks, 1 hackathon. Everything you won't learn in class. DevFest 2016 at Columbia University"
-  facebook_image: "http://devfe.st/img/facebook.png"
-  twitter_image: "http://devfe.st/img/twitter.jpg"
-  image: "http://devfe.st/img/share.jpg"
+  facebook_image: "http://devfe.st/img/facebook.png" #full url for metadata
+  twitter_image: "http://devfe.st/img/twitter.jpg" #full url for metadata
+  image: "http://devfe.st/img/share.jpg" #full url for metadata
   twitter_handle: "adicu"
   domain: "devfe.st"
   url: "http://devfe.st"
@@ -153,32 +153,32 @@ day-7:
 
 gold-level:
   - company: "Yahoo"
-    logo: "http://devfe.st/img/sponsors/yahoo.png"
+    logo: "/img/sponsors/yahoo.png"
     link: "https://www.yahoo.com/"
   - company: "Facebook"
-    logo: "http://devfe.st/img/sponsors/facebook.png"
+    logo: "/img/sponsors/facebook.png"
     link: "https://www.facebook.com/"
   - company: "Bloomberg"
-    logo: "http://devfe.st/img/sponsors/bloomberg.png"
+    logo: "/img/sponsors/bloomberg.png"
     link: "http://www.bloomberg.com/"
 
 silver-level:
   - company: "Andreessen Horowitz"
-    logo: "http://devfe.st/img/sponsors/a16z.png"
+    logo: "/img/sponsors/a16z.png"
     link: "http://a16z.com/"
   - company: "Microsoft"
-    logo: "http://devfe.st/img/sponsors/microsoft.png"
+    logo: "/img/sponsors/microsoft.png"
     link: "http://www.microsoft.com/"
   - company: "Columbia Entrepreneurship"
-    logo: "http://devfe.st/img/sponsors/columbiaentrepeneurship.png"
+    logo: "/img/sponsors/columbiaentrepeneurship.png"
     link: "http://entrepreneurship.columbia.edu/"
 
 bronze-level:
   - company: "Etsy"
-    logo: "http://devfe.st/img/sponsors/etsy.png"
+    logo: "/img/sponsors/etsy.png"
     link: "https://www.etsy.com/"
   - company: "MongoDB"
-    logo: "http://devfe.st/img/sponsors/mongodb.png"
+    logo: "/img/sponsors/mongodb.png"
     link: "https://www.mongodb.com/"
 
 faqs:
