@@ -155,7 +155,7 @@ gulp.task('deploy', ['build:optimized'], function() {
   gulp.src('')
     .pipe(shell('scp -r dist/* root@adi-website:../srv/2016.devfe.st/public_html/'))
     .on('finish', function() {
-      process.stdout.write('Deployed to 2016.devfe.st/');
+      process.stdout.write('Deployed to devfe.st/');
     });
 });
 
