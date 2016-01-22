@@ -1,0 +1,55 @@
+#gold-level, #silver-level, #bronze-level {
+  align-content: center;
+
+  h2 {
+    font-weight: 500;
+    width: auto;
+  }
+}
+
+#gold-level {
+  color: $gold;
+
+  h2 {
+    font-size: 1.9rem;
+    padding-bottom: 0.25em;
+  }
+}
+
+#silver-level {
+  color: $silver;
+
+  h2 {
+    font-size: 1.6rem;
+    padding-top: 0.8em;
+  }
+}
+
+#bronze-level {
+  color: $bronze;
+
+  h2 {
+    font-size: 1.3rem;
+    padding-top: 0.75em;
+  }
+}
+
+.bronze-pic{
+  margin-left: 25%;
+}
+
+.sponsor-box {
+  box-sizing: border-box;
+  margin: .75em 0;
+  padding: 1.2em;
+}
+
+@media (max-width: 1000px) {
+  .spon-pic,.bronze-pic{
+    img{
+      max-height: 15%;
+    }
+
+    margin: 0;
+  }
+}
