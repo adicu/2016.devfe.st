@@ -282,10 +282,16 @@ section {
     font-size: 1.5em;
     padding: 1em;
     margin:1em 0;
-    height: 250px;
-    max-height: 250px;
+    height: 300px;
+    max-height: 300px;
     overflow: scroll;
     font-weight: 500;
+    text-align: center;
+  }
+
+  .track-image{
+    margin-bottom: 5%;
+    height:40%;
   }
 
   a.track-link {
@@ -795,6 +801,10 @@ section {
         line-height: 1.5rem;
       }
 
+      .track-image{
+    margin-bottom: 5%;
+    height:100px;
+      }
 
       .mobile-text {
         font-family: $oxygen;
