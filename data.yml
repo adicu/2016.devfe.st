@@ -1,9 +1,9 @@
 meta:
   title: "DevFest 2016"
   description: "7 days, 6 tracks, 1 hackathon. Everything you won't learn in class. DevFest 2016 at Columbia University"
-  facebook_image: "http://devfe.st/img/facebook.png" #full url for metadata
-  twitter_image: "http://devfe.st/img/twitter.png" #full url for metadata
-  image: "http://devfe.st/img/share.png" #full url for metadata
+  facebook_image: "http://devfe.st/img/meta/facebook.png" #full url for metadata
+  twitter_image: "http://devfe.st/img/meta/twitter.png" #full url for metadata
+  image: "http://devfe.st/img/meta/share.png" #full url for metadata
   twitter_handle: "adicu"
   domain: "devfe.st"
   url: "http://devfe.st"

@@ -67,13 +67,11 @@ $(document).ready(function() {
 
   });
 
-
   $('#moreinfo').click(function() {
     $('html, body').animate({
       scrollTop: $('#info').offset().top,
     }, 1000);
   });
-
 
   $('#main').click(function() {
     $('html, body').animate({
