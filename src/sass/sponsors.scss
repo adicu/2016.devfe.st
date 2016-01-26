@@ -41,19 +41,18 @@
   margin-left: 25%;
 }
 
-#microsponsor-level {
+#partner-level {
   color: $black;
   margin-top: 60px;
 
   h2 {
     font-size: 1.9rem;
-    padding-top: 0.75em;
+    padding-top: 0.25em;
   }
 }
 
-.microsponsor-pic{
+.partner-pic{
   margin-left: 40%;
-  margin-top: 40px;
 }
 
 .spon-box {
@@ -63,7 +62,7 @@
 }
 
 @media (max-width: 1000px) {
-  .spon-pic,.spon-box,.bronze-pic{
+  .spon-pic,.spon-box,.bronze-pic,.partner-pic{
     img{
       max-height: 15%;
     }

@@ -211,13 +211,15 @@ faqs:
   - question: "Where does the hackathon/workshops take place?"
     answer: "Kickoff will be held in Davis Auditorium inside CEPSR. Technical workshops will be held in several rooms inside of Mudd. The main hackathon will be held inside Uris. Check the schedule for the most up-to-date locations."
   - question: "Do I need experience?"
-    answer: "Students of all experience levels are welcome! New hackers can learn to build websites with our Beginner Track, and experienced hackers can expand their skillsets by working on the Web Development Track, Mobile Development Track, Game Development Track, Data Science Track, or Product Track."
+    answer: "Students of all experience levels are welcome! New hackers can learn to build websites with our Beginner Track, and experienced hackers can expand their skillsets by working on the Web Development Track, iOS Development Track, Game Development Track, Data Science Track, or Product Track."
   - question: "Do I have to come to the entire week?"
     answer: "No! However, we highly encourage you to come out to the Hackspaces, company booths, and tech talks--every day will be different so don’t miss out!"
   - question: "Will there be food?"
     answer: "Yes! There will be dinner served every night during the workshops and food throughout the week! If you have any food allergies make sure to state them when you register, or just email us."
   - question: "Do I need a team or idea to sign up?"
     answer: "No! Just come with a willingness to learn something new!"
+  - question: "Should I be there the whole week to participate?"
+    answer: "Definitely not. We will publish each track curriculum at Kickoff and you will have access to information from each! Then you will be able to ask questions on Piazza, an online Q&A forum just for DevFest."
 
 beginner:
 product:
