@@ -41,6 +41,21 @@
   margin-left: 25%;
 }
 
+#microsponsor-level {
+  color: $black;
+  margin-top: 60px;
+
+  h2 {
+    font-size: 1.9rem;
+    padding-top: 0.75em;
+  }
+}
+
+.microsponsor-pic{
+  margin-left: 40%;
+  margin-top: 40px;
+}
+
 .spon-box {
   box-sizing: border-box;
   margin: .75em 0;
