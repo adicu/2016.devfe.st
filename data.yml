@@ -199,9 +199,12 @@ sponsor-prizes:
   - name: "Best Use of Microsoft APIs"
     logo: "/img/sponsors/microsoft.png"
     prize: "Xbox One and Games"
-  - name: ""
+  - name: "Category TBA"
     logo: "/img/sponsors/a16z.png"
     prize: "Anki Drive"
+  - name: "Best Health App"
+    logo: "/img/sponsors/bmes.png"
+    prize: "Amazon Gift Card"
 
 faqs:
   - question: "What is DevFest?"
