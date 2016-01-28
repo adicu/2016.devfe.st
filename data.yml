@@ -183,11 +183,11 @@ bronze-level:
 
 main-prizes:
   - name: "1st Prize"
-    prize: "$1000"
+    prize: "$1500"
   - name: "2nd Prize"
-    prize: "$750"
+    prize: "$1000"
   - name: "3rd Prize"
-    prize: "$500"
+    prize: "$750"
 
 sponsor-prizes:
   - name: "Most Technically Challenging"
@@ -205,7 +205,7 @@ sponsor-prizes:
 
 faqs:
   - question: "What is DevFest?"
-    answer: "DevFest is a week-long series of technical workshops held by ADI culminating in a 24-hour hackathon. DevFest focuses on fostering community, and helping new developers end the week with a completed project."
+    answer: "DevFest is a week-long series of technical workshops held by ADI culminating in a 24-hour hackathon. DevFest focuses on fostering community and helping new developers end the week with a completed project."
   - question: "Who can participate?"
     answer: "Any student from the Columbia community (SEAS, CC, Barnard, General Studies, or any of the graduate schools) can join!"
   - question: "Where does the hackathon/workshops take place?"
@@ -213,17 +213,17 @@ faqs:
   - question: "Do I need experience?"
     answer: "Students of all experience levels are welcome! New hackers can learn to build websites with our Beginner Track, and experienced hackers can expand their skillsets by working on the Web Development Track, iOS Development Track, Game Development Track, Data Science Track, or Product Track."
   - question: "Do I have to come to the entire week?"
-    answer: "No! However, we highly encourage you to come out to the Hackspaces, company booths, and tech talks--every day will be different so don’t miss out!"
+    answer: "No, however be sure to register and attend as many events as you can. We will have different company sponsors, tech talks, and activities every night, so come to as many as you can!"
   - question: "Will there be food?"
     answer: "Yes! There will be dinner served every night during the workshops and food throughout the week! If you have any food allergies make sure to state them when you register, or just email us."
   - question: "Do I need a team or idea to sign up?"
     answer: "No! Just come with a willingness to learn something new!"
-  - question: "Do I need to be there the whole week to participate?"
-    answer: "No, however be sure to register and attend as many events as you can. That way you can be eligible for more prizes. We will publish each track curriculum at Kickoff and you will have access to information from each track! Then you will be able to ask questions on Piazza, an online Q&A forum just for DevFest."
-
-beginner:
-product:
-game:
-web:
-mobile:
-datascience:
+  - question: "How big can my hackathon team be?"
+    answer: "The maximum team size is 5."
+  
+beginner: "Build your very own website using HTML, CSS, and JavaScript"
+product: "Launch a successful product using design thinking and analytics"
+game: "Create a top-down shooter and a platformer using GameMaker"
+web: "Create a reading list app using Flask and MongoDB"
+mobile: "Make your very own Pokedex using Swift"
+datascience: "Build a visual weather model using Python"
