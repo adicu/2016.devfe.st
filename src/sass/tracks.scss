@@ -1,0 +1,78 @@
+.track-box {
+  background: $white;
+  box-sizing: border-box;
+  // border: medium solid $white;
+  // border: medium solid darken($white, 10%);
+  // background: $white;
+  color: $black;
+  font-size: 1.5em;
+  font-weight: 500;
+  height: 400px;
+  margin: 1em 0;
+  max-height: 400px;
+  overflow: visible;
+  padding: 1em;
+  text-align: center;
+
+  h1 {
+    color: $lightblue;
+  }
+
+  p {
+    color: lighten($black, 30%);
+    font-family: $oxygen;
+    font-size: 0.75em;
+    font-weight: 400;
+  }
+
+  .description {
+    color: lighten($black, 10%);
+    font-family: $oxygen;
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.35rem;
+    margin-top: 5%;
+    text-align: left;
+    }
+
+}
+
+.track-image {
+  height: 40%;
+  margin-bottom: 5%;
+}
+
+.track-link {
+  color: $rust;
+  font-weight: bold;
+}
+
+.track-link:hover {
+  text-decoration: underline;
+}
+
+.track-intro {
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+
+.track-box:hover {
+  background-color: darken($white, 10%);
+  color: $black;
+  transition: 0.4s ease background-color;
+}
+
+@media (max-width: $phone-landscape-max) {
+  .track-image {
+    height: 100px;
+    margin-bottom: 5%;
+  }
+
+  .track-box {
+    height: auto;
+  }
+
+  .track-box,.description {
+    text-align: center;
+  }
+}
