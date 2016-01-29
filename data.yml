@@ -181,6 +181,9 @@ silver-level:
   - company: "Columbia Entrepreneurship"
     logo: "/img/sponsors/columbiaentrepeneurship.png"
     link: "http://entrepreneurship.columbia.edu/"
+  - company: "mark43"
+    logo: "/img/sponsors/mark43.png"
+    link: "https://www.mark43.com/"
 
 bronze-level:
   - company: "Etsy"
