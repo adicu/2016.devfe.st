@@ -83,7 +83,7 @@ schedule
 </li> --}}
 <li class="hide-mobile unhide-nav">
   <a id="code-link" target="_blank" href="/static/DevFest2016CodeofConduct.pdf" class="nav-button">
-    Code of Conduct
+    Conduct
   </a>
 </li>
 
@@ -96,6 +96,12 @@ schedule
 <li class="hide-mobile unhide-nav">
   <a id="sponsors-link" href="#sponsors" class="scroll nav-button">
     Sponsors
+  </a>
+</li>
+
+<li class="hide-mobile unhide-nav">
+  <a id="prizes-link" href="#prizes" class="scroll nav-button">
+    Prizes
   </a>
 </li>
 
@@ -235,15 +241,44 @@ schedule
 
     </div>
   </div>
-
-
 </section>
 
+
+<section style="height: auto" id="prizes" class="page page-landing-2">
+  <div class="content">
+    <div class="grid-container">
+      <div class="row">
+        <div class="col-6">
+          <h1 class="page-head"> Prizes </h1>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container prizes">
+      {{#each mainPrizes}}
+      <div class="spon-box col-2 spon-pic prize">
+        <h1>{{this.name}}</h1>
+        <h3>{{this.prize}}</h3>
+      </div>
+      {{/each}}
+    </div>
+    <div class="grid-container">
+      <div class="row">
+        {{#each sponsorPrizes}}
+        <div class="spon-box col-3">
+          <h3>{{this.name}}</h3>
+          <h4>{{this.prize}}, presented by</h4>
+          <img src="{{this.logo}}" alt="">
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-------------------------- SPONSORS ------------------------------>
 
 
-<section style="height: auto" id="sponsors" class="page page-landing-2">
+<section style="height: auto" id="sponsors" class="page page-landing-3">
 
 
   <div class="content">
@@ -308,7 +343,7 @@ schedule
         <h2>Partners</h2>
         <div class="spon-box col-6">
           <div class="partner-pic">
-            <img src="/img/sponsors/soylent.png" alt="Soylent Columbia"  height="55px">
+            <img src="/img/sponsors/soylent.png" alt="Soylent Columbia">
           </div>
         </div>
       </div>
@@ -316,8 +351,8 @@ schedule
   </div>
 </section>
 
-<section style="height: auto" id="faqs" class="page page-landing-4">
 
+<section style="height: auto" id="faqs" class="page page-landing-4">
   <div class="content">
     <div class="grid-container">
       <h1 class="page-head"> FAQs </h1>
@@ -333,7 +368,6 @@ schedule
         <p class="page-info-text" id="faq-info-text">If you have other questions, please <a href="mailto:devfest@adicu.com?Subject=I%20have%20a%20question!">email us</a>.</p>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -365,30 +399,17 @@ schedule
 
 </section>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-{{!-- <div id="sponsors" class="page page-landing-2">
-<div class="content">
-<div class="grid-container"> hi test </div>
-</div>
-</div>
+  ga('create', 'UA-72271329-1', 'auto');
+  ga('send', 'pageview');
+  ga('require', 'linkid');
 
-<div id="judges" class="page page-landing-3">
-<div class="content">
-<div class="grid-container"> judges test </div>
-</div>
-</div>
-
-
-<div id="prizes" class="page page-landing-4">
-<div class="content">
-<div class="grid-container">  hi test </div>
-</div>
-</div> --}}
+</script>
 
 {{/content}}
 {{/extend}}
-
-{{!-- <div class="border-left"></div>
-<div class="border-right"></div>
-<div class="border-right-2 hide-mobile"></div>
-<div class="border-u"></div> --}}

@@ -25,16 +25,15 @@
     font-weight: 400;
   }
 
-  p.description {
+  .description {
     color: lighten($black, 10%);
     font-family: $oxygen;
-    font-size: 1.25rem;
+    font-size: 0.90rem;
     font-weight: 300;
     line-height: 1.35rem;
-    margin-top: 5%;
-    text-align: left;
+    margin-top: 6.5%;
+    text-align: center;
     }
-
 }
 
 .track-image {
@@ -67,6 +66,10 @@
     height: 100px;
     margin-bottom: 5%;
   }
+
+    .description {
+      margin-top: 0%;
+    }
 
   .track-box {
     height: auto;

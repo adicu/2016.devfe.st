@@ -1,0 +1,96 @@
+{{#extend "base"}}
+{{#content "main" mode="prepend"}}
+
+<section id="tracks" class="page page-landing-1">
+
+  <div class="content">
+{{!--     <div class="grid-container">
+      <div class="row">
+        <div class="col-6">
+          <h1 class="page-head"> Tracks </h1>
+          <p class="page-info-text">Learn at your own pace, picking from the tracks that excite you.<br> Work on one track at a time, or bounce between them!</p>
+          <p class="page-info-text">
+          Pick up a <b>DevFest Passport</b> at any Workspace night and <b>earn stamps</b> for completing tracks. Each stamp gives you one entry into a <b>prize raffle</b>!</p>
+        </div>
+      </div>
+    </div> --}}
+
+    <div class="grid-container">
+      <div class="row">
+        <div class="track-box col-2">
+          <img class="track-image" height="40%" src="/img/Beginner-Logo.png">
+          <h1> Beginner Development </h1>
+          <p> Presented by <a onclick="trackOutboundLink('http://adicu.com/jade'); return false;" target="_blank" class="track-link" href="http://adicu.com/jade"> JADE </a> </p>
+          <p class="description">{{beginner}}</p>
+
+        </div>
+        <div class="track-box col-2">
+          <img class="track-image" height="40%" src="/img/Data-Science-Logo.png">
+          <h1> Data <br> Science </h1>
+          <p> Presented by <a target="_blank" class="track-link" href="http://cdssatcu.com"> CDSS </a> </p>
+          <p class="description">{{datascience}}</p>
+
+
+        </div>
+        <div class="track-box col-2">
+          <img class="track-image" height="40%" src="/img/Game-Dev-Logo.png">
+          <h1> Game Development </h1>
+          <p> Presented by <a target="_blank" class="track-link" href="http://cugamedev.org"> CU Game Dev </a> </p>
+          <p class="description">{{game}}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="track-box col-2">
+          <img class="track-image" height="40%" src="/img/Mobile-Dev-Logo.png">
+          <h1> iOS Development </h1>
+          <p> Presented by <a target="_blank" class="track-link" href="http://adicu.com/"> ADI </a> </p>
+          <p class="description">{{mobile}}</p>
+        </div>
+        <div class="track-box col-2">
+          <img class="track-image" height="40%" src="/img/Product-Logo.png">
+          <h1> Product Development </h1>
+          <p> Presented by <a target="_blank" class="track-link" href="http://coreatcu.com/"> CORE </a> </p>
+          <p class="description">{{product}}</p>
+        </div>
+        <div class="track-box col-2">
+          <img class="track-image" src="/img/Web-Dev-Logo.png">
+          <h1> Web Development </h1>
+          <p> Presented by <a target="_blank" class="track-link" href="http://adicu.com/"> ADI </a> </p>
+          <p class="description">{{web}}</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-73062758-1', 'auto');
+  ga('send', 'pageview');
+  ga('require', 'linkid');
+
+</script>
+
+<script>
+/**
+* Function that tracks a click on an outbound link in Google Analytics.
+* This function takes a valid URL string as an argument, and uses that URL string
+* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+* using 'navigator.sendBeacon' in browser that support it.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+</script>
+
+{{/content}}
+{{/extend}}

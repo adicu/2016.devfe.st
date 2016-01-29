@@ -190,7 +190,7 @@ bronze-level:
     logo: "/img/sponsors/mongodb.png"
     link: "https://www.mongodb.com/"
 
-main-prizes:
+mainPrizes:
   - name: "1st Prize"
     prize: "$1500"
   - name: "2nd Prize"
@@ -198,7 +198,7 @@ main-prizes:
   - name: "3rd Prize"
     prize: "$750"
 
-sponsor-prizes:
+sponsorPrizes:
   - name: "Most Technically Challenging"
     logo: "/img/sponsors/bloomberg.png"
     prize: "Pebble Time Watches"
@@ -232,7 +232,7 @@ faqs:
     answer: "No! Just come with a willingness to learn something new!"
   - question: "How big can my hackathon team be?"
     answer: "The maximum team size is 5."
-  
+
 beginner: "Build your very own website using HTML, CSS, and JavaScript"
 product: "Launch a successful product using design thinking and analytics"
 game: "Create a top-down shooter and a platformer using GameMaker"
