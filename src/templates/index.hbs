@@ -83,7 +83,7 @@ schedule
 </li> --}}
 <li class="hide-mobile unhide-nav">
   <a id="code-link" target="_blank" href="/static/DevFest2016CodeofConduct.pdf" class="nav-button">
-    Code of Conduct
+    Conduct
   </a>
 </li>
 
@@ -96,6 +96,12 @@ schedule
 <li class="hide-mobile unhide-nav">
   <a id="sponsors-link" href="#sponsors" class="scroll nav-button">
     Sponsors
+  </a>
+</li>
+
+<li class="hide-mobile unhide-nav">
+  <a id="prizes-link" href="#prizes" class="scroll nav-button">
+    Prizes
   </a>
 </li>
 
@@ -238,6 +244,37 @@ schedule
 </section>
 
 
+<section style="height: auto" id="prizes" class="page page-landing-2">
+  <div class="content">
+    <div class="grid-container">
+      <div class="row">
+        <div class="col-6">
+          <h1 class="page-head"> Prizes </h1>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container prizes">
+      {{#each mainPrizes}}
+      <div class="spon-box col-2 spon-pic prize">
+        <h1>{{this.name}}</h1>
+        <h3>{{this.prize}}</h3>
+      </div>
+      {{/each}}
+    </div>
+    <div class="grid-container">
+      <div class="row">
+        {{#each sponsorPrizes}}
+        <div class="spon-box col-3">
+          <h3>{{this.name}}</h3>
+          <h4>{{this.prize}}, presented by</h4>
+          <img src="{{this.logo}}" alt="">
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-------------------------- SPONSORS ------------------------------>
 
 
@@ -314,34 +351,6 @@ schedule
   </div>
 </section>
 
-<section style="height: auto" id="sponsors" class="page page-landing-2">
-  <div class="content">
-    <div class="grid-container">
-      <div class="row">
-        <div class="col-6">
-          <h1 class="page-head"> Prizes </h1>
-        </div>
-      </div>
-    </div>
-    <div class="grid-container">
-      {{#each mainPrizes}}
-      <div class="spon-box col-2 spon-pic">
-        <h3>{{this.name}}</h3>
-        <h4>{{this.prize}}</h4>
-      </div>
-      {{/each}}
-    </div>
-    <div class="grid-container">
-      {{#each sponsorPrizes}}
-      <div class="spon-box col-3">
-        <h3>{{this.name}}</h3>
-        <h4>{{this.prize}}, presented by</h4>
-        <img src="{{this.logo}}" alt="">
-      </div>
-      {{/each}}
-    </div>
-  </div>
-</section>
 
 <section style="height: auto" id="faqs" class="page page-landing-4">
   <div class="content">
