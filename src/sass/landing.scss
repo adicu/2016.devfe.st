@@ -234,8 +234,8 @@ p.more {
 
 .page-landing-3 {
     // background-image: url('http://i.imgur.com/mei5DgU.jpg');
-    background: $lightblue;
-    color: $white;
+    background: $white;
+    color: $black;
 }
 
 .page-landing-4 {
@@ -326,6 +326,7 @@ h1.page-head {
     font-size: 4.1rem;
     font-family: $oxygen;
     margin-top: 2rem;
+    text-align: center;
 }
 
 #faq-info-text {
@@ -338,6 +339,7 @@ p.page-info-text {
     line-height: 2.6rem;
     font-family: $oxygen;
     margin-bottom: 1em;
+    text-align: center;
 }
 
 p.page-info-text a {
