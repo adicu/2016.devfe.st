@@ -235,15 +235,13 @@ schedule
 
     </div>
   </div>
-
-
 </section>
 
 
 <!-------------------------- SPONSORS ------------------------------>
 
 
-<section style="height: auto" id="sponsors" class="page page-landing-2">
+<section style="height: auto" id="sponsors" class="page page-landing-3">
 
 
   <div class="content">
@@ -308,7 +306,7 @@ schedule
         <h2>Partners</h2>
         <div class="spon-box col-6">
           <div class="partner-pic">
-            <img src="/img/sponsors/soylent.png" alt="Soylent Columbia"  height="55px">
+            <img src="/img/sponsors/soylent.png" alt="Soylent Columbia">
           </div>
         </div>
       </div>
@@ -316,8 +314,36 @@ schedule
   </div>
 </section>
 
-<section style="height: auto" id="faqs" class="page page-landing-4">
+<section style="height: auto" id="sponsors" class="page page-landing-2">
+  <div class="content">
+    <div class="grid-container">
+      <div class="row">
+        <div class="col-6">
+          <h1 class="page-head"> Prizes </h1>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      {{#each mainPrizes}}
+      <div class="spon-box col-2 spon-pic">
+        <h3>{{this.name}}</h3>
+        <h4>{{this.prize}}</h4>
+      </div>
+      {{/each}}
+    </div>
+    <div class="grid-container">
+      {{#each sponsorPrizes}}
+      <div class="spon-box col-3">
+        <h3>{{this.name}}</h3>
+        <h4>{{this.prize}}, presented by</h4>
+        <img src="{{this.logo}}" alt="">
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>
 
+<section style="height: auto" id="faqs" class="page page-landing-4">
   <div class="content">
     <div class="grid-container">
       <h1 class="page-head"> FAQs </h1>
@@ -333,7 +359,6 @@ schedule
         <p class="page-info-text" id="faq-info-text">If you have other questions, please <a href="mailto:devfest@adicu.com?Subject=I%20have%20a%20question!">email us</a>.</p>
       </div>
     </div>
-
   </div>
 </section>
 
