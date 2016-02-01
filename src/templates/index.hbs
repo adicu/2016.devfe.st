@@ -151,6 +151,7 @@ schedule
         <p class="event-description">{{this.description}}</p>
       {{#if this.indent}}</div>{{/if}}
     {{/each}}
+
     <!-- <h3 class="event-title">Dinner<span class="event-time">7pm at CS Lounge (Mudd)</span></h3>
     <p class="event-description">Enjoy dinner with the DevFest community and meet engineers and recruiters from our sponsors.</p>
     <h3 class="event-title">Tech talk<span class="event-time">8pm at Mudd Classrooms </span></h3>
@@ -225,54 +226,69 @@ schedule
           <p class="page-info-text">Learn at your own pace, picking from the tracks that excite you.<br> Work on one track at a time, or bounce between them!</p>
           <p class="page-info-text">
           Pick up a <b>DevFest Passport</b> at any Workspace night and <b>earn stamps</b> for completing tracks. Each stamp gives you one entry into a <b>prize raffle</b>!</p>
+
         </div>
       </div>
-    </div>
+
+      </div>
 
     <div class="grid-container">
       <div class="row">
-        <div class="track-box col-2">
-          <img class="track-image" height="40%" src="/img/Beginner-Logo.png">
-          <h1> Beginner Development </h1>
-          <p> Presented by <a target="_blank" class="track-link" href="http://adicu.com/jade"> JADE </a> </p>
-          <p class="description">{{beginner}}</p>
+        <a target="_blank" href="http://learn.devfe.st/beginner" onClick="ga('send', 'event', 'Tracks', 'click', 'http://learn.devfe.st/beginner', 1 );">
+          <div class="track-box col-2">
+            <img class="track-image" height="40%" src="/img/Beginner-Logo.png">
+            <h1> Beginner Development </h1>
+            <p> Presented by <a target="_blank" class="track-link" href="http://adicu.com/jade"> JADE </a> </p>
+            <p class="description">{{beginner}}</p>
+          </div>
+        </a>
 
-        </div>
-        <div class="track-box col-2">
-          <img class="track-image" height="40%" src="/img/Data-Science-Logo.png">
-          <h1> Data <br> Science </h1>
-          <p> Presented by <a target="_blank" class="track-link" href="http://cdssatcu.com"> CDSS </a> </p>
-          <p class="description">{{datascience}}</p>
+        <a target="_blank" href="http://learn.devfe.st/datascience" onClick="ga('send', 'event', 'Tracks', 'click', 'http://learn.devfe.st/datascience', 1 );">
+          <div class="track-box col-2">
+            <img class="track-image" height="40%" src="/img/Data-Science-Logo.png">
+            <h1> Data <br> Science </h1>
+            <p> Presented by <a target="_blank" class="track-link" href="http://cdssatcu.com"> CDSS </a> </p>
+            <p class="description">{{datascience}}</p>
+          </div>
+        </a>
 
-
-        </div>
-        <div class="track-box col-2">
-          <img class="track-image" height="40%" src="/img/Game-Dev-Logo.png">
-          <h1> Game Development </h1>
-          <p> Presented by <a target="_blank" class="track-link" href="http://cugamedev.org"> CU Game Dev </a> </p>
-          <p class="description">{{game}}</p>
-        </div>
+        <a target="_blank" href="http://learn.devfe.st/gamedev" onClick="ga('send', 'event', 'Tracks', 'click', 'http://learn.devfe.st/gamedev', 1 );">
+          <div class="track-box col-2">
+            <img class="track-image" height="40%" src="/img/Game-Dev-Logo.png">
+            <h1> Game Development </h1>
+            <p> Presented by <a target="_blank" class="track-link" href="http://cugamedev.org"> CU Game Dev </a> </p>
+            <p class="description">{{game}}</p>
+          </div>
+        </a>
       </div>
 
       <div class="row">
+        <a target="_blank" href="http://learn.devfe.st/ios" onClick="ga('send', 'event', 'Tracks', 'click', 'http://learn.devfe.st/ios', 1 );">
         <div class="track-box col-2">
           <img class="track-image" height="40%" src="/img/Mobile-Dev-Logo.png">
           <h1> iOS Development </h1>
           <p> Presented by <a target="_blank" class="track-link" href="http://adicu.com/"> ADI </a> </p>
           <p class="description">{{mobile}}</p>
         </div>
+        </a>
+
+        <a target="_blank" href="http://learn.devfe.st/product" onClick="ga('send', 'event', 'Tracks', 'click', 'http://learn.devfe.st/product', 1 );">
         <div class="track-box col-2">
           <img class="track-image" height="40%" src="/img/Product-Logo.png">
           <h1> Product Development </h1>
           <p> Presented by <a target="_blank" class="track-link" href="http://coreatcu.com/"> CORE </a> </p>
           <p class="description">{{product}}</p>
         </div>
+        </a>
+
+        <a target="_blank" href="http://learn.devfe.st/webdev" onClick="ga('send', 'event', 'Tracks', 'click', 'http://learn.devfe.st/webdev', 1 );">
         <div class="track-box col-2">
           <img class="track-image" src="/img/Web-Dev-Logo.png">
           <h1> Web Development </h1>
           <p> Presented by <a target="_blank" class="track-link" href="http://adicu.com/"> ADI </a> </p>
           <p class="description">{{web}}</p>
         </div>
+        </a>
       </div>
 
     </div>
@@ -382,7 +398,7 @@ schedule
     </div>
     <div class="grid-container">
       <div class="row sponsor-row" id="partner-level">
-        <h2>Partners</h2>
+        <h2>Partner</h2>
         <div class="spon-box col-6">
           <div class="partner-pic">
             <img src="/img/sponsors/soylent.png" alt="Soylent Columbia">
