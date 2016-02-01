@@ -146,8 +146,10 @@ schedule
   <div class="day">
     <h2 id="monday">Monday, February 1</h2>
     {{#each day-2}}
-      <h3 class="event-title">{{this.title}}<span class="event-time">{{this.time}} at <a class="event-location-link" href="{{this.location_link}}" title="Directions to {{this.location}}">{{this.location}}</a></span></h3>
-      <p class="event-description">{{this.description}}</p>
+      {{#if this.indent}}<div class="indent">{{/if}}
+        <h3 class="event-title">{{this.title}}<span class="event-time">{{this.time}} at <a class="event-location-link" href="{{this.location_link}}" title="Directions to {{this.location}}">{{this.location}}</a></span></h3>
+        <p class="event-description">{{this.description}}</p>
+      {{#if this.indent}}</div>{{/if}}
     {{/each}}
     <!-- <h3 class="event-title">Dinner<span class="event-time">7pm at CS Lounge (Mudd)</span></h3>
     <p class="event-description">Enjoy dinner with the DevFest community and meet engineers and recruiters from our sponsors.</p>
@@ -161,8 +163,10 @@ schedule
   <div class="day">
     <h2 id="tuesday">Tuesday, February 2</h2>
     {{#each day-3}}
-      <h3 class="event-title">{{this.title}}<span class="event-time">{{this.time}} at <a class="event-location-link" href="{{this.location_link}}" title="Directions to {{this.location}}">{{this.location}}</a></span></h3>
-      <p class="event-description">{{this.description}}</p>
+      {{#if this.indent}}<div class="indent">{{/if}}
+        <h3 class="event-title">{{this.title}}<span class="event-time">{{this.time}} at <a class="event-location-link" href="{{this.location_link}}" title="Directions to {{this.location}}">{{this.location}}</a></span></h3>
+        <p class="event-description">{{this.description}}</p>
+      {{#if this.indent}}</div>{{/if}}
     {{/each}}
    <!--  <h3 class="event-title">Kickoff<span class="event-time">11:30am - 2:30pm at Davis Auditorium (CEPSR)</span></h3>
     <p class="event-description">Join us as we kick the week off with free food, a talk from our keynote speaker, and more information about the week's events!</p>
@@ -174,16 +178,20 @@ schedule
   <div class="day">
     <h2 id="wednesday">Wednesday, February 3</h2>
     {{#each day-4}}
-      <h3 class="event-title">{{this.title}}<span class="event-time">{{this.time}} at <a class="event-location-link" href="{{this.location_link}}" title="Directions to {{this.location}}">{{this.location}}</a></span></h3>
-      <p class="event-description">{{this.description}}</p>
+      {{#if this.indent}}<div class="indent">{{/if}}
+        <h3 class="event-title">{{this.title}}<span class="event-time">{{this.time}} at <a class="event-location-link" href="{{this.location_link}}" title="Directions to {{this.location}}">{{this.location}}</a></span></h3>
+        <p class="event-description">{{this.description}}</p>
+      {{#if this.indent}}</div>{{/if}}
     {{/each}}
   </div>
 
   <div class="day">
     <h2 id="thursday">Thursday, February 4</h2>
     {{#each day-5}}
-      <h3 class="event-title">{{this.title}}<span class="event-time">{{this.time}} at <a class="event-location-link" href="{{this.location_link}}" title="Directions to {{this.location}}">{{this.location}}</a></span></h3>
-      <p class="event-description">{{this.description}}</p>
+      {{#if this.indent}}<div class="indent">{{/if}}
+        <h3 class="event-title">{{this.title}}<span class="event-time">{{this.time}} at <a class="event-location-link" href="{{this.location_link}}" title="Directions to {{this.location}}">{{this.location}}</a></span></h3>
+        <p class="event-description">{{this.description}}</p>
+      {{#if this.indent}}</div>{{/if}}
     {{/each}}
   </div>
 

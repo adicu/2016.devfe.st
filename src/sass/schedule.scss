@@ -42,3 +42,19 @@
         color: $red;
     }
 }
+
+.indent {
+  padding-left: 3rem;
+  position: relative;
+}
+
+.indent:after {
+  content: ' ';
+  display: block;
+  width: 0.4em;
+  height: 0.4em;
+  position: absolute;
+  top: .6em;
+  left: 1rem;
+  background-color: $black;
+}
