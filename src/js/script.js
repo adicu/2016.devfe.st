@@ -3,6 +3,11 @@ $(document).ready(function() {
   var width = $(window).width();
   $(window).resize(applyNavScroll);
 
+  $(".track-box").click(function() {
+  window.location = $(this).find("a").attr("href");
+  return false;
+});
+
   // Move Page
   var hashTagActive = '';
   $('.scroll').click(function(event) {
@@ -115,7 +120,6 @@ function showVideo() {
 
 function applyNavScroll() {
   var infoHeight = $('#schedule').offset().top;
-  console.log(infoHeight);
   $(window).scroll(function() {
     if ($(this).scrollTop() > infoHeight) {
       $('.nav').css({
