@@ -241,12 +241,12 @@ sponsorPrizes:
   - name: "Best Health App"
     logo: "/img/sponsors/bmes.png"
     prize: "Amazon Gift Card"
-  - name: "Funniest Hack"
+  - name: "Most Creative Hack"
     logo: "img/sponsors/adi-logo.png"
-    prize: "TBA"
+    prize: "Arduino Kits"
   - name: "Best Use of CULPA APIs"
     logo: "img/sponsors/culpa.png"
-    prize: "TBA"
+    prize: "$100"
 
 faqs:
   - question: "What is DevFest?"
