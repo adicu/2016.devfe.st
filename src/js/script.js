@@ -3,8 +3,8 @@ $(document).ready(function() {
   var width = $(window).width();
   $(window).resize(applyNavScroll);
 
-  $(".track-box").click(function() {
-  window.location = $(this).find("a").attr("href");
+  $('.track-box').click(function() {
+  window.location = $(this).find('a').attr('href');
   return false;
 });
 
@@ -159,7 +159,7 @@ function hidePopup() {
 }
 
 // function schedule(param) {
-//   var somestring = "";
+//   var somestring = ';
 //   somestring = param;
 //   $('#day-1').html() = $(somestring);
 // }

@@ -62,21 +62,21 @@
 }
 
 .track_button {
-    background: $transparent;
-    border: medium solid $black;
-    box-sizing: border-box;
-    color: $black;
-    font-size: 1.1em;
-    font-weight: 400;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: center;
-    transition: 0.3s ease background-color;
+  background: $transparent;
+  border: medium solid $black;
+  box-sizing: border-box;
+  color: $black;
+  font-size: 1.1em;
+  font-weight: 400;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  text-align: center;
+  transition: 0.3s ease background-color;
 }
 
 .track_button:hover {
-    background: $black;
-    color: $white;
+  background: $black;
+  color: $white;
 
 }
 

@@ -224,7 +224,7 @@ schedule
 <section style="height: auto" id="judges" class="page page-landing-4">
 <div class="content">
   <div class="day">
-    <h1 class="page-head">Amazing Judges</h1>
+    <h1 class="page-head">Hackathon Judges</h1>
     <div class="grid-container">
       <div class="row">
         {{#each judge}}
@@ -371,55 +371,63 @@ schedule
     <div class="grid-container">
       <div class="row sponsor-row" id="gold-level">
         <h2>Gold Level</h2>
+        {{#each gold-level}}
+        <a href="{{this.link}}">
         <div class="spon-box col-2 spon-pic">
-          <img src="/img/sponsors/bloomberg.png" alt="Bloomberg" width="100%">
-
+          <img src="{{this.logo}}" alt="{{this.company}}" width="100%">
         </div>
-        <div class="spon-box col-2 spon-pic">
-          <img src="/img/sponsors/facebook.png" alt="Facebook" width="100%">
-
-        </div>
-        <div class="spon-box col-2 spon-pic">
-          <img src="/img/sponsors/yahoo.png" alt="Yahoo" width="100%">
-
-        </div>
+        </a>
+      {{/each}}
       </div>
     </div>
     <div class="grid-container">
       <div class="row sponsor-row" id="silver-level">
         <h2>Silver Level</h2>
+        <a href="http://a16z.com/">
         <div class="spon-box col-3 spon-pic">
           <img src="/img/sponsors/AndreessenHorowitzlogo.png" alt="Andreessen Horowitz" width="53%">
-
         </div>
+        </a>
+
+        <a href="http://www.microsoft.com/">
         <div class="spon-box col-3 spon-pic">
           <img src="/img/sponsors/microsoft.png" alt="Microsoft" width="53%">
-
         </div>
+        </a>
       </div>
       <div class="row sponsor-row" id="silver-level">
+        <a href="http://entrepreneurship.columbia.edu/">
         <div class="spon-box col-3 spon-pic">
           <img src="/img/sponsors/columbiaentrepreneurship.png" alt="Columbia Entrepreneurship" width="53%">
         </div>
+        </a>
+
+        <a href="https://www.mark43.com/">
         <div class="spon-box col-3 spon-pic">
           <img src="/img/sponsors/mark43.png"
           alt="mark43" width="53%">
         </div>
+        </a>
       </div>
     </div>
     <div class="grid-container">
       <div class="row sponsor-row" id="bronze-level">
         <h2>Bronze Level</h2>
+        <a href="https://www.etsy.com/">
         <div class="spon-box col-3">
           <div class="bronze-pic">
             <img src="/img/sponsors/etsylogo.png" alt="Etsy"  height="55px">
           </div>
         </div>
+        </a>
+
+        <a href="https://www.mongodb.com/">
         <div class="spon-box col-3">
           <div class="bronze-pic">
             <img src="/img/sponsors/mongodb.png" alt="Mongo DB" height="55px">
           </div>
         </div>
+        </a>
       </div>
     </div>
     <div class="grid-container">
