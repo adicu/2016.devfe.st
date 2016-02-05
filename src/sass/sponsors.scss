@@ -67,6 +67,24 @@
   }
 }
 
+.judge-box {
+  box-sizing: border-box;
+  margin: .75em 0;
+  padding: 1.2em;
+  text-align: center;
+
+  img {
+    max-height: 15rem;
+    max-width: 30rem;
+    height: 15rem;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    margin: 1rem 0 2rem;
+  }
+}
+
 @media (max-width: 1000px) {
   .spon-pic,.spon-box,.bronze-pic,.partner-pic{
     img{

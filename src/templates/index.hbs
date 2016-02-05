@@ -63,7 +63,7 @@
         <li class="mobile-only" id="menu"><a onclick="showNav()" class="register nav-button"><i class="fa fa-bars"></i></a></li>
         <li class="hide-mobile unhide-nav mobile-only"><a onclick="hideNav()" id="exit" class="register nav-button"><i class="fa fa-times"></i></a></li>
         {{!-- <li class="hide-mobile unhide-nav"><a id="nav_sign" class="register nav-button typeform-share hide-mobile unhide-nav" href="javascript:void(0)" data-mode="2">sign up today</a></li> --}}
-        {{!-- <li class="hide-mobile unhide-nav">
+{{!--          <li class="hide-mobile unhide-nav">
         <a id="prizes-link" href="#prizes" class="scroll nav-button">prizes</a>
       </li>
 
@@ -75,7 +75,7 @@
     <a id="sponsors-link" href="#sponsors" class="scroll nav-button">
     sponsors
   </a>
-</li>--}}
+</li> --}}
 {{!-- <li class="hide-mobile unhide-nav">
 <a id="schedule-link" href="#schedule" class="scroll nav-button">
 schedule
@@ -108,6 +108,12 @@ schedule
 <li class="hide-mobile unhide-nav">
   <a id="tracks-link" href="#tracks" class="scroll nav-button">
     Tracks
+  </a>
+</li>
+
+<li class="hide-mobile unhide-nav">
+  <a id="schedule-link" href="#judges" class="scroll nav-button">
+    Judges
   </a>
 </li>
 
@@ -213,6 +219,26 @@ schedule
   </div>
 
 </div>  <!-- content -->
+</section>
+
+<section style="height: auto" id="judges" class="page page-landing-4">
+<div class="content">
+  <div class="day">
+    <h1 class="page-head">Amazing Judges</h1>
+    <div class="grid-container">
+      <div class="row">
+        {{#each judge}}
+        <div class="judge-box col-3">
+          <img src="{{this.photo}}" alt=""><br>
+          <h3>{{this.name}}</h3>
+          <h4>{{this.title}}</h4>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>
+
 </section>
 
 
