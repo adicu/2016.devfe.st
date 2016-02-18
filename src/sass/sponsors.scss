@@ -95,9 +95,16 @@
   }
 
   .judge-box{
-    img{
-      max-height: 7.5rem;
-    }
     margin: 0;
+    img{
+      max-height: 10rem;
+      max-width: 10rem;
+    }
+
+    h4 {
+      margin: 0;
+      font-size: 1rem;
+  }
+
   }
 }
