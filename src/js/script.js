@@ -38,27 +38,14 @@ $(document).ready(function() {
 
   /* Every time the window is scrolled ... */
   $(window).scroll(function() {
-
-    var $coolBody = $(document.body);
-    var bodyHeight = $coolBody.height();
-
     $('#globe').css({
-      transform: 'translateX(+50%) translateY(+50%) rotate(' + ($coolBody.scrollTop() / bodyHeight * 360) + 'deg)',
+      transform: 'translateX(+50%) translateY(+50%) rotate(' + ($(document.body).scrollTop() / $(document.body).height() * 360) + 'deg)',
     });
-
-    // console.log($cool_body.scrollTop());
-    if ((100 * (($coolBody.scrollTop() / bodyHeight) - 1) + 25) > 0) {
-      $('#airplane').css({
-        right: 100 * (($coolBody.scrollTop() / bodyHeight) - 1) + 25 + '%',
-      });
-    }
 
     /* Check the location of each desired element */
     $('.hideme').each(function(i) {
-
       var bottomObject = $(this).offset().top + $(this).outerHeight();
       var bottomWindow = $(window).scrollTop() + $(window).height();
-
       /* If the object is completely visible in the window, fade it it */
       if (bottomWindow > bottomObject) {
 
